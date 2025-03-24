@@ -1,0 +1,1873 @@
+2025-03-23 06:09:32,828 - model_comparison - INFO - Generating synthetic data with 40000 observations, 80 SKUs
+2025-03-23 06:10:23,574 - model_comparison - INFO - Generating synthetic data with 30000 observations, 60 SKUs
+2025-03-23 06:10:24,387 - model_comparison - INFO - Generated synthetic data with 30000 observations
+2025-03-23 06:10:24,387 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:10:24,387 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:10:24,389 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:12:22,828 - model_comparison - INFO - Generating synthetic data with 30000 observations, 60 SKUs
+2025-03-23 06:12:23,634 - model_comparison - INFO - Generated synthetic data with 30000 observations
+2025-03-23 06:12:23,634 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:12:23,634 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:12:23,635 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:12:23,734 - model_comparison - INFO - Created sparse dataset with 19296 total observations
+2025-03-23 06:12:23,739 - model_comparison - INFO - Median observations per SKU: 323.5
+2025-03-23 06:12:23,739 - model_comparison - INFO - Min observations per SKU: 104
+2025-03-23 06:12:23,739 - model_comparison - INFO - Max observations per SKU: 535
+2025-03-23 06:12:47,447 - model_comparison - INFO - Generating synthetic data with 30000 observations, 60 SKUs
+2025-03-23 06:12:48,246 - model_comparison - INFO - Generated synthetic data with 30000 observations
+2025-03-23 06:12:48,247 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:12:48,247 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:12:48,248 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:12:48,349 - model_comparison - INFO - Created sparse dataset with 19457 total observations
+2025-03-23 06:12:48,352 - model_comparison - INFO - Median observations per SKU: 332.5
+2025-03-23 06:12:48,352 - model_comparison - INFO - Min observations per SKU: 107
+2025-03-23 06:12:48,352 - model_comparison - INFO - Max observations per SKU: 519
+2025-03-23 06:12:48,353 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:12:48,489 - model_comparison - INFO - Linear model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:12:48,489 - model_comparison - INFO - Mean elasticity: -0.7007
+2025-03-23 06:12:48,489 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:12:48,489 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:12:48,489 - model_comparison - INFO - Fitting hierarchical model for 60 SKUs
+2025-03-23 06:12:48,490 - model_comparison - INFO - Processing product class 0 with 60 SKUs
+2025-03-23 06:12:48,490 - model_comparison - INFO - Class 0 prior elasticity: -1.2373 ± 0.3018
+2025-03-23 06:12:48,490 - model_comparison - INFO - Processing product class 1 with 60 SKUs
+2025-03-23 06:12:48,491 - model_comparison - INFO - Class 1 prior elasticity: -1.2373 ± 0.3018
+2025-03-23 06:12:48,492 - model_comparison - INFO - Processing product class 2 with 60 SKUs
+2025-03-23 06:12:48,492 - model_comparison - INFO - Class 2 prior elasticity: -1.2373 ± 0.3018
+2025-03-23 06:12:48,493 - model_comparison - INFO - Processing product class 3 with 60 SKUs
+2025-03-23 06:12:48,493 - model_comparison - INFO - Class 3 prior elasticity: -1.2373 ± 0.3018
+2025-03-23 06:12:48,494 - model_comparison - INFO - Processing product class 4 with 60 SKUs
+2025-03-23 06:12:48,494 - model_comparison - INFO - Class 4 prior elasticity: -1.2373 ± 0.3018
+2025-03-23 06:12:48,648 - model_comparison - INFO - HBM model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:12:48,648 - model_comparison - INFO - Mean elasticity: -0.2378
+2025-03-23 06:12:48,649 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 06:12:48,649 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 06:12:48,653 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:12:48,653 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:12:48,732 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:12:48,732 - model_comparison - INFO - Mean elasticity: -1.3796
+2025-03-23 06:12:48,732 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:12:48,732 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:12:48,732 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:12:48,732 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:12:48,733 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:12:48,733 - model_comparison - INFO - Class 0 prior elasticity: -1.2928 ± 0.2980
+2025-03-23 06:12:48,733 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:12:48,733 - model_comparison - INFO - Class 1 prior elasticity: -1.2928 ± 0.2980
+2025-03-23 06:12:48,734 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:12:48,734 - model_comparison - INFO - Class 2 prior elasticity: -1.2928 ± 0.2980
+2025-03-23 06:12:48,734 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:12:48,734 - model_comparison - INFO - Class 3 prior elasticity: -1.2928 ± 0.2980
+2025-03-23 06:12:48,735 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:12:48,735 - model_comparison - INFO - Class 4 prior elasticity: -1.2928 ± 0.2980
+2025-03-23 06:12:48,823 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:12:48,823 - model_comparison - INFO - Mean elasticity: -0.2090
+2025-03-23 06:12:48,823 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 06:12:48,828 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:12:48,828 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:12:48,904 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:12:48,904 - model_comparison - INFO - Mean elasticity: -1.2787
+2025-03-23 06:12:48,904 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:12:48,904 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:12:48,904 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:12:48,904 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:12:48,905 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:12:48,905 - model_comparison - INFO - Class 0 prior elasticity: -1.2277 ± 0.2932
+2025-03-23 06:12:48,905 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:12:48,905 - model_comparison - INFO - Class 1 prior elasticity: -1.2277 ± 0.2932
+2025-03-23 06:12:48,906 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:12:48,906 - model_comparison - INFO - Class 2 prior elasticity: -1.2277 ± 0.2932
+2025-03-23 06:12:48,906 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:12:48,906 - model_comparison - INFO - Class 3 prior elasticity: -1.2277 ± 0.2932
+2025-03-23 06:12:48,907 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:12:48,907 - model_comparison - INFO - Class 4 prior elasticity: -1.2277 ± 0.2932
+2025-03-23 06:12:48,995 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:12:48,995 - model_comparison - INFO - Mean elasticity: -0.2053
+2025-03-23 06:12:48,996 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 06:12:48,999 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:12:48,999 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:12:49,078 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:12:49,078 - model_comparison - INFO - Mean elasticity: -1.2998
+2025-03-23 06:12:49,078 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:12:49,078 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:12:49,079 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:12:49,079 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:12:49,079 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:12:49,079 - model_comparison - INFO - Class 0 prior elasticity: -1.1914 ± 0.3049
+2025-03-23 06:12:49,080 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:12:49,080 - model_comparison - INFO - Class 1 prior elasticity: -1.1914 ± 0.3049
+2025-03-23 06:12:49,081 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:12:49,081 - model_comparison - INFO - Class 2 prior elasticity: -1.1914 ± 0.3049
+2025-03-23 06:12:49,081 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:12:49,082 - model_comparison - INFO - Class 3 prior elasticity: -1.1914 ± 0.3049
+2025-03-23 06:12:49,082 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:12:49,082 - model_comparison - INFO - Class 4 prior elasticity: -1.1914 ± 0.3049
+2025-03-23 06:12:49,172 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:12:49,172 - model_comparison - INFO - Mean elasticity: -0.2192
+2025-03-23 06:12:49,172 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 06:12:49,173 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 06:12:49,173 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 06:12:49,173 - model_comparison - INFO - MAE: 1.0262
+2025-03-23 06:12:49,173 - model_comparison - INFO - RMSE: 1.0654
+2025-03-23 06:12:49,173 - model_comparison - INFO - Correlation: 0.1997
+2025-03-23 06:12:49,173 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:12:49,173 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-23 06:12:49,173 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:12:49,175 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 06:14:01,238 - model_comparison - INFO - Generating synthetic data with 20000 observations, 60 SKUs
+2025-03-23 06:14:01,793 - model_comparison - INFO - Generated synthetic data with 20000 observations
+2025-03-23 06:14:01,793 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:14:01,793 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:14:01,795 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:14:01,864 - model_comparison - INFO - Created sparse dataset with 13132 total observations
+2025-03-23 06:14:01,868 - model_comparison - INFO - Median observations per SKU: 218.5
+2025-03-23 06:14:01,868 - model_comparison - INFO - Min observations per SKU: 63
+2025-03-23 06:14:01,868 - model_comparison - INFO - Max observations per SKU: 371
+2025-03-23 06:14:01,868 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:14:01,972 - model_comparison - INFO - Linear model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:14:01,973 - model_comparison - INFO - Mean elasticity: -0.6756
+2025-03-23 06:14:01,973 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:14:01,973 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:14:01,973 - model_comparison - INFO - Fitting hierarchical model for 60 SKUs
+2025-03-23 06:14:01,973 - model_comparison - INFO - Processing product class 0 with 60 SKUs
+2025-03-23 06:14:01,974 - model_comparison - INFO - Class 0 prior elasticity: -1.2107 ± 0.2778
+2025-03-23 06:14:01,974 - model_comparison - INFO - Processing product class 1 with 60 SKUs
+2025-03-23 06:14:01,974 - model_comparison - INFO - Class 1 prior elasticity: -1.2107 ± 0.2778
+2025-03-23 06:14:01,974 - model_comparison - INFO - Processing product class 2 with 60 SKUs
+2025-03-23 06:14:01,975 - model_comparison - INFO - Class 2 prior elasticity: -1.2107 ± 0.2778
+2025-03-23 06:14:01,975 - model_comparison - INFO - Processing product class 3 with 60 SKUs
+2025-03-23 06:14:01,975 - model_comparison - INFO - Class 3 prior elasticity: -1.2107 ± 0.2778
+2025-03-23 06:14:01,975 - model_comparison - INFO - Processing product class 4 with 60 SKUs
+2025-03-23 06:14:01,975 - model_comparison - INFO - Class 4 prior elasticity: -1.2107 ± 0.2778
+2025-03-23 06:14:02,094 - model_comparison - INFO - HBM model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:14:02,094 - model_comparison - INFO - Mean elasticity: -0.1926
+2025-03-23 06:14:02,094 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 06:14:02,094 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 06:14:02,098 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:14:02,157 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:14:02,157 - model_comparison - INFO - Mean elasticity: -0.6873
+2025-03-23 06:14:02,157 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:14:02,157 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:14:02,157 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:14:02,157 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:14:02,157 - model_comparison - INFO - Class 0 prior elasticity: -1.2397 ± 0.2830
+2025-03-23 06:14:02,158 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:14:02,158 - model_comparison - INFO - Class 1 prior elasticity: -1.2397 ± 0.2830
+2025-03-23 06:14:02,158 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:14:02,158 - model_comparison - INFO - Class 2 prior elasticity: -1.2397 ± 0.2830
+2025-03-23 06:14:02,159 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:14:02,159 - model_comparison - INFO - Class 3 prior elasticity: -1.2397 ± 0.2830
+2025-03-23 06:14:02,159 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:14:02,159 - model_comparison - INFO - Class 4 prior elasticity: -1.2397 ± 0.2830
+2025-03-23 06:14:02,225 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:14:02,225 - model_comparison - INFO - Mean elasticity: -0.1787
+2025-03-23 06:14:02,226 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 06:14:02,229 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:14:02,289 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:14:02,289 - model_comparison - INFO - Mean elasticity: -0.7033
+2025-03-23 06:14:02,289 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:14:02,290 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:14:02,290 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:14:02,290 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:14:02,290 - model_comparison - INFO - Class 0 prior elasticity: -1.2257 ± 0.3069
+2025-03-23 06:14:02,290 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:14:02,291 - model_comparison - INFO - Class 1 prior elasticity: -1.2257 ± 0.3069
+2025-03-23 06:14:02,291 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:14:02,291 - model_comparison - INFO - Class 2 prior elasticity: -1.2257 ± 0.3069
+2025-03-23 06:14:02,291 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:14:02,291 - model_comparison - INFO - Class 3 prior elasticity: -1.2257 ± 0.3069
+2025-03-23 06:14:02,292 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:14:02,292 - model_comparison - INFO - Class 4 prior elasticity: -1.2257 ± 0.3069
+2025-03-23 06:14:02,360 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:14:02,360 - model_comparison - INFO - Mean elasticity: -0.2075
+2025-03-23 06:14:02,361 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 06:14:02,364 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:14:02,421 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:14:02,421 - model_comparison - INFO - Mean elasticity: -0.6362
+2025-03-23 06:14:02,421 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:14:02,421 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:14:02,421 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:14:02,422 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:14:02,422 - model_comparison - INFO - Class 0 prior elasticity: -1.1669 ± 0.2324
+2025-03-23 06:14:02,422 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:14:02,422 - model_comparison - INFO - Class 1 prior elasticity: -1.1669 ± 0.2324
+2025-03-23 06:14:02,422 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:14:02,423 - model_comparison - INFO - Class 2 prior elasticity: -1.1669 ± 0.2324
+2025-03-23 06:14:02,423 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:14:02,423 - model_comparison - INFO - Class 3 prior elasticity: -1.1669 ± 0.2324
+2025-03-23 06:14:02,423 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:14:02,423 - model_comparison - INFO - Class 4 prior elasticity: -1.1669 ± 0.2324
+2025-03-23 06:14:02,489 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:14:02,489 - model_comparison - INFO - Mean elasticity: -0.1949
+2025-03-23 06:14:02,490 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 06:14:02,490 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 06:14:02,490 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 06:14:02,490 - model_comparison - INFO - MAE: 1.0170
+2025-03-23 06:14:02,490 - model_comparison - INFO - RMSE: 1.0445
+2025-03-23 06:14:02,490 - model_comparison - INFO - Correlation: 0.4750
+2025-03-23 06:14:02,490 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,490 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-23 06:14:02,490 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:14:02,491 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 06:14:02,492 - model_comparison - INFO - MAE: 0.5307
+2025-03-23 06:14:02,492 - model_comparison - INFO - RMSE: 0.5588
+2025-03-23 06:14:02,492 - model_comparison - INFO - Correlation: 0.8438
+2025-03-23 06:14:02,492 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,492 - model_comparison - INFO - Within_50%: 55.0000
+2025-03-23 06:14:02,492 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:14:02,492 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 06:14:02,493 - model_comparison - INFO - MAE: 0.5714
+2025-03-23 06:14:02,493 - model_comparison - INFO - RMSE: 0.6072
+2025-03-23 06:14:02,493 - model_comparison - INFO - Correlation: 0.7185
+2025-03-23 06:14:02,493 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,493 - model_comparison - INFO - Within_50%: 43.4783
+2025-03-23 06:14:02,493 - model_comparison - INFO - N: 23.0000
+2025-03-23 06:14:02,493 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 06:14:02,493 - model_comparison - INFO - MAE: 0.4755
+2025-03-23 06:14:02,494 - model_comparison - INFO - RMSE: 0.4857
+2025-03-23 06:14:02,494 - model_comparison - INFO - Correlation: 0.9595
+2025-03-23 06:14:02,494 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,494 - model_comparison - INFO - Within_50%: 70.5882
+2025-03-23 06:14:02,494 - model_comparison - INFO - N: 17.0000
+2025-03-23 06:14:02,494 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 06:14:02,495 - model_comparison - INFO - MAE: 0.9720
+2025-03-23 06:14:02,495 - model_comparison - INFO - RMSE: 0.9899
+2025-03-23 06:14:02,495 - model_comparison - INFO - Correlation: 0.5827
+2025-03-23 06:14:02,495 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,495 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-23 06:14:02,495 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:14:02,495 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 06:14:02,495 - model_comparison - INFO - MAE: 0.9660
+2025-03-23 06:14:02,495 - model_comparison - INFO - RMSE: 0.9863
+2025-03-23 06:14:02,495 - model_comparison - INFO - Correlation: 0.0370
+2025-03-23 06:14:02,495 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,495 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-23 06:14:02,496 - model_comparison - INFO - N: 23.0000
+2025-03-23 06:14:02,496 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 06:14:02,496 - model_comparison - INFO - MAE: 0.9802
+2025-03-23 06:14:02,496 - model_comparison - INFO - RMSE: 0.9947
+2025-03-23 06:14:02,496 - model_comparison - INFO - Correlation: 0.8152
+2025-03-23 06:14:02,496 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:14:02,496 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-23 06:14:02,496 - model_comparison - INFO - N: 17.0000
+2025-03-23 06:14:02,533 - model_comparison - INFO - Results saved to results/hbm_final_scaling
+2025-03-23 06:14:47,561 - model_comparison - INFO - Generating synthetic data with 30000 observations, 60 SKUs
+2025-03-23 06:14:48,367 - model_comparison - INFO - Generated synthetic data with 30000 observations
+2025-03-23 06:14:48,367 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:14:48,367 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:14:48,368 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:14:48,469 - model_comparison - INFO - Created sparse dataset with 19407 total observations
+2025-03-23 06:14:48,473 - model_comparison - INFO - Median observations per SKU: 325.5
+2025-03-23 06:14:48,473 - model_comparison - INFO - Min observations per SKU: 103
+2025-03-23 06:14:48,473 - model_comparison - INFO - Max observations per SKU: 552
+2025-03-23 06:14:48,473 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:14:48,608 - model_comparison - INFO - Linear model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:14:48,608 - model_comparison - INFO - Mean elasticity: -0.6279
+2025-03-23 06:14:48,608 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:14:48,608 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:14:48,608 - model_comparison - INFO - Fitting hierarchical model for 60 SKUs
+2025-03-23 06:14:48,609 - model_comparison - INFO - Processing product class 0 with 60 SKUs
+2025-03-23 06:14:48,609 - model_comparison - INFO - Class 0 prior elasticity: -1.1960 ± 0.3108
+2025-03-23 06:14:48,610 - model_comparison - INFO - Processing product class 1 with 60 SKUs
+2025-03-23 06:14:48,610 - model_comparison - INFO - Class 1 prior elasticity: -1.1960 ± 0.3108
+2025-03-23 06:14:48,610 - model_comparison - INFO - Processing product class 2 with 60 SKUs
+2025-03-23 06:14:48,610 - model_comparison - INFO - Class 2 prior elasticity: -1.1960 ± 0.3108
+2025-03-23 06:14:48,611 - model_comparison - INFO - Processing product class 3 with 60 SKUs
+2025-03-23 06:14:48,611 - model_comparison - INFO - Class 3 prior elasticity: -1.1960 ± 0.3108
+2025-03-23 06:14:48,612 - model_comparison - INFO - Processing product class 4 with 60 SKUs
+2025-03-23 06:14:48,612 - model_comparison - INFO - Class 4 prior elasticity: -1.1960 ± 0.3108
+2025-03-23 06:15:08,828 - model_comparison - INFO - Generating synthetic data with 30000 observations, 60 SKUs
+2025-03-23 06:15:09,630 - model_comparison - INFO - Generated synthetic data with 30000 observations
+2025-03-23 06:15:09,630 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:15:09,630 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:15:09,632 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:15:09,732 - model_comparison - INFO - Created sparse dataset with 19610 total observations
+2025-03-23 06:15:09,736 - model_comparison - INFO - Median observations per SKU: 332.5
+2025-03-23 06:15:09,737 - model_comparison - INFO - Min observations per SKU: 101
+2025-03-23 06:15:09,737 - model_comparison - INFO - Max observations per SKU: 535
+2025-03-23 06:15:09,737 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:09,872 - model_comparison - INFO - Linear model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:15:09,873 - model_comparison - INFO - Mean elasticity: -0.6455
+2025-03-23 06:15:09,873 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:09,873 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:09,873 - model_comparison - INFO - Fitting hierarchical model for 60 SKUs
+2025-03-23 06:15:09,874 - model_comparison - INFO - Processing product class 0 with 60 SKUs
+2025-03-23 06:15:09,874 - model_comparison - INFO - Class 0 prior elasticity: -1.1789 ± 0.3341
+2025-03-23 06:15:09,874 - model_comparison - INFO - Processing product class 1 with 60 SKUs
+2025-03-23 06:15:09,874 - model_comparison - INFO - Class 1 prior elasticity: -1.1789 ± 0.3341
+2025-03-23 06:15:09,875 - model_comparison - INFO - Processing product class 2 with 60 SKUs
+2025-03-23 06:15:09,875 - model_comparison - INFO - Class 2 prior elasticity: -1.1789 ± 0.3341
+2025-03-23 06:15:09,876 - model_comparison - INFO - Processing product class 3 with 60 SKUs
+2025-03-23 06:15:09,876 - model_comparison - INFO - Class 3 prior elasticity: -1.1789 ± 0.3341
+2025-03-23 06:15:09,876 - model_comparison - INFO - Processing product class 4 with 60 SKUs
+2025-03-23 06:15:09,876 - model_comparison - INFO - Class 4 prior elasticity: -1.1789 ± 0.3341
+2025-03-23 06:15:10,030 - model_comparison - INFO - HBM model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:15:10,030 - model_comparison - INFO - Mean elasticity: -0.6490
+2025-03-23 06:15:10,030 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 06:15:10,030 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 06:15:10,035 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:10,111 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:10,111 - model_comparison - INFO - Mean elasticity: -0.6681
+2025-03-23 06:15:10,111 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:10,111 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:10,111 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:15:10,112 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:15:10,112 - model_comparison - INFO - Class 0 prior elasticity: -1.1913 ± 0.3422
+2025-03-23 06:15:10,113 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:15:10,113 - model_comparison - INFO - Class 1 prior elasticity: -1.1913 ± 0.3422
+2025-03-23 06:15:10,114 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:15:10,114 - model_comparison - INFO - Class 2 prior elasticity: -1.1913 ± 0.3422
+2025-03-23 06:15:10,114 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:15:10,115 - model_comparison - INFO - Class 3 prior elasticity: -1.1913 ± 0.3422
+2025-03-23 06:15:10,115 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:15:10,115 - model_comparison - INFO - Class 4 prior elasticity: -1.1913 ± 0.3422
+2025-03-23 06:15:10,204 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:10,204 - model_comparison - INFO - Mean elasticity: -0.6566
+2025-03-23 06:15:10,204 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 06:15:10,207 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:10,284 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:10,284 - model_comparison - INFO - Mean elasticity: -0.6424
+2025-03-23 06:15:10,284 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:10,285 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:10,285 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:15:10,285 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:15:10,285 - model_comparison - INFO - Class 0 prior elasticity: -1.1816 ± 0.3447
+2025-03-23 06:15:10,286 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:15:10,286 - model_comparison - INFO - Class 1 prior elasticity: -1.1816 ± 0.3447
+2025-03-23 06:15:10,286 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:15:10,286 - model_comparison - INFO - Class 2 prior elasticity: -1.1816 ± 0.3447
+2025-03-23 06:15:10,287 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:15:10,287 - model_comparison - INFO - Class 3 prior elasticity: -1.1816 ± 0.3447
+2025-03-23 06:15:10,287 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:15:10,287 - model_comparison - INFO - Class 4 prior elasticity: -1.1816 ± 0.3447
+2025-03-23 06:15:10,374 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:10,375 - model_comparison - INFO - Mean elasticity: -0.6471
+2025-03-23 06:15:10,375 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 06:15:10,379 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:10,472 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:10,472 - model_comparison - INFO - Mean elasticity: -0.6259
+2025-03-23 06:15:10,472 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:10,472 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:10,472 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:15:10,473 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:15:10,473 - model_comparison - INFO - Class 0 prior elasticity: -1.1638 ± 0.3140
+2025-03-23 06:15:10,474 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:15:10,474 - model_comparison - INFO - Class 1 prior elasticity: -1.1638 ± 0.3140
+2025-03-23 06:15:10,474 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:15:10,474 - model_comparison - INFO - Class 2 prior elasticity: -1.1638 ± 0.3140
+2025-03-23 06:15:10,475 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:15:10,475 - model_comparison - INFO - Class 3 prior elasticity: -1.1638 ± 0.3140
+2025-03-23 06:15:10,476 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:15:10,476 - model_comparison - INFO - Class 4 prior elasticity: -1.1638 ± 0.3140
+2025-03-23 06:15:10,577 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:10,577 - model_comparison - INFO - Mean elasticity: -0.6435
+2025-03-23 06:15:10,577 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 06:15:10,578 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 06:15:10,578 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 06:15:10,578 - model_comparison - INFO - MAE: 0.5533
+2025-03-23 06:15:10,578 - model_comparison - INFO - RMSE: 0.6247
+2025-03-23 06:15:10,578 - model_comparison - INFO - Correlation: -0.0525
+2025-03-23 06:15:10,578 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:10,578 - model_comparison - INFO - Within_50%: 61.6667
+2025-03-23 06:15:10,578 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:15:10,580 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 06:15:10,581 - model_comparison - INFO - MAE: 0.5379
+2025-03-23 06:15:10,581 - model_comparison - INFO - RMSE: 0.5556
+2025-03-23 06:15:10,581 - model_comparison - INFO - Correlation: 0.9368
+2025-03-23 06:15:10,581 - model_comparison - INFO - Direction_Accuracy: 95.0000
+2025-03-23 06:15:10,581 - model_comparison - INFO - Within_50%: 55.0000
+2025-03-23 06:15:10,581 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:15:10,581 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 06:15:10,582 - model_comparison - INFO - MAE: 0.5413
+2025-03-23 06:15:10,582 - model_comparison - INFO - RMSE: 0.5609
+2025-03-23 06:15:10,582 - model_comparison - INFO - Correlation: 0.8955
+2025-03-23 06:15:10,582 - model_comparison - INFO - Direction_Accuracy: 95.0000
+2025-03-23 06:15:10,582 - model_comparison - INFO - Within_50%: 40.0000
+2025-03-23 06:15:10,582 - model_comparison - INFO - N: 20.0000
+2025-03-23 06:15:10,582 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 06:15:10,583 - model_comparison - INFO - MAE: 0.5345
+2025-03-23 06:15:10,583 - model_comparison - INFO - RMSE: 0.5502
+2025-03-23 06:15:10,583 - model_comparison - INFO - Correlation: 0.9582
+2025-03-23 06:15:10,583 - model_comparison - INFO - Direction_Accuracy: 95.0000
+2025-03-23 06:15:10,583 - model_comparison - INFO - Within_50%: 70.0000
+2025-03-23 06:15:10,583 - model_comparison - INFO - N: 20.0000
+2025-03-23 06:15:10,583 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 06:15:10,584 - model_comparison - INFO - MAE: 0.5409
+2025-03-23 06:15:10,584 - model_comparison - INFO - RMSE: 0.6095
+2025-03-23 06:15:10,584 - model_comparison - INFO - Correlation: -0.1693
+2025-03-23 06:15:10,584 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:10,584 - model_comparison - INFO - Within_50%: 62.5000
+2025-03-23 06:15:10,584 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:15:10,584 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 06:15:10,585 - model_comparison - INFO - MAE: 0.4375
+2025-03-23 06:15:10,585 - model_comparison - INFO - RMSE: 0.5056
+2025-03-23 06:15:10,585 - model_comparison - INFO - Correlation: -0.3685
+2025-03-23 06:15:10,585 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:10,585 - model_comparison - INFO - Within_50%: 80.0000
+2025-03-23 06:15:10,585 - model_comparison - INFO - N: 20.0000
+2025-03-23 06:15:10,585 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 06:15:10,585 - model_comparison - INFO - MAE: 0.6443
+2025-03-23 06:15:10,585 - model_comparison - INFO - RMSE: 0.6981
+2025-03-23 06:15:10,585 - model_comparison - INFO - Correlation: 0.8754
+2025-03-23 06:15:10,585 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:10,585 - model_comparison - INFO - Within_50%: 45.0000
+2025-03-23 06:15:10,585 - model_comparison - INFO - N: 20.0000
+2025-03-23 06:15:10,644 - model_comparison - INFO - Results saved to results/hbm_improved_elastic
+2025-03-23 06:15:27,252 - model_comparison - INFO - Generating synthetic data with 30000 observations, 60 SKUs
+2025-03-23 06:15:27,252 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 06:15:28,065 - model_comparison - INFO - Generated synthetic data with 30000 observations
+2025-03-23 06:15:28,065 - model_comparison - INFO - Generated data with 60 true elasticities
+2025-03-23 06:15:28,065 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 06:15:28,066 - model_comparison - INFO - Selected 30 SKUs to make sparse
+2025-03-23 06:15:28,169 - model_comparison - INFO - Created sparse dataset with 19594 total observations
+2025-03-23 06:15:28,174 - model_comparison - INFO - Median observations per SKU: 324.5
+2025-03-23 06:15:28,174 - model_comparison - INFO - Min observations per SKU: 104
+2025-03-23 06:15:28,175 - model_comparison - INFO - Max observations per SKU: 560
+2025-03-23 06:15:28,175 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:28,175 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:15:28,339 - model_comparison - INFO - Linear model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:15:28,339 - model_comparison - INFO - Mean elasticity: -1.3150
+2025-03-23 06:15:28,339 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:28,339 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:15:28,340 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:28,340 - model_comparison - INFO - Fitting hierarchical model for 60 SKUs
+2025-03-23 06:15:28,340 - model_comparison - INFO - Processing product class 0 with 60 SKUs
+2025-03-23 06:15:28,341 - model_comparison - INFO - Class 0 prior elasticity: -1.2306 ± 0.2770
+2025-03-23 06:15:28,341 - model_comparison - INFO - Processing product class 1 with 60 SKUs
+2025-03-23 06:15:28,341 - model_comparison - INFO - Class 1 prior elasticity: -1.2306 ± 0.2770
+2025-03-23 06:15:28,342 - model_comparison - INFO - Processing product class 2 with 60 SKUs
+2025-03-23 06:15:28,342 - model_comparison - INFO - Class 2 prior elasticity: -1.2306 ± 0.2770
+2025-03-23 06:15:28,343 - model_comparison - INFO - Processing product class 3 with 60 SKUs
+2025-03-23 06:15:28,343 - model_comparison - INFO - Class 3 prior elasticity: -1.2306 ± 0.2770
+2025-03-23 06:15:28,344 - model_comparison - INFO - Processing product class 4 with 60 SKUs
+2025-03-23 06:15:28,344 - model_comparison - INFO - Class 4 prior elasticity: -1.2306 ± 0.2770
+2025-03-23 06:15:28,515 - model_comparison - INFO - HBM model complete - analyzed 60 SKUs, skipped 0
+2025-03-23 06:15:28,515 - model_comparison - INFO - Mean elasticity: -0.6181
+2025-03-23 06:15:28,515 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 06:15:28,515 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 06:15:28,520 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:28,520 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:15:28,600 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:28,600 - model_comparison - INFO - Mean elasticity: -1.2918
+2025-03-23 06:15:28,600 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:28,600 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:15:28,601 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:28,601 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:15:28,601 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:15:28,601 - model_comparison - INFO - Class 0 prior elasticity: -1.2300 ± 0.2955
+2025-03-23 06:15:28,602 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:15:28,602 - model_comparison - INFO - Class 1 prior elasticity: -1.2300 ± 0.2955
+2025-03-23 06:15:28,602 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:15:28,603 - model_comparison - INFO - Class 2 prior elasticity: -1.2300 ± 0.2955
+2025-03-23 06:15:28,603 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:15:28,603 - model_comparison - INFO - Class 3 prior elasticity: -1.2300 ± 0.2955
+2025-03-23 06:15:28,604 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:15:28,604 - model_comparison - INFO - Class 4 prior elasticity: -1.2300 ± 0.2955
+2025-03-23 06:15:28,707 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:28,707 - model_comparison - INFO - Mean elasticity: -0.6105
+2025-03-23 06:15:28,709 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 06:15:28,712 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:28,712 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:15:28,805 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:28,805 - model_comparison - INFO - Mean elasticity: -1.3309
+2025-03-23 06:15:28,805 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:28,805 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:15:28,805 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:28,805 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:15:28,806 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:15:28,806 - model_comparison - INFO - Class 0 prior elasticity: -1.2471 ± 0.2647
+2025-03-23 06:15:28,807 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:15:28,807 - model_comparison - INFO - Class 1 prior elasticity: -1.2471 ± 0.2647
+2025-03-23 06:15:28,807 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:15:28,807 - model_comparison - INFO - Class 2 prior elasticity: -1.2471 ± 0.2647
+2025-03-23 06:15:28,808 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:15:28,808 - model_comparison - INFO - Class 3 prior elasticity: -1.2471 ± 0.2647
+2025-03-23 06:15:28,808 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:15:28,808 - model_comparison - INFO - Class 4 prior elasticity: -1.2471 ± 0.2647
+2025-03-23 06:15:28,907 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:28,907 - model_comparison - INFO - Mean elasticity: -0.6294
+2025-03-23 06:15:28,908 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 06:15:28,911 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 06:15:28,911 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 06:15:28,989 - model_comparison - INFO - Linear model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:28,990 - model_comparison - INFO - Mean elasticity: -1.3222
+2025-03-23 06:15:28,990 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 06:15:28,990 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 06:15:28,990 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 06:15:28,990 - model_comparison - INFO - Fitting hierarchical model for 40 SKUs
+2025-03-23 06:15:28,990 - model_comparison - INFO - Processing product class 0 with 40 SKUs
+2025-03-23 06:15:28,991 - model_comparison - INFO - Class 0 prior elasticity: -1.2149 ± 0.2688
+2025-03-23 06:15:28,991 - model_comparison - INFO - Processing product class 1 with 40 SKUs
+2025-03-23 06:15:28,991 - model_comparison - INFO - Class 1 prior elasticity: -1.2149 ± 0.2688
+2025-03-23 06:15:28,991 - model_comparison - INFO - Processing product class 2 with 40 SKUs
+2025-03-23 06:15:28,991 - model_comparison - INFO - Class 2 prior elasticity: -1.2149 ± 0.2688
+2025-03-23 06:15:28,992 - model_comparison - INFO - Processing product class 3 with 40 SKUs
+2025-03-23 06:15:28,992 - model_comparison - INFO - Class 3 prior elasticity: -1.2149 ± 0.2688
+2025-03-23 06:15:28,992 - model_comparison - INFO - Processing product class 4 with 40 SKUs
+2025-03-23 06:15:28,992 - model_comparison - INFO - Class 4 prior elasticity: -1.2149 ± 0.2688
+2025-03-23 06:15:29,080 - model_comparison - INFO - HBM model complete - analyzed 40 SKUs, skipped 0
+2025-03-23 06:15:29,080 - model_comparison - INFO - Mean elasticity: -0.6146
+2025-03-23 06:15:29,081 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 06:15:29,081 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 06:15:29,081 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 06:15:29,081 - model_comparison - INFO - MAE: 0.6143
+2025-03-23 06:15:29,081 - model_comparison - INFO - RMSE: 0.6733
+2025-03-23 06:15:29,081 - model_comparison - INFO - Correlation: -0.2094
+2025-03-23 06:15:29,081 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,081 - model_comparison - INFO - Within_50%: 52.5000
+2025-03-23 06:15:29,081 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:15:29,084 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 06:15:29,084 - model_comparison - INFO - MAE: 0.1272
+2025-03-23 06:15:29,085 - model_comparison - INFO - RMSE: 0.1625
+2025-03-23 06:15:29,085 - model_comparison - INFO - Correlation: 0.9127
+2025-03-23 06:15:29,085 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,085 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 06:15:29,085 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:15:29,085 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 06:15:29,085 - model_comparison - INFO - MAE: 0.1517
+2025-03-23 06:15:29,085 - model_comparison - INFO - RMSE: 0.1892
+2025-03-23 06:15:29,085 - model_comparison - INFO - Correlation: 0.8812
+2025-03-23 06:15:29,085 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,085 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 06:15:29,085 - model_comparison - INFO - N: 19.0000
+2025-03-23 06:15:29,086 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 06:15:29,086 - model_comparison - INFO - MAE: 0.1051
+2025-03-23 06:15:29,086 - model_comparison - INFO - RMSE: 0.1337
+2025-03-23 06:15:29,086 - model_comparison - INFO - Correlation: 0.9382
+2025-03-23 06:15:29,086 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,086 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 06:15:29,086 - model_comparison - INFO - N: 21.0000
+2025-03-23 06:15:29,086 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 06:15:29,087 - model_comparison - INFO - MAE: 0.6024
+2025-03-23 06:15:29,087 - model_comparison - INFO - RMSE: 0.6631
+2025-03-23 06:15:29,087 - model_comparison - INFO - Correlation: -0.4251
+2025-03-23 06:15:29,087 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,087 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-23 06:15:29,087 - model_comparison - INFO - N: 40.0000
+2025-03-23 06:15:29,087 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 06:15:29,087 - model_comparison - INFO - MAE: 0.4657
+2025-03-23 06:15:29,087 - model_comparison - INFO - RMSE: 0.5219
+2025-03-23 06:15:29,087 - model_comparison - INFO - Correlation: -0.4707
+2025-03-23 06:15:29,087 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,087 - model_comparison - INFO - Within_50%: 68.4211
+2025-03-23 06:15:29,087 - model_comparison - INFO - N: 19.0000
+2025-03-23 06:15:29,087 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 06:15:29,088 - model_comparison - INFO - MAE: 0.7261
+2025-03-23 06:15:29,088 - model_comparison - INFO - RMSE: 0.7689
+2025-03-23 06:15:29,088 - model_comparison - INFO - Correlation: 0.6636
+2025-03-23 06:15:29,088 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 06:15:29,088 - model_comparison - INFO - Within_50%: 33.3333
+2025-03-23 06:15:29,088 - model_comparison - INFO - N: 21.0000
+2025-03-23 06:15:29,142 - model_comparison - INFO - Results saved to results/hbm_improved_with_promo
+2025-03-23 07:33:03,910 - model_comparison - INFO - Generating synthetic data with 10000 observations, 50 SKUs
+2025-03-23 07:33:04,214 - model_comparison - INFO - Generated synthetic data with 10000 observations
+2025-03-23 07:33:04,214 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-23 07:33:04,214 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 07:33:04,214 - model_comparison - INFO - Selected 25 SKUs to make sparse
+2025-03-23 07:33:04,249 - model_comparison - INFO - Created sparse dataset with 6575 total observations
+2025-03-23 07:33:04,251 - model_comparison - INFO - Median observations per SKU: 129.5
+2025-03-23 07:33:04,251 - model_comparison - INFO - Min observations per SKU: 36
+2025-03-23 07:33:04,251 - model_comparison - INFO - Max observations per SKU: 227
+2025-03-23 07:33:04,251 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:04,325 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:33:04,325 - model_comparison - INFO - Mean elasticity: -0.6484
+2025-03-23 07:33:04,325 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:04,326 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:04,326 - model_comparison - INFO - Fitting hierarchical model for 50 SKUs
+2025-03-23 07:33:04,326 - model_comparison - INFO - Processing product class 0 with 50 SKUs
+2025-03-23 07:33:04,326 - model_comparison - INFO - Class 0 prior elasticity: -1.1933 ± 0.3625
+2025-03-23 07:33:04,327 - model_comparison - INFO - Processing product class 1 with 50 SKUs
+2025-03-23 07:33:04,327 - model_comparison - INFO - Class 1 prior elasticity: -1.1933 ± 0.3625
+2025-03-23 07:33:04,327 - model_comparison - INFO - Processing product class 2 with 50 SKUs
+2025-03-23 07:33:04,327 - model_comparison - INFO - Class 2 prior elasticity: -1.1933 ± 0.3625
+2025-03-23 07:33:04,328 - model_comparison - INFO - Processing product class 3 with 50 SKUs
+2025-03-23 07:33:04,328 - model_comparison - INFO - Class 3 prior elasticity: -1.1933 ± 0.3625
+2025-03-23 07:33:04,328 - model_comparison - INFO - Processing product class 4 with 50 SKUs
+2025-03-23 07:33:04,328 - model_comparison - INFO - Class 4 prior elasticity: -1.1933 ± 0.3625
+2025-03-23 07:33:04,411 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:33:04,411 - model_comparison - INFO - Mean elasticity: -0.7662
+2025-03-23 07:33:04,411 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:06,142 - model_comparison - INFO - XGBoost model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:33:06,142 - model_comparison - INFO - Mean elasticity: -0.6067
+2025-03-23 07:33:06,142 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 07:33:06,142 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 07:33:06,145 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:06,188 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:06,188 - model_comparison - INFO - Mean elasticity: -0.5577
+2025-03-23 07:33:06,188 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:06,188 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:06,188 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 07:33:06,189 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 07:33:06,189 - model_comparison - INFO - Class 0 prior elasticity: -1.1259 ± 0.3438
+2025-03-23 07:33:06,189 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 07:33:06,189 - model_comparison - INFO - Class 1 prior elasticity: -1.1259 ± 0.3438
+2025-03-23 07:33:06,190 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 07:33:06,190 - model_comparison - INFO - Class 2 prior elasticity: -1.1259 ± 0.3438
+2025-03-23 07:33:06,190 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 07:33:06,190 - model_comparison - INFO - Class 3 prior elasticity: -1.1259 ± 0.3438
+2025-03-23 07:33:06,190 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 07:33:06,190 - model_comparison - INFO - Class 4 prior elasticity: -1.1259 ± 0.3438
+2025-03-23 07:33:06,243 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:06,243 - model_comparison - INFO - Mean elasticity: -0.7056
+2025-03-23 07:33:06,243 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:07,386 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:07,387 - model_comparison - INFO - Mean elasticity: -0.5480
+2025-03-23 07:33:07,389 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 07:33:07,392 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:07,433 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:07,433 - model_comparison - INFO - Mean elasticity: -0.7532
+2025-03-23 07:33:07,433 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:07,434 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:07,434 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 07:33:07,434 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 07:33:07,434 - model_comparison - INFO - Class 0 prior elasticity: -1.2715 ± 0.3438
+2025-03-23 07:33:07,434 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 07:33:07,434 - model_comparison - INFO - Class 1 prior elasticity: -1.2715 ± 0.3438
+2025-03-23 07:33:07,435 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 07:33:07,435 - model_comparison - INFO - Class 2 prior elasticity: -1.2715 ± 0.3438
+2025-03-23 07:33:07,435 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 07:33:07,435 - model_comparison - INFO - Class 3 prior elasticity: -1.2715 ± 0.3438
+2025-03-23 07:33:07,435 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 07:33:07,435 - model_comparison - INFO - Class 4 prior elasticity: -1.2715 ± 0.3438
+2025-03-23 07:33:07,485 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:07,485 - model_comparison - INFO - Mean elasticity: -0.8329
+2025-03-23 07:33:07,485 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:08,632 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:08,632 - model_comparison - INFO - Mean elasticity: -0.6716
+2025-03-23 07:33:08,634 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 07:33:08,635 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:08,680 - model_comparison - INFO - Linear model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 07:33:08,680 - model_comparison - INFO - Mean elasticity: -0.6345
+2025-03-23 07:33:08,681 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:08,681 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:08,681 - model_comparison - INFO - Fitting hierarchical model for 34 SKUs
+2025-03-23 07:33:08,681 - model_comparison - INFO - Processing product class 0 with 34 SKUs
+2025-03-23 07:33:08,681 - model_comparison - INFO - Class 0 prior elasticity: -1.1827 ± 0.3825
+2025-03-23 07:33:08,681 - model_comparison - INFO - Processing product class 1 with 34 SKUs
+2025-03-23 07:33:08,681 - model_comparison - INFO - Class 1 prior elasticity: -1.1827 ± 0.3825
+2025-03-23 07:33:08,682 - model_comparison - INFO - Processing product class 2 with 34 SKUs
+2025-03-23 07:33:08,682 - model_comparison - INFO - Class 2 prior elasticity: -1.1827 ± 0.3825
+2025-03-23 07:33:08,682 - model_comparison - INFO - Processing product class 3 with 34 SKUs
+2025-03-23 07:33:08,682 - model_comparison - INFO - Class 3 prior elasticity: -1.1827 ± 0.3825
+2025-03-23 07:33:08,682 - model_comparison - INFO - Processing product class 4 with 34 SKUs
+2025-03-23 07:33:08,682 - model_comparison - INFO - Class 4 prior elasticity: -1.1827 ± 0.3825
+2025-03-23 07:33:08,733 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 07:33:08,734 - model_comparison - INFO - Mean elasticity: -0.7626
+2025-03-23 07:33:08,734 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:09,913 - model_comparison - INFO - XGBoost model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 07:33:09,913 - model_comparison - INFO - Mean elasticity: -0.6007
+2025-03-23 07:33:09,915 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 07:33:09,915 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 07:33:09,915 - model_comparison - INFO - MAE: 0.5449
+2025-03-23 07:33:09,915 - model_comparison - INFO - RMSE: 0.5661
+2025-03-23 07:33:09,915 - model_comparison - INFO - Correlation: 0.9449
+2025-03-23 07:33:09,915 - model_comparison - INFO - Direction_Accuracy: 90.0475
+2025-03-23 07:33:09,916 - model_comparison - INFO - Within_50%: 57.9917
+2025-03-23 07:33:09,916 - model_comparison - INFO - N: 33.3333
+2025-03-23 07:33:09,916 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 07:33:09,916 - model_comparison - INFO - MAE: 0.4648
+2025-03-23 07:33:09,916 - model_comparison - INFO - RMSE: 0.5447
+2025-03-23 07:33:09,916 - model_comparison - INFO - Correlation: 0.2728
+2025-03-23 07:33:09,916 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:09,916 - model_comparison - INFO - Within_50%: 75.9952
+2025-03-23 07:33:09,916 - model_comparison - INFO - N: 33.3333
+2025-03-23 07:33:09,916 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-23 07:33:09,916 - model_comparison - INFO - MAE: 0.6270
+2025-03-23 07:33:09,916 - model_comparison - INFO - RMSE: 0.7337
+2025-03-23 07:33:09,916 - model_comparison - INFO - Correlation: 0.4265
+2025-03-23 07:33:09,916 - model_comparison - INFO - Direction_Accuracy: 92.0380
+2025-03-23 07:33:09,916 - model_comparison - INFO - Within_50%: 43.9691
+2025-03-23 07:33:09,916 - model_comparison - INFO - N: 33.3333
+2025-03-23 07:33:09,917 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 07:33:09,918 - model_comparison - INFO - MAE: 0.5481
+2025-03-23 07:33:09,918 - model_comparison - INFO - RMSE: 0.5719
+2025-03-23 07:33:09,918 - model_comparison - INFO - Correlation: 0.9631
+2025-03-23 07:33:09,918 - model_comparison - INFO - Direction_Accuracy: 85.2941
+2025-03-23 07:33:09,918 - model_comparison - INFO - Within_50%: 58.8235
+2025-03-23 07:33:09,918 - model_comparison - INFO - N: 34.0000
+2025-03-23 07:33:09,918 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 07:33:09,918 - model_comparison - INFO - MAE: 0.5005
+2025-03-23 07:33:09,919 - model_comparison - INFO - RMSE: 0.5283
+2025-03-23 07:33:09,919 - model_comparison - INFO - Correlation: 0.9455
+2025-03-23 07:33:09,919 - model_comparison - INFO - Direction_Accuracy: 94.1176
+2025-03-23 07:33:09,919 - model_comparison - INFO - Within_50%: 82.3529
+2025-03-23 07:33:09,919 - model_comparison - INFO - N: 17.0000
+2025-03-23 07:33:09,919 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 07:33:09,919 - model_comparison - INFO - MAE: 0.5957
+2025-03-23 07:33:09,919 - model_comparison - INFO - RMSE: 0.6125
+2025-03-23 07:33:09,919 - model_comparison - INFO - Correlation: 0.9714
+2025-03-23 07:33:09,919 - model_comparison - INFO - Direction_Accuracy: 76.4706
+2025-03-23 07:33:09,919 - model_comparison - INFO - Within_50%: 35.2941
+2025-03-23 07:33:09,919 - model_comparison - INFO - N: 17.0000
+2025-03-23 07:33:09,919 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 07:33:09,920 - model_comparison - INFO - MAE: 0.4682
+2025-03-23 07:33:09,920 - model_comparison - INFO - RMSE: 0.5434
+2025-03-23 07:33:09,920 - model_comparison - INFO - Correlation: 0.3814
+2025-03-23 07:33:09,920 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:09,920 - model_comparison - INFO - Within_50%: 76.4706
+2025-03-23 07:33:09,920 - model_comparison - INFO - N: 34.0000
+2025-03-23 07:33:09,920 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 07:33:09,921 - model_comparison - INFO - MAE: 0.4830
+2025-03-23 07:33:09,921 - model_comparison - INFO - RMSE: 0.5334
+2025-03-23 07:33:09,921 - model_comparison - INFO - Correlation: 0.1464
+2025-03-23 07:33:09,921 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:09,921 - model_comparison - INFO - Within_50%: 94.1176
+2025-03-23 07:33:09,921 - model_comparison - INFO - N: 17.0000
+2025-03-23 07:33:09,921 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 07:33:09,921 - model_comparison - INFO - MAE: 0.4533
+2025-03-23 07:33:09,921 - model_comparison - INFO - RMSE: 0.5532
+2025-03-23 07:33:09,921 - model_comparison - INFO - Correlation: 0.3685
+2025-03-23 07:33:09,922 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:09,922 - model_comparison - INFO - Within_50%: 58.8235
+2025-03-23 07:33:09,922 - model_comparison - INFO - N: 17.0000
+2025-03-23 07:33:09,922 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-23 07:33:09,922 - model_comparison - INFO - MAE: 0.6327
+2025-03-23 07:33:09,922 - model_comparison - INFO - RMSE: 0.7460
+2025-03-23 07:33:09,922 - model_comparison - INFO - Correlation: 0.4387
+2025-03-23 07:33:09,922 - model_comparison - INFO - Direction_Accuracy: 88.2353
+2025-03-23 07:33:09,922 - model_comparison - INFO - Within_50%: 47.0588
+2025-03-23 07:33:09,922 - model_comparison - INFO - N: 34.0000
+2025-03-23 07:33:09,922 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-23 07:33:09,922 - model_comparison - INFO - MAE: 0.7035
+2025-03-23 07:33:09,923 - model_comparison - INFO - RMSE: 0.8189
+2025-03-23 07:33:09,923 - model_comparison - INFO - Correlation: 0.2296
+2025-03-23 07:33:09,923 - model_comparison - INFO - Direction_Accuracy: 94.1176
+2025-03-23 07:33:09,923 - model_comparison - INFO - Within_50%: 47.0588
+2025-03-23 07:33:09,923 - model_comparison - INFO - N: 17.0000
+2025-03-23 07:33:09,923 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-23 07:33:09,923 - model_comparison - INFO - MAE: 0.5620
+2025-03-23 07:33:09,923 - model_comparison - INFO - RMSE: 0.6652
+2025-03-23 07:33:09,923 - model_comparison - INFO - Correlation: 0.5959
+2025-03-23 07:33:09,923 - model_comparison - INFO - Direction_Accuracy: 82.3529
+2025-03-23 07:33:09,923 - model_comparison - INFO - Within_50%: 47.0588
+2025-03-23 07:33:09,923 - model_comparison - INFO - N: 17.0000
+2025-03-23 07:33:09,943 - model_comparison - INFO - Results saved to results/model_comparison_with_xgb
+2025-03-23 07:33:19,033 - model_comparison - INFO - Generating synthetic data with 10000 observations, 50 SKUs
+2025-03-23 07:33:19,033 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 07:33:19,304 - model_comparison - INFO - Generated synthetic data with 10000 observations
+2025-03-23 07:33:19,304 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-23 07:33:19,304 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 07:33:19,304 - model_comparison - INFO - Selected 25 SKUs to make sparse
+2025-03-23 07:33:19,336 - model_comparison - INFO - Created sparse dataset with 6488 total observations
+2025-03-23 07:33:19,337 - model_comparison - INFO - Median observations per SKU: 130.0
+2025-03-23 07:33:19,337 - model_comparison - INFO - Min observations per SKU: 36
+2025-03-23 07:33:19,337 - model_comparison - INFO - Max observations per SKU: 226
+2025-03-23 07:33:19,337 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:19,337 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 07:33:19,410 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:33:19,410 - model_comparison - INFO - Mean elasticity: -1.3108
+2025-03-23 07:33:19,410 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:19,410 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 07:33:19,410 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:19,410 - model_comparison - INFO - Fitting hierarchical model for 50 SKUs
+2025-03-23 07:33:19,411 - model_comparison - INFO - Processing product class 0 with 50 SKUs
+2025-03-23 07:33:19,411 - model_comparison - INFO - Class 0 prior elasticity: -1.2130 ± 0.3099
+2025-03-23 07:33:19,411 - model_comparison - INFO - Processing product class 1 with 50 SKUs
+2025-03-23 07:33:19,411 - model_comparison - INFO - Class 1 prior elasticity: -1.2130 ± 0.3099
+2025-03-23 07:33:19,412 - model_comparison - INFO - Processing product class 2 with 50 SKUs
+2025-03-23 07:33:19,412 - model_comparison - INFO - Class 2 prior elasticity: -1.2130 ± 0.3099
+2025-03-23 07:33:19,412 - model_comparison - INFO - Processing product class 3 with 50 SKUs
+2025-03-23 07:33:19,412 - model_comparison - INFO - Class 3 prior elasticity: -1.2130 ± 0.3099
+2025-03-23 07:33:19,413 - model_comparison - INFO - Processing product class 4 with 50 SKUs
+2025-03-23 07:33:19,413 - model_comparison - INFO - Class 4 prior elasticity: -1.2130 ± 0.3099
+2025-03-23 07:33:19,498 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:33:19,498 - model_comparison - INFO - Mean elasticity: -0.7312
+2025-03-23 07:33:19,499 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:19,499 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 07:33:21,306 - model_comparison - INFO - XGBoost model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:33:21,306 - model_comparison - INFO - Mean elasticity: -0.7489
+2025-03-23 07:33:21,306 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 07:33:21,306 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 07:33:21,307 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:21,307 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 07:33:21,352 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:21,352 - model_comparison - INFO - Mean elasticity: -1.3467
+2025-03-23 07:33:21,353 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:21,353 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 07:33:21,353 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:21,353 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 07:33:21,353 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 07:33:21,353 - model_comparison - INFO - Class 0 prior elasticity: -1.2645 ± 0.3040
+2025-03-23 07:33:21,353 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 07:33:21,353 - model_comparison - INFO - Class 1 prior elasticity: -1.2645 ± 0.3040
+2025-03-23 07:33:21,354 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 07:33:21,354 - model_comparison - INFO - Class 2 prior elasticity: -1.2645 ± 0.3040
+2025-03-23 07:33:21,354 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 07:33:21,354 - model_comparison - INFO - Class 3 prior elasticity: -1.2645 ± 0.3040
+2025-03-23 07:33:21,354 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 07:33:21,354 - model_comparison - INFO - Class 4 prior elasticity: -1.2645 ± 0.3040
+2025-03-23 07:33:21,406 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:21,406 - model_comparison - INFO - Mean elasticity: -0.7693
+2025-03-23 07:33:21,406 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:21,406 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 07:33:22,614 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:22,614 - model_comparison - INFO - Mean elasticity: -0.7911
+2025-03-23 07:33:22,616 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 07:33:22,618 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:22,618 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 07:33:22,661 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:22,661 - model_comparison - INFO - Mean elasticity: -1.2958
+2025-03-23 07:33:22,661 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:22,661 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 07:33:22,662 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:22,662 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 07:33:22,662 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 07:33:22,662 - model_comparison - INFO - Class 0 prior elasticity: -1.1894 ± 0.3054
+2025-03-23 07:33:22,663 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 07:33:22,663 - model_comparison - INFO - Class 1 prior elasticity: -1.1894 ± 0.3054
+2025-03-23 07:33:22,663 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 07:33:22,663 - model_comparison - INFO - Class 2 prior elasticity: -1.1894 ± 0.3054
+2025-03-23 07:33:22,664 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 07:33:22,664 - model_comparison - INFO - Class 3 prior elasticity: -1.1894 ± 0.3054
+2025-03-23 07:33:22,664 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 07:33:22,664 - model_comparison - INFO - Class 4 prior elasticity: -1.1894 ± 0.3054
+2025-03-23 07:33:22,717 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:22,717 - model_comparison - INFO - Mean elasticity: -0.7040
+2025-03-23 07:33:22,717 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:22,717 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 07:33:23,891 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 07:33:23,892 - model_comparison - INFO - Mean elasticity: -0.7245
+2025-03-23 07:33:23,893 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 07:33:23,895 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:33:23,895 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 07:33:23,942 - model_comparison - INFO - Linear model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 07:33:23,942 - model_comparison - INFO - Mean elasticity: -1.2905
+2025-03-23 07:33:23,942 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:33:23,942 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 07:33:23,942 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:33:23,943 - model_comparison - INFO - Fitting hierarchical model for 34 SKUs
+2025-03-23 07:33:23,943 - model_comparison - INFO - Processing product class 0 with 34 SKUs
+2025-03-23 07:33:23,943 - model_comparison - INFO - Class 0 prior elasticity: -1.1859 ± 0.3133
+2025-03-23 07:33:23,943 - model_comparison - INFO - Processing product class 1 with 34 SKUs
+2025-03-23 07:33:23,943 - model_comparison - INFO - Class 1 prior elasticity: -1.1859 ± 0.3133
+2025-03-23 07:33:23,944 - model_comparison - INFO - Processing product class 2 with 34 SKUs
+2025-03-23 07:33:23,944 - model_comparison - INFO - Class 2 prior elasticity: -1.1859 ± 0.3133
+2025-03-23 07:33:23,944 - model_comparison - INFO - Processing product class 3 with 34 SKUs
+2025-03-23 07:33:23,944 - model_comparison - INFO - Class 3 prior elasticity: -1.1859 ± 0.3133
+2025-03-23 07:33:23,944 - model_comparison - INFO - Processing product class 4 with 34 SKUs
+2025-03-23 07:33:23,944 - model_comparison - INFO - Class 4 prior elasticity: -1.1859 ± 0.3133
+2025-03-23 07:33:23,997 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 07:33:23,997 - model_comparison - INFO - Mean elasticity: -0.7213
+2025-03-23 07:33:23,997 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 07:33:23,997 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 07:33:25,205 - model_comparison - INFO - XGBoost model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 07:33:25,205 - model_comparison - INFO - Mean elasticity: -0.7317
+2025-03-23 07:33:25,207 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 07:33:25,207 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 07:33:25,207 - model_comparison - INFO - MAE: 0.1482
+2025-03-23 07:33:25,207 - model_comparison - INFO - RMSE: 0.2005
+2025-03-23 07:33:25,207 - model_comparison - INFO - Correlation: 0.8521
+2025-03-23 07:33:25,207 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,207 - model_comparison - INFO - Within_50%: 96.0190
+2025-03-23 07:33:25,207 - model_comparison - INFO - N: 33.3333
+2025-03-23 07:33:25,208 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 07:33:25,208 - model_comparison - INFO - MAE: 0.5083
+2025-03-23 07:33:25,208 - model_comparison - INFO - RMSE: 0.5875
+2025-03-23 07:33:25,208 - model_comparison - INFO - Correlation: 0.0285
+2025-03-23 07:33:25,208 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,208 - model_comparison - INFO - Within_50%: 61.9727
+2025-03-23 07:33:25,208 - model_comparison - INFO - N: 33.3333
+2025-03-23 07:33:25,208 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-23 07:33:25,208 - model_comparison - INFO - MAE: 0.5088
+2025-03-23 07:33:25,208 - model_comparison - INFO - RMSE: 0.6128
+2025-03-23 07:33:25,208 - model_comparison - INFO - Correlation: 0.3928
+2025-03-23 07:33:25,208 - model_comparison - INFO - Direction_Accuracy: 97.9798
+2025-03-23 07:33:25,208 - model_comparison - INFO - Within_50%: 66.0428
+2025-03-23 07:33:25,208 - model_comparison - INFO - N: 33.3333
+2025-03-23 07:33:25,209 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 07:33:25,209 - model_comparison - INFO - MAE: 0.1574
+2025-03-23 07:33:25,210 - model_comparison - INFO - RMSE: 0.2178
+2025-03-23 07:33:25,210 - model_comparison - INFO - Correlation: 0.8392
+2025-03-23 07:33:25,210 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,210 - model_comparison - INFO - Within_50%: 94.1176
+2025-03-23 07:33:25,210 - model_comparison - INFO - N: 34.0000
+2025-03-23 07:33:25,210 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 07:33:25,210 - model_comparison - INFO - MAE: 0.1968
+2025-03-23 07:33:25,210 - model_comparison - INFO - RMSE: 0.2641
+2025-03-23 07:33:25,210 - model_comparison - INFO - Correlation: 0.7601
+2025-03-23 07:33:25,210 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,210 - model_comparison - INFO - Within_50%: 88.8889
+2025-03-23 07:33:25,210 - model_comparison - INFO - N: 18.0000
+2025-03-23 07:33:25,211 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 07:33:25,211 - model_comparison - INFO - MAE: 0.1131
+2025-03-23 07:33:25,211 - model_comparison - INFO - RMSE: 0.1495
+2025-03-23 07:33:25,211 - model_comparison - INFO - Correlation: 0.9291
+2025-03-23 07:33:25,211 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,211 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 07:33:25,211 - model_comparison - INFO - N: 16.0000
+2025-03-23 07:33:25,211 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 07:33:25,212 - model_comparison - INFO - MAE: 0.4981
+2025-03-23 07:33:25,212 - model_comparison - INFO - RMSE: 0.5732
+2025-03-23 07:33:25,212 - model_comparison - INFO - Correlation: 0.0458
+2025-03-23 07:33:25,212 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,212 - model_comparison - INFO - Within_50%: 64.7059
+2025-03-23 07:33:25,212 - model_comparison - INFO - N: 34.0000
+2025-03-23 07:33:25,212 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 07:33:25,212 - model_comparison - INFO - MAE: 0.3777
+2025-03-23 07:33:25,212 - model_comparison - INFO - RMSE: 0.4220
+2025-03-23 07:33:25,212 - model_comparison - INFO - Correlation: 0.3450
+2025-03-23 07:33:25,212 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,212 - model_comparison - INFO - Within_50%: 94.4444
+2025-03-23 07:33:25,212 - model_comparison - INFO - N: 18.0000
+2025-03-23 07:33:25,213 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 07:33:25,213 - model_comparison - INFO - MAE: 0.6336
+2025-03-23 07:33:25,213 - model_comparison - INFO - RMSE: 0.7055
+2025-03-23 07:33:25,213 - model_comparison - INFO - Correlation: 0.3231
+2025-03-23 07:33:25,213 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,213 - model_comparison - INFO - Within_50%: 31.2500
+2025-03-23 07:33:25,213 - model_comparison - INFO - N: 16.0000
+2025-03-23 07:33:25,213 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-23 07:33:25,213 - model_comparison - INFO - MAE: 0.4997
+2025-03-23 07:33:25,214 - model_comparison - INFO - RMSE: 0.5932
+2025-03-23 07:33:25,214 - model_comparison - INFO - Correlation: 0.4710
+2025-03-23 07:33:25,214 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,214 - model_comparison - INFO - Within_50%: 61.7647
+2025-03-23 07:33:25,214 - model_comparison - INFO - N: 34.0000
+2025-03-23 07:33:25,214 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-23 07:33:25,214 - model_comparison - INFO - MAE: 0.5946
+2025-03-23 07:33:25,214 - model_comparison - INFO - RMSE: 0.6935
+2025-03-23 07:33:25,214 - model_comparison - INFO - Correlation: 0.2675
+2025-03-23 07:33:25,214 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,214 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-23 07:33:25,214 - model_comparison - INFO - N: 18.0000
+2025-03-23 07:33:25,214 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-23 07:33:25,215 - model_comparison - INFO - MAE: 0.3929
+2025-03-23 07:33:25,215 - model_comparison - INFO - RMSE: 0.4546
+2025-03-23 07:33:25,215 - model_comparison - INFO - Correlation: 0.6902
+2025-03-23 07:33:25,215 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 07:33:25,215 - model_comparison - INFO - Within_50%: 75.0000
+2025-03-23 07:33:25,215 - model_comparison - INFO - N: 16.0000
+2025-03-23 07:33:25,234 - model_comparison - INFO - Results saved to results/model_comparison_with_promo
+2025-03-23 07:45:54,203 - model_comparison - INFO - Generating synthetic data with 10000 observations and 50 SKUs
+2025-03-23 07:45:54,203 - model_comparison - INFO - Including seasonality patterns with amplitude 0.3
+2025-03-23 07:46:49,880 - model_comparison - INFO - Generating synthetic data with 10000 observations and 50 SKUs
+2025-03-23 07:46:49,880 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 07:46:49,880 - model_comparison - INFO - Including seasonality patterns with amplitude 0.3
+2025-03-23 07:46:50,205 - model_comparison - INFO - Selected 25 SKUs to make sparse
+2025-03-23 07:46:50,238 - model_comparison - INFO - Created sparse dataset with 6480 total observations
+2025-03-23 07:46:50,240 - model_comparison - INFO - Median observations per SKU: 127.0
+2025-03-23 07:46:50,240 - model_comparison - INFO - Min observations per SKU: 43
+2025-03-23 07:46:50,240 - model_comparison - INFO - Max observations per SKU: 242
+2025-03-23 07:46:50,240 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 07:46:50,240 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 07:46:50,240 - model_comparison - INFO - Detected seasonality features - including in linear model
+2025-03-23 07:46:50,465 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 07:46:50,465 - model_comparison - INFO - Mean elasticity: -1.2147
+2025-03-23 07:46:50,465 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 07:46:50,465 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 07:46:50,465 - model_comparison - INFO - Detected seasonality features - including in HBM model
+2025-03-23 07:46:50,465 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 07:46:50,465 - model_comparison - INFO - Fitting hierarchical model for 50 SKUs
+2025-03-23 07:46:50,466 - model_comparison - INFO - Processing product class 0 with 50 SKUs
+2025-03-23 07:46:50,466 - model_comparison - INFO - Class 0 prior elasticity: -1.1506 ± 0.3148
+2025-03-23 07:46:50,466 - model_comparison - INFO - Processing product class 1 with 50 SKUs
+2025-03-23 07:46:50,466 - model_comparison - INFO - Class 1 prior elasticity: -1.1506 ± 0.3148
+2025-03-23 07:46:50,467 - model_comparison - INFO - Processing product class 2 with 50 SKUs
+2025-03-23 07:46:50,467 - model_comparison - INFO - Class 2 prior elasticity: -1.1506 ± 0.3148
+2025-03-23 07:46:50,467 - model_comparison - INFO - Processing product class 3 with 50 SKUs
+2025-03-23 07:46:50,467 - model_comparison - INFO - Class 3 prior elasticity: -1.1506 ± 0.3148
+2025-03-23 07:46:50,468 - model_comparison - INFO - Processing product class 4 with 50 SKUs
+2025-03-23 07:46:50,468 - model_comparison - INFO - Class 4 prior elasticity: -1.1506 ± 0.3148
+2025-03-23 08:00:43,489 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs
+2025-03-23 08:00:43,489 - model_comparison - INFO - Mean elasticity: -1.1298
+2025-03-23 08:00:43,489 - model_comparison - INFO - Running XGBoost model
+2025-03-23 08:00:43,490 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:00:43,490 - model_comparison - INFO - Detected seasonality features - including in XGBoost model
+2025-03-23 08:00:47,531 - model_comparison - INFO - XGBoost complete - estimated elasticities for 50 SKUs, skipped 0
+2025-03-23 08:00:47,531 - model_comparison - INFO - Mean elasticity: -1.1594
+2025-03-23 08:00:47,532 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 08:00:47,532 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 08:00:47,534 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:00:47,534 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:00:47,535 - model_comparison - INFO - Detected seasonality features - including in linear model
+2025-03-23 08:00:47,667 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:00:47,667 - model_comparison - INFO - Mean elasticity: -1.2890
+2025-03-23 08:00:47,667 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:00:47,667 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:00:47,667 - model_comparison - INFO - Detected seasonality features - including in HBM model
+2025-03-23 08:00:47,668 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:00:47,668 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 08:00:47,668 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 08:00:47,668 - model_comparison - INFO - Class 0 prior elasticity: -1.1973 ± 0.3064
+2025-03-23 08:00:47,668 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 08:00:47,668 - model_comparison - INFO - Class 1 prior elasticity: -1.1973 ± 0.3064
+2025-03-23 08:00:47,669 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 08:00:47,669 - model_comparison - INFO - Class 2 prior elasticity: -1.1973 ± 0.3064
+2025-03-23 08:00:47,669 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 08:00:47,669 - model_comparison - INFO - Class 3 prior elasticity: -1.1973 ± 0.3064
+2025-03-23 08:00:47,669 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 08:00:47,669 - model_comparison - INFO - Class 4 prior elasticity: -1.1973 ± 0.3064
+2025-03-23 08:03:14,852 - model_comparison - INFO - Generating synthetic data with 10000 observations, 50 SKUs
+2025-03-23 08:03:14,853 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 08:03:14,853 - model_comparison - INFO - Including seasonal patterns in synthetic data
+2025-03-23 08:03:15,232 - model_comparison - INFO - Generated synthetic data with 10000 observations
+2025-03-23 08:03:15,233 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-23 08:03:15,233 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 08:03:15,233 - model_comparison - INFO - Selected 25 SKUs to make sparse
+2025-03-23 08:03:15,270 - model_comparison - INFO - Created sparse dataset with 6562 total observations
+2025-03-23 08:03:15,271 - model_comparison - INFO - Median observations per SKU: 130.5
+2025-03-23 08:03:15,271 - model_comparison - INFO - Min observations per SKU: 39
+2025-03-23 08:03:15,271 - model_comparison - INFO - Max observations per SKU: 225
+2025-03-23 08:03:15,271 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:03:15,271 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:03:15,348 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 08:03:15,348 - model_comparison - INFO - Mean elasticity: -1.2118
+2025-03-23 08:03:15,348 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:03:15,348 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:03:15,348 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:03:15,348 - model_comparison - INFO - Fitting hierarchical model for 50 SKUs
+2025-03-23 08:03:15,349 - model_comparison - INFO - Processing product class 0 with 50 SKUs
+2025-03-23 08:03:15,349 - model_comparison - INFO - Class 0 prior elasticity: -1.1537 ± 0.3133
+2025-03-23 08:03:15,350 - model_comparison - INFO - Processing product class 1 with 50 SKUs
+2025-03-23 08:03:15,350 - model_comparison - INFO - Class 1 prior elasticity: -1.1537 ± 0.3133
+2025-03-23 08:03:15,350 - model_comparison - INFO - Processing product class 2 with 50 SKUs
+2025-03-23 08:03:15,350 - model_comparison - INFO - Class 2 prior elasticity: -1.1537 ± 0.3133
+2025-03-23 08:03:15,351 - model_comparison - INFO - Processing product class 3 with 50 SKUs
+2025-03-23 08:03:15,351 - model_comparison - INFO - Class 3 prior elasticity: -1.1537 ± 0.3133
+2025-03-23 08:03:15,351 - model_comparison - INFO - Processing product class 4 with 50 SKUs
+2025-03-23 08:03:15,351 - model_comparison - INFO - Class 4 prior elasticity: -1.1537 ± 0.3133
+2025-03-23 08:03:15,449 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 08:03:15,449 - model_comparison - INFO - Mean elasticity: -0.6888
+2025-03-23 08:03:15,449 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:03:15,449 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:03:17,476 - model_comparison - INFO - XGBoost model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 08:03:17,476 - model_comparison - INFO - Mean elasticity: -0.7159
+2025-03-23 08:03:17,476 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 08:03:17,477 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 08:03:17,478 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:03:17,478 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:03:17,525 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:03:17,525 - model_comparison - INFO - Mean elasticity: -1.1887
+2025-03-23 08:03:17,525 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:03:17,525 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:03:17,525 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:03:17,525 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 08:03:17,525 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 08:03:17,525 - model_comparison - INFO - Class 0 prior elasticity: -1.1215 ± 0.3267
+2025-03-23 08:03:17,526 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 08:03:17,526 - model_comparison - INFO - Class 1 prior elasticity: -1.1215 ± 0.3267
+2025-03-23 08:03:17,526 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 08:03:17,526 - model_comparison - INFO - Class 2 prior elasticity: -1.1215 ± 0.3267
+2025-03-23 08:03:17,526 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 08:03:17,527 - model_comparison - INFO - Class 3 prior elasticity: -1.1215 ± 0.3267
+2025-03-23 08:03:17,527 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 08:03:17,527 - model_comparison - INFO - Class 4 prior elasticity: -1.1215 ± 0.3267
+2025-03-23 08:03:17,582 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:03:17,582 - model_comparison - INFO - Mean elasticity: -0.6738
+2025-03-23 08:03:17,582 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:03:17,582 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:03:18,916 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:03:18,916 - model_comparison - INFO - Mean elasticity: -0.7289
+2025-03-23 08:03:18,919 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 08:03:18,921 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:03:18,921 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:03:18,969 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:03:18,969 - model_comparison - INFO - Mean elasticity: -1.2094
+2025-03-23 08:03:18,969 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:03:18,969 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:03:18,969 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:03:18,969 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 08:03:18,969 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 08:03:18,970 - model_comparison - INFO - Class 0 prior elasticity: -1.1549 ± 0.3283
+2025-03-23 08:03:18,970 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 08:03:18,970 - model_comparison - INFO - Class 1 prior elasticity: -1.1549 ± 0.3283
+2025-03-23 08:03:18,970 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 08:03:18,970 - model_comparison - INFO - Class 2 prior elasticity: -1.1549 ± 0.3283
+2025-03-23 08:03:18,971 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 08:03:18,971 - model_comparison - INFO - Class 3 prior elasticity: -1.1549 ± 0.3283
+2025-03-23 08:03:18,971 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 08:03:18,971 - model_comparison - INFO - Class 4 prior elasticity: -1.1549 ± 0.3283
+2025-03-23 08:03:19,027 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:03:19,027 - model_comparison - INFO - Mean elasticity: -0.6933
+2025-03-23 08:03:19,027 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:03:19,027 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:03:20,341 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:03:20,341 - model_comparison - INFO - Mean elasticity: -0.7017
+2025-03-23 08:03:20,343 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 08:03:20,344 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:03:20,344 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:03:20,394 - model_comparison - INFO - Linear model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 08:03:20,394 - model_comparison - INFO - Mean elasticity: -1.2367
+2025-03-23 08:03:20,394 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:03:20,394 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:03:20,394 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:03:20,394 - model_comparison - INFO - Fitting hierarchical model for 34 SKUs
+2025-03-23 08:03:20,395 - model_comparison - INFO - Processing product class 0 with 34 SKUs
+2025-03-23 08:03:20,395 - model_comparison - INFO - Class 0 prior elasticity: -1.1837 ± 0.2802
+2025-03-23 08:03:20,395 - model_comparison - INFO - Processing product class 1 with 34 SKUs
+2025-03-23 08:03:20,395 - model_comparison - INFO - Class 1 prior elasticity: -1.1837 ± 0.2802
+2025-03-23 08:03:20,396 - model_comparison - INFO - Processing product class 2 with 34 SKUs
+2025-03-23 08:03:20,396 - model_comparison - INFO - Class 2 prior elasticity: -1.1837 ± 0.2802
+2025-03-23 08:03:20,396 - model_comparison - INFO - Processing product class 3 with 34 SKUs
+2025-03-23 08:03:20,396 - model_comparison - INFO - Class 3 prior elasticity: -1.1837 ± 0.2802
+2025-03-23 08:03:20,396 - model_comparison - INFO - Processing product class 4 with 34 SKUs
+2025-03-23 08:03:20,397 - model_comparison - INFO - Class 4 prior elasticity: -1.1837 ± 0.2802
+2025-03-23 08:03:20,456 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 08:03:20,456 - model_comparison - INFO - Mean elasticity: -0.6990
+2025-03-23 08:03:20,456 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:03:20,456 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:03:21,851 - model_comparison - INFO - XGBoost model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 08:03:21,852 - model_comparison - INFO - Mean elasticity: -0.7172
+2025-03-23 08:03:21,854 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 08:03:21,854 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 08:03:21,854 - model_comparison - INFO - MAE: 0.1838
+2025-03-23 08:03:21,854 - model_comparison - INFO - RMSE: 0.2265
+2025-03-23 08:03:21,854 - model_comparison - INFO - Correlation: 0.8264
+2025-03-23 08:03:21,854 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,854 - model_comparison - INFO - Within_50%: 97.9798
+2025-03-23 08:03:21,854 - model_comparison - INFO - N: 33.3333
+2025-03-23 08:03:21,854 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 08:03:21,854 - model_comparison - INFO - MAE: 0.4877
+2025-03-23 08:03:21,854 - model_comparison - INFO - RMSE: 0.5623
+2025-03-23 08:03:21,854 - model_comparison - INFO - Correlation: 0.1634
+2025-03-23 08:03:21,854 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,854 - model_comparison - INFO - Within_50%: 60.9329
+2025-03-23 08:03:21,854 - model_comparison - INFO - N: 33.3333
+2025-03-23 08:03:21,854 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-23 08:03:21,854 - model_comparison - INFO - MAE: 0.4907
+2025-03-23 08:03:21,854 - model_comparison - INFO - RMSE: 0.6140
+2025-03-23 08:03:21,854 - model_comparison - INFO - Correlation: 0.4606
+2025-03-23 08:03:21,854 - model_comparison - INFO - Direction_Accuracy: 94.0285
+2025-03-23 08:03:21,854 - model_comparison - INFO - Within_50%: 61.9727
+2025-03-23 08:03:21,854 - model_comparison - INFO - N: 33.3333
+2025-03-23 08:03:21,855 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 08:03:21,856 - model_comparison - INFO - MAE: 0.1945
+2025-03-23 08:03:21,856 - model_comparison - INFO - RMSE: 0.2412
+2025-03-23 08:03:21,856 - model_comparison - INFO - Correlation: 0.7647
+2025-03-23 08:03:21,856 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,856 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:03:21,856 - model_comparison - INFO - N: 34.0000
+2025-03-23 08:03:21,857 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 08:03:21,858 - model_comparison - INFO - MAE: 0.2806
+2025-03-23 08:03:21,858 - model_comparison - INFO - RMSE: 0.3158
+2025-03-23 08:03:21,858 - model_comparison - INFO - Correlation: 0.5895
+2025-03-23 08:03:21,859 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,859 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:03:21,859 - model_comparison - INFO - N: 16.0000
+2025-03-23 08:03:21,859 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 08:03:21,859 - model_comparison - INFO - MAE: 0.1179
+2025-03-23 08:03:21,859 - model_comparison - INFO - RMSE: 0.1459
+2025-03-23 08:03:21,859 - model_comparison - INFO - Correlation: 0.9105
+2025-03-23 08:03:21,859 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,859 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:03:21,859 - model_comparison - INFO - N: 18.0000
+2025-03-23 08:03:21,859 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 08:03:21,860 - model_comparison - INFO - MAE: 0.4848
+2025-03-23 08:03:21,860 - model_comparison - INFO - RMSE: 0.5557
+2025-03-23 08:03:21,860 - model_comparison - INFO - Correlation: 0.2827
+2025-03-23 08:03:21,860 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,860 - model_comparison - INFO - Within_50%: 67.6471
+2025-03-23 08:03:21,860 - model_comparison - INFO - N: 34.0000
+2025-03-23 08:03:21,860 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 08:03:21,861 - model_comparison - INFO - MAE: 0.3973
+2025-03-23 08:03:21,861 - model_comparison - INFO - RMSE: 0.4768
+2025-03-23 08:03:21,861 - model_comparison - INFO - Correlation: 0.1168
+2025-03-23 08:03:21,861 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,861 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:03:21,861 - model_comparison - INFO - N: 16.0000
+2025-03-23 08:03:21,861 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 08:03:21,861 - model_comparison - INFO - MAE: 0.5625
+2025-03-23 08:03:21,861 - model_comparison - INFO - RMSE: 0.6175
+2025-03-23 08:03:21,861 - model_comparison - INFO - Correlation: 0.3325
+2025-03-23 08:03:21,861 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:03:21,861 - model_comparison - INFO - Within_50%: 38.8889
+2025-03-23 08:03:21,861 - model_comparison - INFO - N: 18.0000
+2025-03-23 08:03:21,861 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-23 08:03:21,862 - model_comparison - INFO - MAE: 0.5208
+2025-03-23 08:03:21,862 - model_comparison - INFO - RMSE: 0.6686
+2025-03-23 08:03:21,862 - model_comparison - INFO - Correlation: 0.4144
+2025-03-23 08:03:21,862 - model_comparison - INFO - Direction_Accuracy: 91.1765
+2025-03-23 08:03:21,862 - model_comparison - INFO - Within_50%: 64.7059
+2025-03-23 08:03:21,862 - model_comparison - INFO - N: 34.0000
+2025-03-23 08:03:21,862 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-23 08:03:21,863 - model_comparison - INFO - MAE: 0.6644
+2025-03-23 08:03:21,863 - model_comparison - INFO - RMSE: 0.8156
+2025-03-23 08:03:21,863 - model_comparison - INFO - Correlation: 0.0825
+2025-03-23 08:03:21,863 - model_comparison - INFO - Direction_Accuracy: 87.5000
+2025-03-23 08:03:21,863 - model_comparison - INFO - Within_50%: 56.2500
+2025-03-23 08:03:21,863 - model_comparison - INFO - N: 16.0000
+2025-03-23 08:03:21,863 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-23 08:03:21,863 - model_comparison - INFO - MAE: 0.3931
+2025-03-23 08:03:21,864 - model_comparison - INFO - RMSE: 0.5030
+2025-03-23 08:03:21,864 - model_comparison - INFO - Correlation: 0.7882
+2025-03-23 08:03:21,864 - model_comparison - INFO - Direction_Accuracy: 94.4444
+2025-03-23 08:03:21,864 - model_comparison - INFO - Within_50%: 72.2222
+2025-03-23 08:03:21,864 - model_comparison - INFO - N: 18.0000
+2025-03-23 08:03:21,885 - model_comparison - INFO - Results saved to results/model_comparison_with_seasonality
+2025-03-23 08:11:16,884 - model_comparison - INFO - Generating synthetic data with 10000 observations, 50 SKUs
+2025-03-23 08:11:16,885 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 08:11:16,885 - model_comparison - INFO - Including seasonal patterns in synthetic data
+2025-03-23 08:11:17,339 - model_comparison - INFO - Generated synthetic data with 10000 observations
+2025-03-23 08:11:17,339 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-23 08:11:17,339 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 08:11:17,340 - model_comparison - INFO - Selected 25 SKUs to make sparse
+2025-03-23 08:11:17,396 - model_comparison - INFO - Created sparse dataset with 6507 total observations
+2025-03-23 08:11:17,397 - model_comparison - INFO - Median observations per SKU: 127.5
+2025-03-23 08:11:17,397 - model_comparison - INFO - Min observations per SKU: 40
+2025-03-23 08:11:17,397 - model_comparison - INFO - Max observations per SKU: 223
+2025-03-23 08:11:17,397 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:11:17,397 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:11:17,397 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:11:17,733 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 08:11:17,733 - model_comparison - INFO - Mean elasticity: -1.2016
+2025-03-23 08:11:17,733 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:11:17,733 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:11:17,733 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:11:17,749 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:11:17,749 - model_comparison - INFO - Fitting hierarchical model for 50 SKUs
+2025-03-23 08:11:17,751 - model_comparison - INFO - Processing product class 0 with 50 SKUs
+2025-03-23 08:11:17,751 - model_comparison - INFO - Class 0 prior elasticity: -1.1338 ± 0.3100
+2025-03-23 08:11:17,752 - model_comparison - INFO - Processing product class 1 with 50 SKUs
+2025-03-23 08:11:17,752 - model_comparison - INFO - Class 1 prior elasticity: -1.1338 ± 0.3100
+2025-03-23 08:11:17,753 - model_comparison - INFO - Processing product class 2 with 50 SKUs
+2025-03-23 08:11:17,753 - model_comparison - INFO - Class 2 prior elasticity: -1.1338 ± 0.3100
+2025-03-23 08:11:17,755 - model_comparison - INFO - Processing product class 3 with 50 SKUs
+2025-03-23 08:11:17,755 - model_comparison - INFO - Class 3 prior elasticity: -1.1338 ± 0.3100
+2025-03-23 08:11:17,756 - model_comparison - INFO - Processing product class 4 with 50 SKUs
+2025-03-23 08:11:17,756 - model_comparison - INFO - Class 4 prior elasticity: -1.1338 ± 0.3100
+2025-03-23 08:11:17,928 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 08:11:17,928 - model_comparison - INFO - Mean elasticity: -0.6789
+2025-03-23 08:11:17,928 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:11:17,928 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:11:17,928 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:11:21,202 - model_comparison - INFO - XGBoost model complete - analyzed 50 SKUs, skipped 0
+2025-03-23 08:11:21,202 - model_comparison - INFO - Mean elasticity: -0.7324
+2025-03-23 08:11:21,202 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-23 08:11:21,203 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-23 08:11:21,206 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:11:21,206 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:11:21,206 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:11:21,410 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:11:21,410 - model_comparison - INFO - Mean elasticity: -1.2280
+2025-03-23 08:11:21,410 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:11:21,410 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:11:21,410 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:11:21,420 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:11:21,420 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 08:11:21,421 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 08:11:21,421 - model_comparison - INFO - Class 0 prior elasticity: -1.1610 ± 0.2855
+2025-03-23 08:11:21,422 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 08:11:21,422 - model_comparison - INFO - Class 1 prior elasticity: -1.1610 ± 0.2855
+2025-03-23 08:11:21,423 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 08:11:21,423 - model_comparison - INFO - Class 2 prior elasticity: -1.1610 ± 0.2855
+2025-03-23 08:11:21,424 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 08:11:21,424 - model_comparison - INFO - Class 3 prior elasticity: -1.1610 ± 0.2855
+2025-03-23 08:11:21,425 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 08:11:21,425 - model_comparison - INFO - Class 4 prior elasticity: -1.1610 ± 0.2855
+2025-03-23 08:11:21,520 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:11:21,520 - model_comparison - INFO - Mean elasticity: -0.7060
+2025-03-23 08:11:21,521 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:11:21,521 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:11:21,521 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:11:23,653 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:11:23,653 - model_comparison - INFO - Mean elasticity: -0.7458
+2025-03-23 08:11:23,656 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-23 08:11:23,661 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:11:23,661 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:11:23,661 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:11:23,886 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:11:23,886 - model_comparison - INFO - Mean elasticity: -1.1689
+2025-03-23 08:11:23,886 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:11:23,886 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:11:23,886 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:11:23,896 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:11:23,896 - model_comparison - INFO - Fitting hierarchical model for 33 SKUs
+2025-03-23 08:11:23,897 - model_comparison - INFO - Processing product class 0 with 33 SKUs
+2025-03-23 08:11:23,897 - model_comparison - INFO - Class 0 prior elasticity: -1.0873 ± 0.3080
+2025-03-23 08:11:23,898 - model_comparison - INFO - Processing product class 1 with 33 SKUs
+2025-03-23 08:11:23,898 - model_comparison - INFO - Class 1 prior elasticity: -1.0873 ± 0.3080
+2025-03-23 08:11:23,899 - model_comparison - INFO - Processing product class 2 with 33 SKUs
+2025-03-23 08:11:23,899 - model_comparison - INFO - Class 2 prior elasticity: -1.0873 ± 0.3080
+2025-03-23 08:11:23,900 - model_comparison - INFO - Processing product class 3 with 33 SKUs
+2025-03-23 08:11:23,900 - model_comparison - INFO - Class 3 prior elasticity: -1.0873 ± 0.3080
+2025-03-23 08:11:23,900 - model_comparison - INFO - Processing product class 4 with 33 SKUs
+2025-03-23 08:11:23,901 - model_comparison - INFO - Class 4 prior elasticity: -1.0873 ± 0.3080
+2025-03-23 08:11:23,995 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:11:23,995 - model_comparison - INFO - Mean elasticity: -0.6373
+2025-03-23 08:11:23,995 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:11:23,995 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:11:23,995 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:11:26,134 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs, skipped 0
+2025-03-23 08:11:26,135 - model_comparison - INFO - Mean elasticity: -0.7230
+2025-03-23 08:11:26,138 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-23 08:11:26,142 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:11:26,142 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:11:26,142 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:11:26,350 - model_comparison - INFO - Linear model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 08:11:26,350 - model_comparison - INFO - Mean elasticity: -1.2078
+2025-03-23 08:11:26,350 - model_comparison - INFO - Running custom Hierarchical Bayesian Model implementation
+2025-03-23 08:11:26,350 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:11:26,350 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:11:26,360 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:11:26,360 - model_comparison - INFO - Fitting hierarchical model for 34 SKUs
+2025-03-23 08:11:26,361 - model_comparison - INFO - Processing product class 0 with 34 SKUs
+2025-03-23 08:11:26,361 - model_comparison - INFO - Class 0 prior elasticity: -1.1526 ± 0.3289
+2025-03-23 08:11:26,362 - model_comparison - INFO - Processing product class 1 with 34 SKUs
+2025-03-23 08:11:26,362 - model_comparison - INFO - Class 1 prior elasticity: -1.1526 ± 0.3289
+2025-03-23 08:11:26,362 - model_comparison - INFO - Processing product class 2 with 34 SKUs
+2025-03-23 08:11:26,363 - model_comparison - INFO - Class 2 prior elasticity: -1.1526 ± 0.3289
+2025-03-23 08:11:26,363 - model_comparison - INFO - Processing product class 3 with 34 SKUs
+2025-03-23 08:11:26,363 - model_comparison - INFO - Class 3 prior elasticity: -1.1526 ± 0.3289
+2025-03-23 08:11:26,364 - model_comparison - INFO - Processing product class 4 with 34 SKUs
+2025-03-23 08:11:26,364 - model_comparison - INFO - Class 4 prior elasticity: -1.1526 ± 0.3289
+2025-03-23 08:11:26,464 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 08:11:26,464 - model_comparison - INFO - Mean elasticity: -0.6942
+2025-03-23 08:11:26,464 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:11:26,464 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:11:26,465 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:11:28,688 - model_comparison - INFO - XGBoost model complete - analyzed 34 SKUs, skipped 0
+2025-03-23 08:11:28,688 - model_comparison - INFO - Mean elasticity: -0.7285
+2025-03-23 08:11:28,692 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 08:11:28,692 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 08:11:28,692 - model_comparison - INFO - MAE: 0.1398
+2025-03-23 08:11:28,692 - model_comparison - INFO - RMSE: 0.1782
+2025-03-23 08:11:28,692 - model_comparison - INFO - Correlation: 0.8720
+2025-03-23 08:11:28,692 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,692 - model_comparison - INFO - Within_50%: 97.9798
+2025-03-23 08:11:28,692 - model_comparison - INFO - N: 33.3333
+2025-03-23 08:11:28,693 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 08:11:28,693 - model_comparison - INFO - MAE: 0.4669
+2025-03-23 08:11:28,693 - model_comparison - INFO - RMSE: 0.5524
+2025-03-23 08:11:28,693 - model_comparison - INFO - Correlation: 0.1396
+2025-03-23 08:11:28,693 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,693 - model_comparison - INFO - Within_50%: 70.9745
+2025-03-23 08:11:28,693 - model_comparison - INFO - N: 33.3333
+2025-03-23 08:11:28,693 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-23 08:11:28,693 - model_comparison - INFO - MAE: 0.4201
+2025-03-23 08:11:28,693 - model_comparison - INFO - RMSE: 0.5015
+2025-03-23 08:11:28,693 - model_comparison - INFO - Correlation: 0.5243
+2025-03-23 08:11:28,693 - model_comparison - INFO - Direction_Accuracy: 97.9798
+2025-03-23 08:11:28,693 - model_comparison - INFO - Within_50%: 73.9750
+2025-03-23 08:11:28,693 - model_comparison - INFO - N: 33.3333
+2025-03-23 08:11:28,695 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 08:11:28,696 - model_comparison - INFO - MAE: 0.1285
+2025-03-23 08:11:28,696 - model_comparison - INFO - RMSE: 0.1614
+2025-03-23 08:11:28,696 - model_comparison - INFO - Correlation: 0.9148
+2025-03-23 08:11:28,696 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,696 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:11:28,696 - model_comparison - INFO - N: 34.0000
+2025-03-23 08:11:28,697 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 08:11:28,698 - model_comparison - INFO - MAE: 0.1359
+2025-03-23 08:11:28,698 - model_comparison - INFO - RMSE: 0.1787
+2025-03-23 08:11:28,698 - model_comparison - INFO - Correlation: 0.8734
+2025-03-23 08:11:28,698 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,698 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:11:28,698 - model_comparison - INFO - N: 18.0000
+2025-03-23 08:11:28,698 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 08:11:28,699 - model_comparison - INFO - MAE: 0.1203
+2025-03-23 08:11:28,699 - model_comparison - INFO - RMSE: 0.1396
+2025-03-23 08:11:28,699 - model_comparison - INFO - Correlation: 0.9660
+2025-03-23 08:11:28,699 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,699 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:11:28,699 - model_comparison - INFO - N: 16.0000
+2025-03-23 08:11:28,699 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 08:11:28,701 - model_comparison - INFO - MAE: 0.4656
+2025-03-23 08:11:28,701 - model_comparison - INFO - RMSE: 0.5502
+2025-03-23 08:11:28,701 - model_comparison - INFO - Correlation: 0.3287
+2025-03-23 08:11:28,701 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,701 - model_comparison - INFO - Within_50%: 73.5294
+2025-03-23 08:11:28,701 - model_comparison - INFO - N: 34.0000
+2025-03-23 08:11:28,701 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 08:11:28,702 - model_comparison - INFO - MAE: 0.4158
+2025-03-23 08:11:28,702 - model_comparison - INFO - RMSE: 0.4662
+2025-03-23 08:11:28,702 - model_comparison - INFO - Correlation: 0.3832
+2025-03-23 08:11:28,702 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,702 - model_comparison - INFO - Within_50%: 94.4444
+2025-03-23 08:11:28,702 - model_comparison - INFO - N: 18.0000
+2025-03-23 08:11:28,702 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 08:11:28,704 - model_comparison - INFO - MAE: 0.5216
+2025-03-23 08:11:28,704 - model_comparison - INFO - RMSE: 0.6315
+2025-03-23 08:11:28,704 - model_comparison - INFO - Correlation: 0.3073
+2025-03-23 08:11:28,704 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,704 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-23 08:11:28,704 - model_comparison - INFO - N: 16.0000
+2025-03-23 08:11:28,704 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-23 08:11:28,705 - model_comparison - INFO - MAE: 0.4504
+2025-03-23 08:11:28,705 - model_comparison - INFO - RMSE: 0.5324
+2025-03-23 08:11:28,705 - model_comparison - INFO - Correlation: 0.3755
+2025-03-23 08:11:28,705 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,705 - model_comparison - INFO - Within_50%: 76.4706
+2025-03-23 08:11:28,705 - model_comparison - INFO - N: 34.0000
+2025-03-23 08:11:28,705 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-23 08:11:28,706 - model_comparison - INFO - MAE: 0.5689
+2025-03-23 08:11:28,706 - model_comparison - INFO - RMSE: 0.6275
+2025-03-23 08:11:28,706 - model_comparison - INFO - Correlation: 0.1975
+2025-03-23 08:11:28,706 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,706 - model_comparison - INFO - Within_50%: 66.6667
+2025-03-23 08:11:28,706 - model_comparison - INFO - N: 18.0000
+2025-03-23 08:11:28,706 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-23 08:11:28,707 - model_comparison - INFO - MAE: 0.3170
+2025-03-23 08:11:28,707 - model_comparison - INFO - RMSE: 0.3993
+2025-03-23 08:11:28,707 - model_comparison - INFO - Correlation: 0.6652
+2025-03-23 08:11:28,707 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:11:28,707 - model_comparison - INFO - Within_50%: 87.5000
+2025-03-23 08:11:28,707 - model_comparison - INFO - N: 16.0000
+2025-03-23 08:11:28,748 - model_comparison - INFO - Results saved to results/model_comparison_with_seasonality_updated
+2025-03-23 08:13:21,568 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs
+2025-03-23 08:13:21,569 - model_comparison - INFO - Mean elasticity: -1.1794
+2025-03-23 08:13:21,569 - model_comparison - INFO - Running XGBoost model
+2025-03-23 08:13:21,569 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:13:21,569 - model_comparison - INFO - Detected seasonality features - including in XGBoost model
+2025-03-23 08:13:25,081 - model_comparison - INFO - XGBoost complete - estimated elasticities for 33 SKUs, skipped 0
+2025-03-23 08:13:25,081 - model_comparison - INFO - Mean elasticity: -1.4427
+2025-03-23 08:13:25,082 - model_comparison - INFO - Fold 1 results:
+2025-03-23 08:16:55,503 - model_comparison - INFO - Generating synthetic data with 1000 observations, 10 SKUs
+2025-03-23 08:16:55,504 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 08:16:55,504 - model_comparison - INFO - Including seasonal patterns in synthetic data
+2025-03-23 08:16:55,573 - model_comparison - INFO - Generated synthetic data with 1000 observations
+2025-03-23 08:16:55,573 - model_comparison - INFO - Generated data with 10 true elasticities
+2025-03-23 08:16:55,573 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 08:16:55,573 - model_comparison - INFO - Selected 5 SKUs to make sparse
+2025-03-23 08:16:55,577 - model_comparison - INFO - Created sparse dataset with 664 total observations
+2025-03-23 08:16:55,578 - model_comparison - INFO - Median observations per SKU: 67.0
+2025-03-23 08:16:55,578 - model_comparison - INFO - Min observations per SKU: 20
+2025-03-23 08:16:55,578 - model_comparison - INFO - Max observations per SKU: 120
+2025-03-23 08:16:55,578 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:16:55,578 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:16:55,578 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:16:55,644 - model_comparison - INFO - Linear model complete - analyzed 10 SKUs, skipped 0
+2025-03-23 08:16:55,644 - model_comparison - INFO - Mean elasticity: -1.0755
+2025-03-23 08:16:55,644 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:16:55,644 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:16:55,644 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:16:55,648 - model_comparison - INFO - Fitting full BayesianModel to 664 observations
+2025-03-23 08:17:50,247 - model_comparison - ERROR - Error in full BayesianModel: 'BayesianModel' object has no attribute 'extract_elasticities'
+2025-03-23 08:17:50,248 - model_comparison - INFO - Falling back to simplified HBM implementation
+2025-03-23 08:17:50,256 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:17:50,256 - model_comparison - INFO - Fitting hierarchical model for 10 SKUs
+2025-03-23 08:17:50,257 - model_comparison - INFO - Processing product class 0 with 10 SKUs
+2025-03-23 08:17:50,257 - model_comparison - INFO - Class 0 prior elasticity: -1.0611 ± 0.2969
+2025-03-23 08:17:50,257 - model_comparison - INFO - Processing product class 1 with 10 SKUs
+2025-03-23 08:17:50,257 - model_comparison - INFO - Class 1 prior elasticity: -1.0611 ± 0.2969
+2025-03-23 08:17:50,258 - model_comparison - INFO - Processing product class 2 with 10 SKUs
+2025-03-23 08:17:50,258 - model_comparison - INFO - Class 2 prior elasticity: -1.0611 ± 0.2969
+2025-03-23 08:17:50,259 - model_comparison - INFO - Processing product class 3 with 10 SKUs
+2025-03-23 08:17:50,259 - model_comparison - INFO - Class 3 prior elasticity: -1.0611 ± 0.2969
+2025-03-23 08:17:50,259 - model_comparison - INFO - Processing product class 4 with 10 SKUs
+2025-03-23 08:17:50,259 - model_comparison - INFO - Class 4 prior elasticity: -1.0611 ± 0.2969
+2025-03-23 08:17:50,287 - model_comparison - INFO - HBM model complete - analyzed 10 SKUs, skipped 0
+2025-03-23 08:17:50,287 - model_comparison - INFO - Mean elasticity: -0.7729
+2025-03-23 08:17:50,288 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:17:50,288 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:17:50,288 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:17:50,791 - model_comparison - INFO - XGBoost model complete - analyzed 10 SKUs, skipped 0
+2025-03-23 08:17:50,792 - model_comparison - INFO - Mean elasticity: -0.5469
+2025-03-23 08:17:50,792 - model_comparison - INFO - Performing 2-fold cross-validation
+2025-03-23 08:17:50,792 - model_comparison - INFO - Cross-validation fold 1/2
+2025-03-23 08:17:50,794 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:17:50,794 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:17:50,794 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:17:50,823 - model_comparison - INFO - Linear model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:17:50,823 - model_comparison - INFO - Mean elasticity: -0.9973
+2025-03-23 08:17:50,824 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:17:50,824 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:17:50,824 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:17:50,826 - model_comparison - INFO - Fitting full BayesianModel to 466 observations
+2025-03-23 08:17:52,270 - model_comparison - ERROR - Error in full BayesianModel: 'BayesianModel' object has no attribute 'extract_elasticities'
+2025-03-23 08:17:52,270 - model_comparison - INFO - Falling back to simplified HBM implementation
+2025-03-23 08:17:52,274 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:17:52,274 - model_comparison - INFO - Fitting hierarchical model for 5 SKUs
+2025-03-23 08:17:52,275 - model_comparison - INFO - Processing product class 0 with 5 SKUs
+2025-03-23 08:17:52,275 - model_comparison - INFO - Class 0 prior elasticity: -1.0469 ± 0.2430
+2025-03-23 08:17:52,276 - model_comparison - INFO - Processing product class 1 with 5 SKUs
+2025-03-23 08:17:52,276 - model_comparison - INFO - Class 1 prior elasticity: -1.0469 ± 0.2430
+2025-03-23 08:17:52,277 - model_comparison - INFO - Processing product class 2 with 5 SKUs
+2025-03-23 08:17:52,277 - model_comparison - INFO - Class 2 prior elasticity: -1.0469 ± 0.2430
+2025-03-23 08:17:52,278 - model_comparison - INFO - Processing product class 3 with 5 SKUs
+2025-03-23 08:17:52,278 - model_comparison - INFO - Class 3 prior elasticity: -1.0469 ± 0.2430
+2025-03-23 08:17:52,278 - model_comparison - INFO - Processing product class 4 with 5 SKUs
+2025-03-23 08:17:52,278 - model_comparison - INFO - Class 4 prior elasticity: -1.0469 ± 0.2430
+2025-03-23 08:17:52,292 - model_comparison - INFO - HBM model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:17:52,293 - model_comparison - INFO - Mean elasticity: -0.6716
+2025-03-23 08:17:52,293 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:17:52,293 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:17:52,293 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:17:52,555 - model_comparison - INFO - XGBoost model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:17:52,555 - model_comparison - INFO - Mean elasticity: -0.5126
+2025-03-23 08:17:52,558 - model_comparison - INFO - Cross-validation fold 2/2
+2025-03-23 08:17:52,559 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:17:52,559 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:17:52,559 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:17:52,588 - model_comparison - INFO - Linear model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:17:52,589 - model_comparison - INFO - Mean elasticity: -1.1536
+2025-03-23 08:17:52,589 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:17:52,589 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:17:52,589 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:17:52,591 - model_comparison - INFO - Fitting full BayesianModel to 198 observations
+2025-03-23 08:17:54,168 - model_comparison - ERROR - Error in full BayesianModel: 'BayesianModel' object has no attribute 'extract_elasticities'
+2025-03-23 08:17:54,168 - model_comparison - INFO - Falling back to simplified HBM implementation
+2025-03-23 08:17:54,172 - model_comparison - INFO - Identified 5 product classes for hierarchical structure
+2025-03-23 08:17:54,172 - model_comparison - INFO - Fitting hierarchical model for 5 SKUs
+2025-03-23 08:17:54,173 - model_comparison - INFO - Processing product class 0 with 5 SKUs
+2025-03-23 08:17:54,173 - model_comparison - INFO - Class 0 prior elasticity: -1.0752 ± 0.3415
+2025-03-23 08:17:54,173 - model_comparison - INFO - Processing product class 1 with 5 SKUs
+2025-03-23 08:17:54,173 - model_comparison - INFO - Class 1 prior elasticity: -1.0752 ± 0.3415
+2025-03-23 08:17:54,174 - model_comparison - INFO - Processing product class 2 with 4 SKUs
+2025-03-23 08:17:54,174 - model_comparison - INFO - Class 2 prior elasticity: -0.9321 ± 0.1967
+2025-03-23 08:17:54,174 - model_comparison - INFO - Processing product class 3 with 5 SKUs
+2025-03-23 08:17:54,175 - model_comparison - INFO - Class 3 prior elasticity: -1.0752 ± 0.3415
+2025-03-23 08:17:54,175 - model_comparison - INFO - Processing product class 4 with 5 SKUs
+2025-03-23 08:17:54,175 - model_comparison - INFO - Class 4 prior elasticity: -1.0752 ± 0.3415
+2025-03-23 08:17:54,188 - model_comparison - INFO - HBM model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:17:54,188 - model_comparison - INFO - Mean elasticity: -0.8544
+2025-03-23 08:17:54,189 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:17:54,189 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:17:54,189 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:17:54,430 - model_comparison - INFO - XGBoost model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:17:54,430 - model_comparison - INFO - Mean elasticity: -0.5811
+2025-03-23 08:17:54,433 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 08:17:54,433 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 08:17:54,434 - model_comparison - INFO - MAE: 0.2580
+2025-03-23 08:17:54,434 - model_comparison - INFO - RMSE: 0.2890
+2025-03-23 08:17:54,434 - model_comparison - INFO - Correlation: 0.7128
+2025-03-23 08:17:54,434 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - N: 5.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 08:17:54,434 - model_comparison - INFO - MAE: 0.3281
+2025-03-23 08:17:54,434 - model_comparison - INFO - RMSE: 0.3939
+2025-03-23 08:17:54,434 - model_comparison - INFO - Correlation: 0.5830
+2025-03-23 08:17:54,434 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - N: 5.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-23 08:17:54,434 - model_comparison - INFO - MAE: 0.5142
+2025-03-23 08:17:54,434 - model_comparison - INFO - RMSE: 0.5619
+2025-03-23 08:17:54,434 - model_comparison - INFO - Correlation: 0.4552
+2025-03-23 08:17:54,434 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,434 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-23 08:17:54,435 - model_comparison - INFO - N: 5.0000
+2025-03-23 08:17:54,436 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 08:17:54,436 - model_comparison - INFO - MAE: 0.3040
+2025-03-23 08:17:54,437 - model_comparison - INFO - RMSE: 0.3162
+2025-03-23 08:17:54,437 - model_comparison - INFO - Correlation: 0.9360
+2025-03-23 08:17:54,437 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,437 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,437 - model_comparison - INFO - N: 5.0000
+2025-03-23 08:17:54,437 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 08:17:54,438 - model_comparison - INFO - MAE: 0.3387
+2025-03-23 08:17:54,438 - model_comparison - INFO - RMSE: 0.3437
+2025-03-23 08:17:54,438 - model_comparison - INFO - Correlation: 0.9385
+2025-03-23 08:17:54,438 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,438 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,438 - model_comparison - INFO - N: 4.0000
+2025-03-23 08:17:54,438 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 08:17:54,439 - model_comparison - INFO - MAE: 0.1654
+2025-03-23 08:17:54,439 - model_comparison - INFO - RMSE: 0.1654
+2025-03-23 08:17:54,439 - model_comparison - INFO - Correlation: nan
+2025-03-23 08:17:54,439 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,439 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,439 - model_comparison - INFO - N: 1.0000
+2025-03-23 08:17:54,439 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 08:17:54,440 - model_comparison - INFO - MAE: 0.2808
+2025-03-23 08:17:54,440 - model_comparison - INFO - RMSE: 0.3742
+2025-03-23 08:17:54,440 - model_comparison - INFO - Correlation: 0.4144
+2025-03-23 08:17:54,440 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,440 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,440 - model_comparison - INFO - N: 5.0000
+2025-03-23 08:17:54,440 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 08:17:54,441 - model_comparison - INFO - MAE: 0.2471
+2025-03-23 08:17:54,441 - model_comparison - INFO - RMSE: 0.3631
+2025-03-23 08:17:54,441 - model_comparison - INFO - Correlation: 0.6885
+2025-03-23 08:17:54,441 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,441 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,441 - model_comparison - INFO - N: 4.0000
+2025-03-23 08:17:54,441 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 08:17:54,442 - model_comparison - INFO - MAE: 0.4153
+2025-03-23 08:17:54,442 - model_comparison - INFO - RMSE: 0.4153
+2025-03-23 08:17:54,442 - model_comparison - INFO - Correlation: nan
+2025-03-23 08:17:54,442 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,442 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,442 - model_comparison - INFO - N: 1.0000
+2025-03-23 08:17:54,442 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-23 08:17:54,443 - model_comparison - INFO - MAE: 0.4941
+2025-03-23 08:17:54,443 - model_comparison - INFO - RMSE: 0.5197
+2025-03-23 08:17:54,443 - model_comparison - INFO - Correlation: 0.8753
+2025-03-23 08:17:54,443 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,443 - model_comparison - INFO - Within_50%: 60.0000
+2025-03-23 08:17:54,443 - model_comparison - INFO - N: 5.0000
+2025-03-23 08:17:54,443 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-23 08:17:54,444 - model_comparison - INFO - MAE: 0.5419
+2025-03-23 08:17:54,444 - model_comparison - INFO - RMSE: 0.5610
+2025-03-23 08:17:54,444 - model_comparison - INFO - Correlation: 0.9346
+2025-03-23 08:17:54,444 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,444 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-23 08:17:54,444 - model_comparison - INFO - N: 4.0000
+2025-03-23 08:17:54,444 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-23 08:17:54,444 - model_comparison - INFO - MAE: 0.3028
+2025-03-23 08:17:54,444 - model_comparison - INFO - RMSE: 0.3028
+2025-03-23 08:17:54,444 - model_comparison - INFO - Correlation: nan
+2025-03-23 08:17:54,444 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:17:54,444 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:17:54,444 - model_comparison - INFO - N: 1.0000
+2025-03-23 08:17:54,450 - model_comparison - INFO - Results saved to results/model_comparison_full_hbm
+2025-03-23 08:19:13,007 - model_comparison - INFO - Generating synthetic data with 800 observations, 5 SKUs
+2025-03-23 08:19:13,007 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 08:19:13,007 - model_comparison - INFO - Including seasonal patterns in synthetic data
+2025-03-23 08:19:13,063 - model_comparison - INFO - Generated synthetic data with 800 observations
+2025-03-23 08:19:13,063 - model_comparison - INFO - Generated data with 5 true elasticities
+2025-03-23 08:19:13,063 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 08:19:13,063 - model_comparison - INFO - Selected 2 SKUs to make sparse
+2025-03-23 08:19:13,065 - model_comparison - INFO - Created sparse dataset with 564 total observations
+2025-03-23 08:19:13,066 - model_comparison - INFO - Median observations per SKU: 142.0
+2025-03-23 08:19:13,066 - model_comparison - INFO - Min observations per SKU: 40
+2025-03-23 08:19:13,066 - model_comparison - INFO - Max observations per SKU: 173
+2025-03-23 08:19:13,066 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:19:13,066 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:19:13,066 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:19:13,097 - model_comparison - INFO - Linear model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:19:13,098 - model_comparison - INFO - Mean elasticity: -1.3550
+2025-03-23 08:19:13,098 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:19:13,098 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:19:13,098 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:19:13,101 - model_comparison - INFO - Fitting full BayesianModel to 564 observations
+2025-03-23 08:20:20,001 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-23 08:20:20,002 - model_comparison - INFO - HBM model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:20:20,002 - model_comparison - INFO - Mean elasticity: -1.2705
+2025-03-23 08:20:20,003 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:20:20,003 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:20:20,003 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:20:20,286 - model_comparison - INFO - XGBoost model complete - analyzed 5 SKUs, skipped 0
+2025-03-23 08:20:20,287 - model_comparison - INFO - Mean elasticity: -0.8610
+2025-03-23 08:20:20,287 - model_comparison - INFO - Performing 2-fold cross-validation
+2025-03-23 08:20:20,287 - model_comparison - INFO - Cross-validation fold 1/2
+2025-03-23 08:20:20,288 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:20:20,288 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:20:20,289 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:20:20,301 - model_comparison - INFO - Linear model complete - analyzed 2 SKUs, skipped 0
+2025-03-23 08:20:20,301 - model_comparison - INFO - Mean elasticity: -1.2861
+2025-03-23 08:20:20,301 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:20:20,301 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:20:20,301 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:20:20,303 - model_comparison - INFO - Fitting full BayesianModel to 213 observations
+2025-03-23 08:20:57,299 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-23 08:20:57,299 - model_comparison - INFO - HBM model complete - analyzed 2 SKUs, skipped 0
+2025-03-23 08:20:57,299 - model_comparison - INFO - Mean elasticity: -1.4104
+2025-03-23 08:20:57,301 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:20:57,301 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:20:57,301 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:20:57,409 - model_comparison - INFO - XGBoost model complete - analyzed 2 SKUs, skipped 0
+2025-03-23 08:20:57,409 - model_comparison - INFO - Mean elasticity: -0.8429
+2025-03-23 08:20:57,412 - model_comparison - INFO - Cross-validation fold 2/2
+2025-03-23 08:20:57,413 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:20:57,413 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:20:57,413 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:20:57,432 - model_comparison - INFO - Linear model complete - analyzed 3 SKUs, skipped 0
+2025-03-23 08:20:57,432 - model_comparison - INFO - Mean elasticity: -1.4010
+2025-03-23 08:20:57,432 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:20:57,432 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:20:57,432 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:20:57,434 - model_comparison - INFO - Fitting full BayesianModel to 351 observations
+2025-03-23 08:21:43,557 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-23 08:21:43,557 - model_comparison - INFO - HBM model complete - analyzed 3 SKUs, skipped 0
+2025-03-23 08:21:43,557 - model_comparison - INFO - Mean elasticity: -1.3323
+2025-03-23 08:21:43,559 - model_comparison - INFO - Running XGBoost regression model
+2025-03-23 08:21:43,559 - model_comparison - INFO - Using promotional features in XGBoost model
+2025-03-23 08:21:43,559 - model_comparison - INFO - Using seasonality features in XGBoost model
+2025-03-23 08:21:43,733 - model_comparison - INFO - XGBoost model complete - analyzed 3 SKUs, skipped 0
+2025-03-23 08:21:43,733 - model_comparison - INFO - Mean elasticity: -0.8731
+2025-03-23 08:21:43,736 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-23 08:21:43,736 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-23 08:21:43,736 - model_comparison - INFO - MAE: 0.1020
+2025-03-23 08:21:43,736 - model_comparison - INFO - RMSE: 0.1138
+2025-03-23 08:21:43,736 - model_comparison - INFO - Correlation: 0.9639
+2025-03-23 08:21:43,737 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,737 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,737 - model_comparison - INFO - N: 2.5000
+2025-03-23 08:21:43,737 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-23 08:21:43,737 - model_comparison - INFO - MAE: 0.1114
+2025-03-23 08:21:43,737 - model_comparison - INFO - RMSE: 0.1503
+2025-03-23 08:21:43,737 - model_comparison - INFO - Correlation: -0.0158
+2025-03-23 08:21:43,737 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,737 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,737 - model_comparison - INFO - N: 2.5000
+2025-03-23 08:21:43,737 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-23 08:21:43,737 - model_comparison - INFO - MAE: 0.4381
+2025-03-23 08:21:43,737 - model_comparison - INFO - RMSE: 0.5189
+2025-03-23 08:21:43,737 - model_comparison - INFO - Correlation: 0.0042
+2025-03-23 08:21:43,737 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,737 - model_comparison - INFO - Within_50%: 83.3333
+2025-03-23 08:21:43,737 - model_comparison - INFO - N: 2.5000
+2025-03-23 08:21:43,738 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-23 08:21:43,739 - model_comparison - INFO - MAE: 0.0560
+2025-03-23 08:21:43,739 - model_comparison - INFO - RMSE: 0.0736
+2025-03-23 08:21:43,740 - model_comparison - INFO - Correlation: 0.9278
+2025-03-23 08:21:43,740 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,740 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,740 - model_comparison - INFO - N: 3.0000
+2025-03-23 08:21:43,741 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-23 08:21:43,742 - model_comparison - INFO - MAE: 0.0053
+2025-03-23 08:21:43,742 - model_comparison - INFO - RMSE: 0.0053
+2025-03-23 08:21:43,742 - model_comparison - INFO - Correlation: nan
+2025-03-23 08:21:43,742 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,742 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,742 - model_comparison - INFO - N: 1.0000
+2025-03-23 08:21:43,742 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-23 08:21:43,743 - model_comparison - INFO - MAE: 0.0814
+2025-03-23 08:21:43,743 - model_comparison - INFO - RMSE: 0.0900
+2025-03-23 08:21:43,743 - model_comparison - INFO - Correlation: -1.0000
+2025-03-23 08:21:43,743 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,743 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,743 - model_comparison - INFO - N: 2.0000
+2025-03-23 08:21:43,743 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-23 08:21:43,744 - model_comparison - INFO - MAE: 0.2104
+2025-03-23 08:21:43,744 - model_comparison - INFO - RMSE: 0.2556
+2025-03-23 08:21:43,744 - model_comparison - INFO - Correlation: -0.5938
+2025-03-23 08:21:43,744 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,744 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,744 - model_comparison - INFO - N: 3.0000
+2025-03-23 08:21:43,744 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-23 08:21:43,745 - model_comparison - INFO - MAE: 0.3333
+2025-03-23 08:21:43,745 - model_comparison - INFO - RMSE: 0.3333
+2025-03-23 08:21:43,745 - model_comparison - INFO - Correlation: nan
+2025-03-23 08:21:43,745 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,745 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,745 - model_comparison - INFO - N: 1.0000
+2025-03-23 08:21:43,745 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-23 08:21:43,746 - model_comparison - INFO - MAE: 0.1490
+2025-03-23 08:21:43,746 - model_comparison - INFO - RMSE: 0.2060
+2025-03-23 08:21:43,746 - model_comparison - INFO - Correlation: 1.0000
+2025-03-23 08:21:43,746 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,746 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,746 - model_comparison - INFO - N: 2.0000
+2025-03-23 08:21:43,746 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-23 08:21:43,747 - model_comparison - INFO - MAE: 0.4754
+2025-03-23 08:21:43,747 - model_comparison - INFO - RMSE: 0.6047
+2025-03-23 08:21:43,747 - model_comparison - INFO - Correlation: -0.9916
+2025-03-23 08:21:43,747 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,747 - model_comparison - INFO - Within_50%: 66.6667
+2025-03-23 08:21:43,747 - model_comparison - INFO - N: 3.0000
+2025-03-23 08:21:43,747 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-23 08:21:43,748 - model_comparison - INFO - MAE: 0.9970
+2025-03-23 08:21:43,748 - model_comparison - INFO - RMSE: 0.9970
+2025-03-23 08:21:43,748 - model_comparison - INFO - Correlation: nan
+2025-03-23 08:21:43,748 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,748 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-23 08:21:43,748 - model_comparison - INFO - N: 1.0000
+2025-03-23 08:21:43,748 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-23 08:21:43,748 - model_comparison - INFO - MAE: 0.2147
+2025-03-23 08:21:43,748 - model_comparison - INFO - RMSE: 0.2267
+2025-03-23 08:21:43,749 - model_comparison - INFO - Correlation: -1.0000
+2025-03-23 08:21:43,749 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-23 08:21:43,749 - model_comparison - INFO - Within_50%: 100.0000
+2025-03-23 08:21:43,749 - model_comparison - INFO - N: 2.0000
+2025-03-23 08:21:43,754 - model_comparison - INFO - Results saved to results/model_comparison_full_hbm_fixed
+2025-03-23 08:21:57,185 - model_comparison - INFO - Generating synthetic data with 5000 observations, 20 SKUs
+2025-03-23 08:21:57,185 - model_comparison - INFO - Including promotional features in synthetic data
+2025-03-23 08:21:57,185 - model_comparison - INFO - Including seasonal patterns in synthetic data
+2025-03-23 08:21:57,402 - model_comparison - INFO - Generated synthetic data with 5000 observations
+2025-03-23 08:21:57,402 - model_comparison - INFO - Generated data with 20 true elasticities
+2025-03-23 08:21:57,402 - model_comparison - INFO - Creating sparse dataset with 50.0% sparse SKUs
+2025-03-23 08:21:57,403 - model_comparison - INFO - Selected 10 SKUs to make sparse
+2025-03-23 08:21:57,416 - model_comparison - INFO - Created sparse dataset with 3247 total observations
+2025-03-23 08:21:57,417 - model_comparison - INFO - Median observations per SKU: 164.0
+2025-03-23 08:21:57,418 - model_comparison - INFO - Min observations per SKU: 50
+2025-03-23 08:21:57,418 - model_comparison - INFO - Max observations per SKU: 288
+2025-03-23 08:21:57,418 - model_comparison - INFO - Running log-log linear regression model
+2025-03-23 08:21:57,418 - model_comparison - INFO - Using promotional features in linear model
+2025-03-23 08:21:57,418 - model_comparison - INFO - Using seasonality features in linear model
+2025-03-23 08:21:57,543 - model_comparison - INFO - Linear model complete - analyzed 20 SKUs, skipped 0
+2025-03-23 08:21:57,543 - model_comparison - INFO - Mean elasticity: -1.3035
+2025-03-23 08:21:57,544 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-23 08:21:57,544 - model_comparison - INFO - Using promotional features in HBM model
+2025-03-23 08:21:57,544 - model_comparison - INFO - Using seasonality features in HBM model
+2025-03-23 08:21:57,547 - model_comparison - INFO - Fitting full BayesianModel to 3247 observations

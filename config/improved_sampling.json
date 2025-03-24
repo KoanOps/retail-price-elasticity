@@ -1,0 +1,26 @@
+{
+  "model_name": "bayesian_elasticity_improved",
+  "model_type": "bayesian",
+  "data_config": {
+    "price_col": "Total_Sale_Value",
+    "quantity_col": "Qty_Sold",
+    "sku_col": "SKU_Coded",
+    "product_class_col": "Product_Class_Code"
+  },
+  "model_config": {
+    "sampling": {
+      "method": "standard"
+    },
+    "standard": {
+      "draws": 2000,
+      "tune": 2000,
+      "chains": 4,
+      "target_accept": 0.95,
+      "cores": null,
+      "init": "adapt_diag",
+      "compute_convergence_checks": true
+    }
+  },
+  "use_seasonality": true,
+  "notes": "Configuration with improved sampling parameters for better ESS on sigma_beta. This configuration uses a higher number of draws, more chains, and a higher target acceptance rate to improve sampling efficiency."
+}
