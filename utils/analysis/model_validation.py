@@ -42,6 +42,10 @@ from typing import Dict, List, Any, Tuple, Optional, Union
 from pathlib import Path
 import logging
 import traceback
+import sys
+
+# Add project root to sys.path to resolve imports
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 from model.model_runner import ModelRunner
 from data.simulation import generate_synthetic_data

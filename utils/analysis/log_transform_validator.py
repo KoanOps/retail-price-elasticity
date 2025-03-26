@@ -41,7 +41,7 @@ import seaborn as sns
 from typing import List, Dict, Optional, Tuple, Union
 
 # Add project root to path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 from model.data_preparation import BayesianDataPreparation
 from utils.logging_utils import logger

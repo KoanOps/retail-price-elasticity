@@ -9,22 +9,6 @@ Price elasticity measures how demand responds to price changes.
 - Elasticity = -1: Unit elastic
 - Elasticity > -1: Inelastic (less price-sensitive)
 
-## Model Philosophy
-- Materially right > Precisely wrong
-- Signal + actionability is underrated, model precision is overrated
-- Design for reliable decision-making under uncertainty, not surgical price optimization
-- Different markets have fundamentally different data-generating processes
-
-## Data Characteristics
-- **Sparse SKU Data**: Hierarchical structure manages varying observation counts of unique price points per SKU with product class effects (categorical data)
-- **Long-Tailed Distributions**: Log transformations handle skewed price and quantity distributions
-- **Correlated Patterns**: Partial pooling captures relationships between SKUs and product classes
-- **Temporal Effects**: Seasonal components model time-based demand patterns
-
-## Conceptual Flow
-Raw Data → Data Preprocessing → Hierarchical Bayesian Model → Posterior Analysis → Visualizations/Reports
-```
-
 ## Repository Structure
 
 ```
@@ -132,6 +116,44 @@ python main.py \
   --chains 2
 ```
 
+## Model Philosophy
+- Materially right > Precisely wrong
+- Signal + actionability is underrated, model precision is overrated
+- Design for reliable decision-making under uncertainty, not surgical price optimization
+- Different markets have fundamentally different data-generating processes
+
+## Data Characteristics
+- **Sparse SKU Data**: Hierarchical structure manages varying observation counts of unique price points per SKU with product class effects (categorical data)
+- **Long-Tailed Distributions**: Log transformations handle skewed price and quantity distributions
+- **Correlated Patterns**: Partial pooling captures relationships between SKUs and product classes
+- **Temporal Effects**: Seasonal components model time-based demand patterns
+
+## Conceptual Flow
+Raw Data → Data Preprocessing → Hierarchical Bayesian Model → Posterior Analysis → Visualizations/Reports
+![Bayesian Hierarchical Model Structure](docs/images/model_graph.png)
+
+## Model Performance
+The hierarchical Bayesian model (HBM) demonstrates key advantages compared to traditional approaches:
+
+- **Uncertainty Quantification**: Provides credible intervals that reflect confidence in predictions
+- **Stable Sparse-Data Estimates**: Maintains reliable predictions even with limited price points (<50 observations)  
+- **Hierarchical Structure**: Leverages information across SKUs and product classes
+- **More Accurate Estimation**: Consistently achieves lower error rates, especially with sparse data
+
+Our controlled experiment with balanced sparse and dense datasets clearly demonstrates HBM's advantages:
+
+![Model Comparison with Balanced Data Samples](docs/images/model_comparison_balanced.png)
+
+The analysis shows that HBM consistently:
+- Produces lower estimation errors (RMSE) on sparse data
+- Maintains tighter error distributions
+- Provides robust performance across varying data densities
+
+The comparison shows each model's strengths and limitations:
+- **HBM**: Consistent predictions with quantified uncertainty, handles sparse data reliably
+- **Linear**: Simple but produces occasional extreme estimates
+- **XGBoost**: Good with dense data but unstable on sparse SKUs
+
 ### Model Validation
 
 To validate model accuracy using synthetic data:
@@ -148,6 +170,15 @@ python tests/validate_elasticity_model.py \
 ```
 
 ## Utility Tools
+
+### Model Validation Tools
+
+Essential tools for validating elasticity estimates:
+
+```bash
+# Validate model against synthetic data with known elasticities
+python utils/analysis/model_validation.py --model-type bayesian --results-dir results/validation
+```
 
 ### Log Transform Validator
 
@@ -168,29 +199,32 @@ The utility evaluates three key metrics to determine appropriateness:
 
 ## Model Features
 
-- **Hierarchical Structure**: Balances between "complete pooling" (all SKUs have identical elasticity) and "no pooling" (each SKU is fully independent). Uses partial pooling to optimize bias-variance trade-off.
-- **Uncertainty Quantification**: Provides credible intervals around elasticity estimates, allowing informed decisions under uncertainty.
-- **Diagnostics and Validation**:
+**Hierarchical Structure**: Balances between "complete pooling" (all SKUs have identical elasticity) and "no pooling" (each SKU is fully independent). Uses partial pooling to optimize bias-variance 
+**Uncertainty Quantification**: Provides credible intervals around elasticity estimates, allowing informed decisions under uncertainty.
+**Diagnostics and Validation**:
   - MCMC convergence checks
   - Posterior predictive checks
   - Validation on synthetic data with known elasticities
-- **Performance Optimization**:
+**Performance Optimization**:
   - Non-centered parameterization to handle hierarchical complexity
   - Optimized MCMC sampling (target_accept=0.95, adaptive tuning, multiple chains) suitable for large retail datasets
 
 ## Model Assumptions
-- **Demand Functional Form**: Assumes a log-log demand relationship (constant elasticity model).
-- **Prior Distributions**: Elasticity priors are normally distributed, centered around -1.0, adjustable via configuration parameters.
-- **Observation Noise**: Currently modeled with a HalfNormal distribution. Inverse gamma could replace this if historical data suggests known variance patterns.
-- **Cross-Price Effects**: Model currently focuses only on own-price elasticity; explicit modeling of cross-price or promotional interaction terms is not implemented.
-- **Exchangeability**: Assumes SKUs within a product class are exchangeable, allowing hierarchical parameters to generalize.
-- **Customization**: model_config parameters allow adjusting priors, pooling strength, and elasticity bounds for market-specific adaptations (luxury vs. necessities).
+**Demand Functional Form**: Assumes a log-log demand relationship (constant elasticity model).
+**Prior Distributions**: Elasticity priors are normally distributed, centered around -1.0, adjustable via configuration parameters.
+**Observation Noise**: Currently modeled with a HalfNormal distribution. Inverse gamma could replace this if historical data suggests known variance patterns.
+**Cross-Price Effects**: Model currently focuses only on own-price elasticity; explicit modeling of cross-price or promotional interaction terms is not implemented.
+**Exchangeability**: Assumes SKUs within a product class are exchangeable, allowing hierarchical parameters to generalize.
+**Customization**: model_config parameters allow adjusting priors, pooling strength, and elasticity bounds for market-specific adaptations (luxury vs. necessities).
+
+## Development Features
+- Unit test coverage and robust error handling to ensure reliability
 
 ## Limitations
 - **Data Requirements**: Currently requires clean, structured price-quantity data
 - **Computation Time**: Full Bayesian inference can be computationally intensive for very large datasets. 
-- **External Factors**: Current model doesn't account for all external factors (i.e.competitor pricing)
-- **Regime Stability**: Assumes stable price-demand relationships across time periods; phase shifts (e.g., COVID, inflation spikes) require detecting regime changes and adapting the modeling framework accordingly
+- **External Factors**: Current model doesn't account for all external factors (i.e. competitor pricing)
+- **Regime Stability**: Assumes stable price-demand relationships across time periods; phase shifts (e.g. COVID, inflation spikes, trade war/anti-globalization) require detecting regime changes and adapting the modeling framework accordingly
 
 ## Future work
 Future enhancements could include:

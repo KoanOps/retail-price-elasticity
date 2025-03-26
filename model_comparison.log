@@ -1871,3 +1871,660 @@ XGBoost Model Average Metrics:
 2025-03-23 08:21:57,544 - model_comparison - INFO - Using promotional features in HBM model
 2025-03-23 08:21:57,544 - model_comparison - INFO - Using seasonality features in HBM model
 2025-03-23 08:21:57,547 - model_comparison - INFO - Fitting full BayesianModel to 3247 observations
+2025-03-26 12:27:18,974 - model_comparison - INFO - Generating synthetic data with 1000 observations, 50 SKUs
+2025-03-26 12:27:19,212 - model_comparison - INFO - Generated synthetic data with 1000 observations
+2025-03-26 12:27:19,212 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-26 12:27:19,212 - model_comparison - INFO - Creating sparse dataset with 30.0% sparse SKUs
+2025-03-26 12:27:19,212 - model_comparison - INFO - Selected 15 SKUs to make sparse
+2025-03-26 12:27:19,224 - model_comparison - INFO - Created sparse dataset with 782 total observations
+2025-03-26 12:27:19,225 - model_comparison - INFO - Median observations per SKU: 17.5
+2025-03-26 12:27:19,225 - model_comparison - INFO - Min observations per SKU: 2
+2025-03-26 12:27:19,225 - model_comparison - INFO - Max observations per SKU: 27
+2025-03-26 12:27:19,225 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:27:19,249 - model_comparison - WARNING - Skipping SKU Class_02_SKU_003 with only 4 observations
+2025-03-26 12:27:19,277 - model_comparison - WARNING - Skipping SKU Class_03_SKU_009 with only 2 observations
+2025-03-26 12:27:19,278 - model_comparison - WARNING - Skipping SKU Class_03_SKU_010 with only 3 observations
+2025-03-26 12:27:19,278 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 4 observations
+2025-03-26 12:27:19,298 - model_comparison - WARNING - Skipping SKU Class_05_SKU_004 with only 4 observations
+2025-03-26 12:27:19,308 - model_comparison - INFO - Linear model complete - analyzed 45 SKUs, skipped 5
+2025-03-26 12:27:19,308 - model_comparison - INFO - Mean elasticity: -0.7776
+2025-03-26 12:27:19,309 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:27:19,313 - model_comparison - INFO - Fitting full BayesianModel to 782 observations
+2025-03-26 12:28:55,906 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:28:55,907 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-26 12:28:55,908 - model_comparison - INFO - Mean elasticity: -1.6127
+2025-03-26 12:28:55,909 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:28:56,369 - model_comparison - WARNING - Skipping SKU Class_02_SKU_003 with only 4 observations
+2025-03-26 12:28:56,931 - model_comparison - WARNING - Skipping SKU Class_03_SKU_009 with only 2 observations
+2025-03-26 12:28:56,932 - model_comparison - WARNING - Skipping SKU Class_03_SKU_010 with only 3 observations
+2025-03-26 12:28:56,932 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 4 observations
+2025-03-26 12:28:57,385 - model_comparison - WARNING - Skipping SKU Class_05_SKU_004 with only 4 observations
+2025-03-26 12:28:57,609 - model_comparison - INFO - XGBoost model complete - analyzed 45 SKUs, skipped 5
+2025-03-26 12:28:57,609 - model_comparison - INFO - Mean elasticity: -0.3153
+2025-03-26 12:28:57,609 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-26 12:28:57,610 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-26 12:28:57,611 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:28:57,638 - model_comparison - WARNING - Skipping SKU Class_03_SKU_009 with only 2 observations
+2025-03-26 12:28:57,640 - model_comparison - WARNING - Skipping SKU Class_03_SKU_010 with only 3 observations
+2025-03-26 12:28:57,652 - model_comparison - WARNING - Skipping SKU Class_05_SKU_004 with only 4 observations
+2025-03-26 12:28:57,658 - model_comparison - INFO - Linear model complete - analyzed 30 SKUs, skipped 3
+2025-03-26 12:28:57,658 - model_comparison - INFO - Mean elasticity: -0.8248
+2025-03-26 12:28:57,658 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:28:57,661 - model_comparison - INFO - Fitting full BayesianModel to 525 observations
+2025-03-26 12:29:48,404 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:29:48,406 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 12:29:48,406 - model_comparison - INFO - Mean elasticity: -1.5668
+2025-03-26 12:29:48,407 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:29:49,077 - model_comparison - WARNING - Skipping SKU Class_03_SKU_009 with only 2 observations
+2025-03-26 12:29:49,077 - model_comparison - WARNING - Skipping SKU Class_03_SKU_010 with only 3 observations
+2025-03-26 12:29:49,377 - model_comparison - WARNING - Skipping SKU Class_05_SKU_004 with only 4 observations
+2025-03-26 12:29:49,525 - model_comparison - INFO - XGBoost model complete - analyzed 30 SKUs, skipped 3
+2025-03-26 12:29:49,525 - model_comparison - INFO - Mean elasticity: -0.2075
+2025-03-26 12:43:11,152 - model_comparison - INFO - Generating synthetic data with 1000 observations, 50 SKUs
+2025-03-26 12:43:11,253 - model_comparison - INFO - Generated synthetic data with 1000 observations
+2025-03-26 12:43:11,253 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-26 12:43:11,253 - model_comparison - INFO - Creating sparse dataset with 30.0% sparse SKUs
+2025-03-26 12:43:11,254 - model_comparison - INFO - Selected 15 SKUs to make sparse
+2025-03-26 12:43:11,267 - model_comparison - INFO - Created sparse dataset with 768 total observations
+2025-03-26 12:43:11,268 - model_comparison - INFO - Median observations per SKU: 17.0
+2025-03-26 12:43:11,269 - model_comparison - INFO - Min observations per SKU: 3
+2025-03-26 12:43:11,269 - model_comparison - INFO - Max observations per SKU: 34
+2025-03-26 12:43:11,269 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:43:11,285 - model_comparison - WARNING - Skipping SKU Class_01_SKU_008 with only 4 observations
+2025-03-26 12:43:11,297 - model_comparison - WARNING - Skipping SKU Class_02_SKU_004 with only 4 observations
+2025-03-26 12:43:11,309 - model_comparison - WARNING - Skipping SKU Class_03_SKU_001 with only 4 observations
+2025-03-26 12:43:11,336 - model_comparison - WARNING - Skipping SKU Class_04_SKU_006 with only 3 observations
+2025-03-26 12:43:11,360 - model_comparison - INFO - Linear model complete - analyzed 46 SKUs, skipped 4
+2025-03-26 12:43:11,360 - model_comparison - INFO - Mean elasticity: -0.6478
+2025-03-26 12:43:11,360 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:43:11,364 - model_comparison - INFO - Fitting full BayesianModel to 768 observations
+2025-03-26 12:44:13,063 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:44:13,064 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-26 12:44:13,064 - model_comparison - INFO - Mean elasticity: -1.6127
+2025-03-26 12:44:13,066 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:44:13,344 - model_comparison - WARNING - Skipping SKU Class_01_SKU_008 with only 4 observations
+2025-03-26 12:44:13,524 - model_comparison - WARNING - Skipping SKU Class_02_SKU_004 with only 4 observations
+2025-03-26 12:44:13,743 - model_comparison - WARNING - Skipping SKU Class_03_SKU_001 with only 4 observations
+2025-03-26 12:44:14,260 - model_comparison - WARNING - Skipping SKU Class_04_SKU_006 with only 3 observations
+2025-03-26 12:44:14,779 - model_comparison - INFO - XGBoost model complete - analyzed 46 SKUs, skipped 4
+2025-03-26 12:44:14,779 - model_comparison - INFO - Mean elasticity: -0.4096
+2025-03-26 12:44:14,779 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-26 12:44:14,779 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-26 12:44:14,782 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:44:14,791 - model_comparison - WARNING - Skipping SKU Class_01_SKU_008 with only 4 observations
+2025-03-26 12:44:14,802 - model_comparison - WARNING - Skipping SKU Class_03_SKU_001 with only 4 observations
+2025-03-26 12:44:14,818 - model_comparison - WARNING - Skipping SKU Class_04_SKU_006 with only 3 observations
+2025-03-26 12:44:14,831 - model_comparison - INFO - Linear model complete - analyzed 30 SKUs, skipped 3
+2025-03-26 12:44:14,832 - model_comparison - INFO - Mean elasticity: -0.7225
+2025-03-26 12:44:14,832 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:44:14,836 - model_comparison - INFO - Fitting full BayesianModel to 497 observations
+2025-03-26 12:44:52,225 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:44:52,227 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 12:44:52,227 - model_comparison - INFO - Mean elasticity: -1.5668
+2025-03-26 12:44:52,229 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:44:52,387 - model_comparison - WARNING - Skipping SKU Class_01_SKU_008 with only 4 observations
+2025-03-26 12:44:52,645 - model_comparison - WARNING - Skipping SKU Class_03_SKU_001 with only 4 observations
+2025-03-26 12:44:53,014 - model_comparison - WARNING - Skipping SKU Class_04_SKU_006 with only 3 observations
+2025-03-26 12:44:53,354 - model_comparison - INFO - XGBoost model complete - analyzed 30 SKUs, skipped 3
+2025-03-26 12:44:53,354 - model_comparison - INFO - Mean elasticity: -0.4324
+2025-03-26 12:45:53,927 - model_comparison - INFO - Generating synthetic data with 1000 observations, 50 SKUs
+2025-03-26 12:45:54,003 - model_comparison - INFO - Generated synthetic data with 1000 observations
+2025-03-26 12:45:54,003 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-26 12:45:54,003 - model_comparison - INFO - Creating sparse dataset with 30.0% sparse SKUs
+2025-03-26 12:45:54,003 - model_comparison - INFO - Selected 15 SKUs to make sparse
+2025-03-26 12:45:54,016 - model_comparison - INFO - Created sparse dataset with 768 total observations
+2025-03-26 12:45:54,017 - model_comparison - INFO - Median observations per SKU: 16.5
+2025-03-26 12:45:54,017 - model_comparison - INFO - Min observations per SKU: 3
+2025-03-26 12:45:54,017 - model_comparison - INFO - Max observations per SKU: 26
+2025-03-26 12:45:54,017 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:45:54,059 - model_comparison - WARNING - Skipping SKU Class_03_SKU_002 with only 3 observations
+2025-03-26 12:45:54,062 - model_comparison - WARNING - Skipping SKU Class_03_SKU_005 with only 4 observations
+2025-03-26 12:45:54,071 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 3 observations
+2025-03-26 12:45:54,103 - model_comparison - INFO - Linear model complete - analyzed 47 SKUs, skipped 3
+2025-03-26 12:45:54,103 - model_comparison - INFO - Mean elasticity: -0.6007
+2025-03-26 12:45:54,103 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:45:54,108 - model_comparison - INFO - Fitting full BayesianModel to 768 observations
+2025-03-26 12:46:56,212 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:46:56,213 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-26 12:46:56,213 - model_comparison - INFO - Mean elasticity: -1.6127
+2025-03-26 12:46:56,215 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:46:57,008 - model_comparison - WARNING - Skipping SKU Class_03_SKU_002 with only 3 observations
+2025-03-26 12:46:57,088 - model_comparison - WARNING - Skipping SKU Class_03_SKU_005 with only 4 observations
+2025-03-26 12:46:57,286 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 3 observations
+2025-03-26 12:46:57,980 - model_comparison - INFO - XGBoost model complete - analyzed 47 SKUs, skipped 3
+2025-03-26 12:46:57,980 - model_comparison - INFO - Mean elasticity: -0.3186
+2025-03-26 12:46:57,980 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-26 12:46:57,980 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-26 12:46:57,981 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:46:58,002 - model_comparison - WARNING - Skipping SKU Class_03_SKU_002 with only 3 observations
+2025-03-26 12:46:58,005 - model_comparison - WARNING - Skipping SKU Class_03_SKU_005 with only 4 observations
+2025-03-26 12:46:58,029 - model_comparison - INFO - Linear model complete - analyzed 31 SKUs, skipped 2
+2025-03-26 12:46:58,030 - model_comparison - INFO - Mean elasticity: -0.5436
+2025-03-26 12:46:58,030 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:46:58,033 - model_comparison - INFO - Fitting full BayesianModel to 535 observations
+2025-03-26 12:47:45,495 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:47:45,497 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 12:47:45,497 - model_comparison - INFO - Mean elasticity: -1.5668
+2025-03-26 12:47:45,499 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:47:45,998 - model_comparison - WARNING - Skipping SKU Class_03_SKU_002 with only 3 observations
+2025-03-26 12:47:46,078 - model_comparison - WARNING - Skipping SKU Class_03_SKU_005 with only 4 observations
+2025-03-26 12:47:46,695 - model_comparison - INFO - XGBoost model complete - analyzed 31 SKUs, skipped 2
+2025-03-26 12:47:46,695 - model_comparison - INFO - Mean elasticity: -0.3176
+2025-03-26 12:47:46,701 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-26 12:47:46,702 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:47:46,726 - model_comparison - WARNING - Skipping SKU Class_03_SKU_002 with only 3 observations
+2025-03-26 12:47:46,734 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 3 observations
+2025-03-26 12:47:46,753 - model_comparison - INFO - Linear model complete - analyzed 31 SKUs, skipped 2
+2025-03-26 12:47:46,753 - model_comparison - INFO - Mean elasticity: -0.5950
+2025-03-26 12:47:46,753 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:47:46,757 - model_comparison - INFO - Fitting full BayesianModel to 498 observations
+2025-03-26 12:48:43,047 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:48:43,048 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 12:48:43,048 - model_comparison - INFO - Mean elasticity: -1.5668
+2025-03-26 12:48:43,050 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:48:43,580 - model_comparison - WARNING - Skipping SKU Class_03_SKU_002 with only 3 observations
+2025-03-26 12:48:43,778 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 3 observations
+2025-03-26 12:48:44,218 - model_comparison - INFO - XGBoost model complete - analyzed 31 SKUs, skipped 2
+2025-03-26 12:48:44,218 - model_comparison - INFO - Mean elasticity: -0.3489
+2025-03-26 12:48:44,222 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-26 12:48:44,223 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:48:44,250 - model_comparison - WARNING - Skipping SKU Class_03_SKU_005 with only 4 observations
+2025-03-26 12:48:44,256 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 3 observations
+2025-03-26 12:48:44,276 - model_comparison - INFO - Linear model complete - analyzed 32 SKUs, skipped 2
+2025-03-26 12:48:44,277 - model_comparison - INFO - Mean elasticity: -0.6617
+2025-03-26 12:48:44,277 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:48:44,279 - model_comparison - INFO - Fitting full BayesianModel to 503 observations
+2025-03-26 12:49:44,428 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:49:44,430 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-26 12:49:44,430 - model_comparison - INFO - Mean elasticity: -1.5804
+2025-03-26 12:49:44,431 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:49:45,012 - model_comparison - WARNING - Skipping SKU Class_03_SKU_005 with only 4 observations
+2025-03-26 12:49:45,169 - model_comparison - WARNING - Skipping SKU Class_04_SKU_001 with only 3 observations
+2025-03-26 12:49:45,663 - model_comparison - INFO - XGBoost model complete - analyzed 32 SKUs, skipped 2
+2025-03-26 12:49:45,663 - model_comparison - INFO - Mean elasticity: -0.2902
+2025-03-26 12:49:45,666 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-26 12:49:45,666 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-26 12:49:45,666 - model_comparison - INFO - MAE: 0.6884
+2025-03-26 12:49:45,666 - model_comparison - INFO - RMSE: 0.8310
+2025-03-26 12:49:45,666 - model_comparison - INFO - Correlation: 0.5984
+2025-03-26 12:49:45,666 - model_comparison - INFO - Direction_Accuracy: 78.6962
+2025-03-26 12:49:45,666 - model_comparison - INFO - Within_50%: 44.6573
+2025-03-26 12:49:45,667 - model_comparison - INFO - N: 31.3333
+2025-03-26 12:49:45,667 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-26 12:49:45,667 - model_comparison - INFO - MAE: 0.5242
+2025-03-26 12:49:45,667 - model_comparison - INFO - RMSE: 0.6272
+2025-03-26 12:49:45,667 - model_comparison - INFO - Correlation: 0.1339
+2025-03-26 12:49:45,667 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:49:45,667 - model_comparison - INFO - Within_50%: 64.8185
+2025-03-26 12:49:45,667 - model_comparison - INFO - N: 31.3333
+2025-03-26 12:49:45,667 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-26 12:49:45,667 - model_comparison - INFO - MAE: 0.9775
+2025-03-26 12:49:45,667 - model_comparison - INFO - RMSE: 1.1063
+2025-03-26 12:49:45,667 - model_comparison - INFO - Correlation: 0.0855
+2025-03-26 12:49:45,667 - model_comparison - INFO - Direction_Accuracy: 42.5403
+2025-03-26 12:49:45,667 - model_comparison - INFO - Within_50%: 21.2702
+2025-03-26 12:49:45,667 - model_comparison - INFO - N: 31.3333
+2025-03-26 12:49:45,669 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-26 12:49:45,670 - model_comparison - INFO - MAE: 0.7075
+2025-03-26 12:49:45,670 - model_comparison - INFO - RMSE: 0.8561
+2025-03-26 12:49:45,670 - model_comparison - INFO - Correlation: 0.5363
+2025-03-26 12:49:45,670 - model_comparison - INFO - Direction_Accuracy: 81.2500
+2025-03-26 12:49:45,670 - model_comparison - INFO - Within_50%: 46.8750
+2025-03-26 12:49:45,670 - model_comparison - INFO - N: 32.0000
+2025-03-26 12:49:45,670 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-26 12:49:45,671 - model_comparison - INFO - MAE: 0.8326
+2025-03-26 12:49:45,671 - model_comparison - INFO - RMSE: 0.9863
+2025-03-26 12:49:45,671 - model_comparison - INFO - Correlation: 0.3982
+2025-03-26 12:49:45,671 - model_comparison - INFO - Direction_Accuracy: 75.0000
+2025-03-26 12:49:45,671 - model_comparison - INFO - Within_50%: 37.5000
+2025-03-26 12:49:45,671 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:49:45,671 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-26 12:49:45,672 - model_comparison - INFO - MAE: 0.5824
+2025-03-26 12:49:45,672 - model_comparison - INFO - RMSE: 0.7022
+2025-03-26 12:49:45,672 - model_comparison - INFO - Correlation: 0.7493
+2025-03-26 12:49:45,672 - model_comparison - INFO - Direction_Accuracy: 87.5000
+2025-03-26 12:49:45,672 - model_comparison - INFO - Within_50%: 56.2500
+2025-03-26 12:49:45,672 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:49:45,672 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-26 12:49:45,673 - model_comparison - INFO - MAE: 0.4511
+2025-03-26 12:49:45,673 - model_comparison - INFO - RMSE: 0.5352
+2025-03-26 12:49:45,673 - model_comparison - INFO - Correlation: 0.4127
+2025-03-26 12:49:45,673 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:49:45,673 - model_comparison - INFO - Within_50%: 71.8750
+2025-03-26 12:49:45,674 - model_comparison - INFO - N: 32.0000
+2025-03-26 12:49:45,674 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-26 12:49:45,674 - model_comparison - INFO - MAE: 0.5139
+2025-03-26 12:49:45,674 - model_comparison - INFO - RMSE: 0.5646
+2025-03-26 12:49:45,675 - model_comparison - INFO - Correlation: 0.5608
+2025-03-26 12:49:45,675 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:49:45,675 - model_comparison - INFO - Within_50%: 62.5000
+2025-03-26 12:49:45,675 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:49:45,675 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-26 12:49:45,676 - model_comparison - INFO - MAE: 0.3883
+2025-03-26 12:49:45,676 - model_comparison - INFO - RMSE: 0.5040
+2025-03-26 12:49:45,676 - model_comparison - INFO - Correlation: 0.3012
+2025-03-26 12:49:45,676 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:49:45,676 - model_comparison - INFO - Within_50%: 81.2500
+2025-03-26 12:49:45,676 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:49:45,676 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-26 12:49:45,677 - model_comparison - INFO - MAE: 0.9884
+2025-03-26 12:49:45,677 - model_comparison - INFO - RMSE: 1.1148
+2025-03-26 12:49:45,678 - model_comparison - INFO - Correlation: 0.0355
+2025-03-26 12:49:45,678 - model_comparison - INFO - Direction_Accuracy: 43.7500
+2025-03-26 12:49:45,678 - model_comparison - INFO - Within_50%: 21.8750
+2025-03-26 12:49:45,678 - model_comparison - INFO - N: 32.0000
+2025-03-26 12:49:45,678 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-26 12:49:45,678 - model_comparison - INFO - MAE: 1.1604
+2025-03-26 12:49:45,679 - model_comparison - INFO - RMSE: 1.2226
+2025-03-26 12:49:45,679 - model_comparison - INFO - Correlation: -0.3665
+2025-03-26 12:49:45,679 - model_comparison - INFO - Direction_Accuracy: 18.7500
+2025-03-26 12:49:45,679 - model_comparison - INFO - Within_50%: 6.2500
+2025-03-26 12:49:45,679 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:49:45,679 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-26 12:49:45,679 - model_comparison - INFO - MAE: 0.8165
+2025-03-26 12:49:45,679 - model_comparison - INFO - RMSE: 0.9954
+2025-03-26 12:49:45,679 - model_comparison - INFO - Correlation: 0.1832
+2025-03-26 12:49:45,679 - model_comparison - INFO - Direction_Accuracy: 68.7500
+2025-03-26 12:49:45,679 - model_comparison - INFO - Within_50%: 37.5000
+2025-03-26 12:49:45,680 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:49:45,960 - model_comparison - INFO - Results saved to results/comparison
+2025-03-26 12:54:43,536 - model_comparison - INFO - Generating synthetic data with 1000 observations, 50 SKUs
+2025-03-26 12:54:43,636 - model_comparison - INFO - Generated synthetic data with 1000 observations
+2025-03-26 12:54:43,637 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-26 12:54:43,637 - model_comparison - INFO - Creating sparse dataset with 30.0% sparse SKUs
+2025-03-26 12:54:43,637 - model_comparison - INFO - Selected 15 SKUs to make sparse
+2025-03-26 12:54:43,650 - model_comparison - INFO - Created sparse dataset with 779 total observations
+2025-03-26 12:54:43,652 - model_comparison - INFO - Median observations per SKU: 18.0
+2025-03-26 12:54:43,653 - model_comparison - INFO - Min observations per SKU: 3
+2025-03-26 12:54:43,653 - model_comparison - INFO - Max observations per SKU: 30
+2025-03-26 12:54:43,653 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:54:43,746 - model_comparison - INFO - Using pooled class estimate for SKU Class_01_SKU_004 with 3 observations
+2025-03-26 12:54:43,760 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_004 with 4 observations
+2025-03-26 12:54:43,773 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_005 with 4 observations
+2025-03-26 12:54:43,789 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_001 with 4 observations
+2025-03-26 12:54:43,805 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 12:54:43,819 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_005 with 3 observations
+2025-03-26 12:54:43,834 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 4 observations
+2025-03-26 12:54:43,850 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_005 with 3 observations
+2025-03-26 12:54:43,850 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs
+2025-03-26 12:54:43,850 - model_comparison - INFO - Mean elasticity: -0.5850
+2025-03-26 12:54:43,850 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:54:43,854 - model_comparison - INFO - Fitting full BayesianModel to 779 observations
+2025-03-26 12:55:47,127 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:55:47,128 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-26 12:55:47,128 - model_comparison - INFO - Mean elasticity: -1.6127
+2025-03-26 12:55:47,130 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:55:50,359 - model_comparison - INFO - Using pooled class estimate for SKU Class_01_SKU_004 with 3 observations
+2025-03-26 12:55:50,373 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_004 with 4 observations
+2025-03-26 12:55:50,387 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_005 with 4 observations
+2025-03-26 12:55:50,403 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_001 with 4 observations
+2025-03-26 12:55:50,417 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 12:55:50,432 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_005 with 3 observations
+2025-03-26 12:55:50,446 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 4 observations
+2025-03-26 12:55:50,460 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_005 with 3 observations
+2025-03-26 12:55:50,461 - model_comparison - INFO - XGBoost model complete - analyzed 50 SKUs
+2025-03-26 12:55:50,461 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 12:55:50,461 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-26 12:55:50,461 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-26 12:55:50,464 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:55:50,516 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_005 with 4 observations
+2025-03-26 12:55:50,525 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_001 with 4 observations
+2025-03-26 12:55:50,534 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 12:55:50,542 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_005 with 3 observations
+2025-03-26 12:55:50,551 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_005 with 3 observations
+2025-03-26 12:55:50,552 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs
+2025-03-26 12:55:50,552 - model_comparison - INFO - Mean elasticity: -0.5720
+2025-03-26 12:55:50,552 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:55:50,555 - model_comparison - INFO - Fitting full BayesianModel to 529 observations
+2025-03-26 12:56:24,883 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:56:24,884 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 12:56:24,884 - model_comparison - INFO - Mean elasticity: -1.5668
+2025-03-26 12:56:24,885 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:56:27,047 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_005 with 4 observations
+2025-03-26 12:56:27,055 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_001 with 4 observations
+2025-03-26 12:56:27,064 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 12:56:27,073 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_005 with 3 observations
+2025-03-26 12:56:27,082 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_005 with 3 observations
+2025-03-26 12:56:27,082 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs
+2025-03-26 12:56:27,083 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 12:56:27,088 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-26 12:56:27,089 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:56:27,139 - model_comparison - INFO - Using pooled class estimate for SKU Class_01_SKU_004 with 3 observations
+2025-03-26 12:56:27,147 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_004 with 4 observations
+2025-03-26 12:56:27,155 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_005 with 4 observations
+2025-03-26 12:56:27,163 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_001 with 4 observations
+2025-03-26 12:56:27,172 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 12:56:27,182 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 4 observations
+2025-03-26 12:56:27,182 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs
+2025-03-26 12:56:27,182 - model_comparison - INFO - Mean elasticity: -0.6506
+2025-03-26 12:56:27,182 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:56:27,185 - model_comparison - INFO - Fitting full BayesianModel to 506 observations
+2025-03-26 12:57:06,521 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:57:06,521 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 12:57:06,521 - model_comparison - INFO - Mean elasticity: -1.5668
+2025-03-26 12:57:06,522 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:57:08,585 - model_comparison - INFO - Using pooled class estimate for SKU Class_01_SKU_004 with 3 observations
+2025-03-26 12:57:08,593 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_004 with 4 observations
+2025-03-26 12:57:08,601 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_005 with 4 observations
+2025-03-26 12:57:08,609 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_001 with 4 observations
+2025-03-26 12:57:08,618 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 12:57:08,627 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 4 observations
+2025-03-26 12:57:08,627 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs
+2025-03-26 12:57:08,627 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 12:57:08,631 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-26 12:57:08,631 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 12:57:08,684 - model_comparison - INFO - Using pooled class estimate for SKU Class_01_SKU_004 with 3 observations
+2025-03-26 12:57:08,693 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_004 with 4 observations
+2025-03-26 12:57:08,701 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_005 with 3 observations
+2025-03-26 12:57:08,710 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 4 observations
+2025-03-26 12:57:08,719 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_005 with 3 observations
+2025-03-26 12:57:08,719 - model_comparison - INFO - Linear model complete - analyzed 34 SKUs
+2025-03-26 12:57:08,720 - model_comparison - INFO - Mean elasticity: -0.5520
+2025-03-26 12:57:08,720 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 12:57:08,722 - model_comparison - INFO - Fitting full BayesianModel to 523 observations
+2025-03-26 12:58:10,368 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 12:58:10,369 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-26 12:58:10,369 - model_comparison - INFO - Mean elasticity: -1.5804
+2025-03-26 12:58:10,372 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 12:58:12,659 - model_comparison - INFO - Using pooled class estimate for SKU Class_01_SKU_004 with 3 observations
+2025-03-26 12:58:12,668 - model_comparison - INFO - Using pooled class estimate for SKU Class_02_SKU_004 with 4 observations
+2025-03-26 12:58:12,676 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_005 with 3 observations
+2025-03-26 12:58:12,685 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 4 observations
+2025-03-26 12:58:12,695 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_005 with 3 observations
+2025-03-26 12:58:12,695 - model_comparison - INFO - XGBoost model complete - analyzed 34 SKUs
+2025-03-26 12:58:12,695 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 12:58:12,698 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-26 12:58:12,698 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-26 12:58:12,699 - model_comparison - INFO - MAE: 0.6249
+2025-03-26 12:58:12,699 - model_comparison - INFO - RMSE: 0.7210
+2025-03-26 12:58:12,699 - model_comparison - INFO - Correlation: 0.6648
+2025-03-26 12:58:12,699 - model_comparison - INFO - Direction_Accuracy: 92.0380
+2025-03-26 12:58:12,699 - model_comparison - INFO - Within_50%: 49.0493
+2025-03-26 12:58:12,699 - model_comparison - INFO - N: 33.3333
+2025-03-26 12:58:12,699 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-26 12:58:12,699 - model_comparison - INFO - MAE: 0.5454
+2025-03-26 12:58:12,699 - model_comparison - INFO - RMSE: 0.6710
+2025-03-26 12:58:12,699 - model_comparison - INFO - Correlation: 0.0181
+2025-03-26 12:58:12,699 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:58:12,699 - model_comparison - INFO - Within_50%: 61.0814
+2025-03-26 12:58:12,699 - model_comparison - INFO - N: 33.3333
+2025-03-26 12:58:12,699 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-26 12:58:12,699 - model_comparison - INFO - MAE: 2.1723
+2025-03-26 12:58:12,699 - model_comparison - INFO - RMSE: 2.1915
+2025-03-26 12:58:12,699 - model_comparison - INFO - Correlation: nan
+2025-03-26 12:58:12,699 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 12:58:12,699 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 12:58:12,699 - model_comparison - INFO - N: 33.3333
+2025-03-26 12:58:12,702 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-26 12:58:12,703 - model_comparison - INFO - MAE: 0.6757
+2025-03-26 12:58:12,703 - model_comparison - INFO - RMSE: 0.7898
+2025-03-26 12:58:12,703 - model_comparison - INFO - Correlation: 0.7038
+2025-03-26 12:58:12,703 - model_comparison - INFO - Direction_Accuracy: 88.2353
+2025-03-26 12:58:12,703 - model_comparison - INFO - Within_50%: 44.1176
+2025-03-26 12:58:12,703 - model_comparison - INFO - N: 34.0000
+2025-03-26 12:58:12,703 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-26 12:58:12,705 - model_comparison - INFO - MAE: 0.7104
+2025-03-26 12:58:12,705 - model_comparison - INFO - RMSE: 0.8778
+2025-03-26 12:58:12,705 - model_comparison - INFO - Correlation: 0.6273
+2025-03-26 12:58:12,705 - model_comparison - INFO - Direction_Accuracy: 93.7500
+2025-03-26 12:58:12,705 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-26 12:58:12,705 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:58:12,705 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-26 12:58:12,707 - model_comparison - INFO - MAE: 0.6449
+2025-03-26 12:58:12,707 - model_comparison - INFO - RMSE: 0.7023
+2025-03-26 12:58:12,707 - model_comparison - INFO - Correlation: 0.8394
+2025-03-26 12:58:12,707 - model_comparison - INFO - Direction_Accuracy: 83.3333
+2025-03-26 12:58:12,707 - model_comparison - INFO - Within_50%: 38.8889
+2025-03-26 12:58:12,707 - model_comparison - INFO - N: 18.0000
+2025-03-26 12:58:12,707 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-26 12:58:12,708 - model_comparison - INFO - MAE: 0.6112
+2025-03-26 12:58:12,708 - model_comparison - INFO - RMSE: 0.7249
+2025-03-26 12:58:12,708 - model_comparison - INFO - Correlation: -0.1146
+2025-03-26 12:58:12,708 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:58:12,708 - model_comparison - INFO - Within_50%: 52.9412
+2025-03-26 12:58:12,708 - model_comparison - INFO - N: 34.0000
+2025-03-26 12:58:12,708 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-26 12:58:12,709 - model_comparison - INFO - MAE: 0.5908
+2025-03-26 12:58:12,709 - model_comparison - INFO - RMSE: 0.7228
+2025-03-26 12:58:12,709 - model_comparison - INFO - Correlation: -0.0955
+2025-03-26 12:58:12,709 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:58:12,709 - model_comparison - INFO - Within_50%: 62.5000
+2025-03-26 12:58:12,709 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:58:12,709 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-26 12:58:12,710 - model_comparison - INFO - MAE: 0.6294
+2025-03-26 12:58:12,710 - model_comparison - INFO - RMSE: 0.7269
+2025-03-26 12:58:12,710 - model_comparison - INFO - Correlation: -0.1248
+2025-03-26 12:58:12,711 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 12:58:12,711 - model_comparison - INFO - Within_50%: 44.4444
+2025-03-26 12:58:12,711 - model_comparison - INFO - N: 18.0000
+2025-03-26 12:58:12,711 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-26 12:58:12,711 - model_comparison - INFO - MAE: 2.1625
+2025-03-26 12:58:12,711 - model_comparison - INFO - RMSE: 2.1870
+2025-03-26 12:58:12,711 - model_comparison - INFO - Correlation: nan
+2025-03-26 12:58:12,711 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 12:58:12,711 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 12:58:12,711 - model_comparison - INFO - N: 34.0000
+2025-03-26 12:58:12,711 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-26 12:58:12,712 - model_comparison - INFO - MAE: 2.2652
+2025-03-26 12:58:12,712 - model_comparison - INFO - RMSE: 2.2919
+2025-03-26 12:58:12,712 - model_comparison - INFO - Correlation: nan
+2025-03-26 12:58:12,712 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 12:58:12,712 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 12:58:12,712 - model_comparison - INFO - N: 16.0000
+2025-03-26 12:58:12,712 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-26 12:58:12,713 - model_comparison - INFO - MAE: 2.0712
+2025-03-26 12:58:12,713 - model_comparison - INFO - RMSE: 2.0893
+2025-03-26 12:58:12,713 - model_comparison - INFO - Correlation: nan
+2025-03-26 12:58:12,713 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 12:58:12,713 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 12:58:12,713 - model_comparison - INFO - N: 18.0000
+2025-03-26 12:58:13,108 - model_comparison - INFO - Results saved to results/comparison
+2025-03-26 13:04:57,000 - model_comparison - INFO - Generating synthetic data with 1000 observations, 50 SKUs
+2025-03-26 13:04:57,104 - model_comparison - INFO - Generated synthetic data with 1000 observations
+2025-03-26 13:04:57,104 - model_comparison - INFO - Generated data with 50 true elasticities
+2025-03-26 13:04:57,104 - model_comparison - INFO - Creating sparse dataset with 30.0% sparse SKUs
+2025-03-26 13:04:57,105 - model_comparison - INFO - Selected 15 SKUs to make sparse
+2025-03-26 13:04:57,118 - model_comparison - INFO - Created sparse dataset with 786 total observations
+2025-03-26 13:04:57,121 - model_comparison - INFO - Median observations per SKU: 17.0
+2025-03-26 13:04:57,121 - model_comparison - INFO - Min observations per SKU: 2
+2025-03-26 13:04:57,121 - model_comparison - INFO - Max observations per SKU: 36
+2025-03-26 13:04:57,121 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 13:04:57,217 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 13:04:57,231 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 3 observations
+2025-03-26 13:04:57,248 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_002 with 4 observations
+2025-03-26 13:04:57,266 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_006 with 2 observations
+2025-03-26 13:04:57,282 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_008 with 3 observations
+2025-03-26 13:04:57,282 - model_comparison - INFO - Linear model complete - analyzed 50 SKUs
+2025-03-26 13:04:57,282 - model_comparison - INFO - Mean elasticity: -0.6577
+2025-03-26 13:04:57,282 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 13:04:57,286 - model_comparison - INFO - Fitting full BayesianModel to 786 observations
+2025-03-26 13:05:57,277 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 13:05:57,277 - model_comparison - INFO - HBM model complete - analyzed 50 SKUs, skipped 0
+2025-03-26 13:05:57,277 - model_comparison - INFO - Mean elasticity: -0.6819
+2025-03-26 13:05:57,279 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 13:06:00,752 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 13:06:00,766 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 3 observations
+2025-03-26 13:06:00,780 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_002 with 4 observations
+2025-03-26 13:06:00,795 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_006 with 2 observations
+2025-03-26 13:06:00,810 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_008 with 3 observations
+2025-03-26 13:06:00,810 - model_comparison - INFO - XGBoost model complete - analyzed 50 SKUs
+2025-03-26 13:06:00,810 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 13:06:00,811 - model_comparison - INFO - Performing 3-fold cross-validation
+2025-03-26 13:06:00,811 - model_comparison - INFO - Cross-validation fold 1/3
+2025-03-26 13:06:00,814 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 13:06:00,868 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 13:06:00,877 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_002 with 4 observations
+2025-03-26 13:06:00,887 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_008 with 3 observations
+2025-03-26 13:06:00,887 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs
+2025-03-26 13:06:00,887 - model_comparison - INFO - Mean elasticity: -0.7138
+2025-03-26 13:06:00,887 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 13:06:00,889 - model_comparison - INFO - Fitting full BayesianModel to 523 observations
+2025-03-26 13:06:41,256 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 13:06:41,258 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 13:06:41,258 - model_comparison - INFO - Mean elasticity: -0.7663
+2025-03-26 13:06:41,261 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 13:06:43,825 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 13:06:43,834 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_002 with 4 observations
+2025-03-26 13:06:43,843 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_008 with 3 observations
+2025-03-26 13:06:43,843 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs
+2025-03-26 13:06:43,844 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 13:06:43,849 - model_comparison - INFO - Cross-validation fold 2/3
+2025-03-26 13:06:43,851 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 13:06:43,911 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 13:06:43,920 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 3 observations
+2025-03-26 13:06:43,930 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_006 with 2 observations
+2025-03-26 13:06:43,930 - model_comparison - INFO - Linear model complete - analyzed 33 SKUs
+2025-03-26 13:06:43,930 - model_comparison - INFO - Mean elasticity: -0.6088
+2025-03-26 13:06:43,930 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 13:06:43,932 - model_comparison - INFO - Fitting full BayesianModel to 517 observations
+2025-03-26 13:07:36,859 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 13:07:36,861 - model_comparison - INFO - HBM model complete - analyzed 33 SKUs, skipped 0
+2025-03-26 13:07:36,861 - model_comparison - INFO - Mean elasticity: -0.5787
+2025-03-26 13:07:36,863 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 13:07:39,152 - model_comparison - INFO - Using pooled class estimate for SKU Class_03_SKU_002 with 4 observations
+2025-03-26 13:07:39,160 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 3 observations
+2025-03-26 13:07:39,169 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_006 with 2 observations
+2025-03-26 13:07:39,169 - model_comparison - INFO - XGBoost model complete - analyzed 33 SKUs
+2025-03-26 13:07:39,169 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 13:07:39,173 - model_comparison - INFO - Cross-validation fold 3/3
+2025-03-26 13:07:39,174 - model_comparison - INFO - Running log-log linear regression model
+2025-03-26 13:07:39,230 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 3 observations
+2025-03-26 13:07:39,239 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_002 with 4 observations
+2025-03-26 13:07:39,247 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_006 with 2 observations
+2025-03-26 13:07:39,257 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_008 with 3 observations
+2025-03-26 13:07:39,257 - model_comparison - INFO - Linear model complete - analyzed 34 SKUs
+2025-03-26 13:07:39,257 - model_comparison - INFO - Mean elasticity: -0.6557
+2025-03-26 13:07:39,257 - model_comparison - INFO - Running full Hierarchical Bayesian Model implementation
+2025-03-26 13:07:39,260 - model_comparison - INFO - Fitting full BayesianModel to 532 observations
+2025-03-26 13:08:20,700 - model_comparison - INFO - Extracting elasticity estimates from Bayesian model
+2025-03-26 13:08:20,702 - model_comparison - INFO - HBM model complete - analyzed 34 SKUs, skipped 0
+2025-03-26 13:08:20,702 - model_comparison - INFO - Mean elasticity: -0.6951
+2025-03-26 13:08:20,704 - model_comparison - INFO - Running XGBoost regression model
+2025-03-26 13:08:22,888 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_001 with 3 observations
+2025-03-26 13:08:22,896 - model_comparison - INFO - Using pooled class estimate for SKU Class_04_SKU_002 with 4 observations
+2025-03-26 13:08:22,905 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_006 with 2 observations
+2025-03-26 13:08:22,915 - model_comparison - INFO - Using pooled class estimate for SKU Class_05_SKU_008 with 3 observations
+2025-03-26 13:08:22,915 - model_comparison - INFO - XGBoost model complete - analyzed 34 SKUs
+2025-03-26 13:08:22,915 - model_comparison - INFO - Mean elasticity: 1.0000
+2025-03-26 13:08:22,918 - model_comparison - INFO - 
+----- CROSS-VALIDATION RESULTS -----
+2025-03-26 13:08:22,918 - model_comparison - INFO - Linear Model Average Metrics:
+2025-03-26 13:08:22,918 - model_comparison - INFO - MAE: 0.5908
+2025-03-26 13:08:22,918 - model_comparison - INFO - RMSE: 0.6884
+2025-03-26 13:08:22,918 - model_comparison - INFO - Correlation: 0.5721
+2025-03-26 13:08:22,918 - model_comparison - INFO - Direction_Accuracy: 91.9786
+2025-03-26 13:08:22,918 - model_comparison - INFO - Within_50%: 51.0101
+2025-03-26 13:08:22,918 - model_comparison - INFO - N: 33.3333
+2025-03-26 13:08:22,918 - model_comparison - INFO - 
+HBM Model Average Metrics:
+2025-03-26 13:08:22,918 - model_comparison - INFO - MAE: 0.5337
+2025-03-26 13:08:22,919 - model_comparison - INFO - RMSE: 0.5829
+2025-03-26 13:08:22,919 - model_comparison - INFO - Correlation: 0.6676
+2025-03-26 13:08:22,919 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 13:08:22,919 - model_comparison - INFO - Within_50%: 66.9935
+2025-03-26 13:08:22,919 - model_comparison - INFO - N: 33.3333
+2025-03-26 13:08:22,919 - model_comparison - INFO - 
+XGBoost Model Average Metrics:
+2025-03-26 13:08:22,919 - model_comparison - INFO - MAE: 2.2136
+2025-03-26 13:08:22,919 - model_comparison - INFO - RMSE: 2.2350
+2025-03-26 13:08:22,919 - model_comparison - INFO - Correlation: nan
+2025-03-26 13:08:22,919 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 13:08:22,919 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 13:08:22,919 - model_comparison - INFO - N: 33.3333
+2025-03-26 13:08:22,920 - model_comparison - INFO - 
+----- LOG-LOG LINEAR MODEL METRICS -----
+2025-03-26 13:08:22,921 - model_comparison - INFO - MAE: 0.6216
+2025-03-26 13:08:22,921 - model_comparison - INFO - RMSE: 0.7174
+2025-03-26 13:08:22,921 - model_comparison - INFO - Correlation: 0.6289
+2025-03-26 13:08:22,921 - model_comparison - INFO - Direction_Accuracy: 94.1176
+2025-03-26 13:08:22,921 - model_comparison - INFO - Within_50%: 50.0000
+2025-03-26 13:08:22,921 - model_comparison - INFO - N: 34.0000
+2025-03-26 13:08:22,922 - model_comparison - INFO - 
+----- SPARSE SKUs (LINEAR MODEL) -----
+2025-03-26 13:08:22,922 - model_comparison - INFO - MAE: 0.6549
+2025-03-26 13:08:22,923 - model_comparison - INFO - RMSE: 0.7845
+2025-03-26 13:08:22,923 - model_comparison - INFO - Correlation: 0.3774
+2025-03-26 13:08:22,923 - model_comparison - INFO - Direction_Accuracy: 93.3333
+2025-03-26 13:08:22,923 - model_comparison - INFO - Within_50%: 60.0000
+2025-03-26 13:08:22,923 - model_comparison - INFO - N: 15.0000
+2025-03-26 13:08:22,923 - model_comparison - INFO - 
+----- DATA-RICH SKUs (LINEAR MODEL) -----
+2025-03-26 13:08:22,924 - model_comparison - INFO - MAE: 0.5954
+2025-03-26 13:08:22,924 - model_comparison - INFO - RMSE: 0.6597
+2025-03-26 13:08:22,924 - model_comparison - INFO - Correlation: 0.7867
+2025-03-26 13:08:22,924 - model_comparison - INFO - Direction_Accuracy: 94.7368
+2025-03-26 13:08:22,924 - model_comparison - INFO - Within_50%: 42.1053
+2025-03-26 13:08:22,924 - model_comparison - INFO - N: 19.0000
+2025-03-26 13:08:22,924 - model_comparison - INFO - 
+----- HIERARCHICAL BAYESIAN MODEL METRICS -----
+2025-03-26 13:08:22,925 - model_comparison - INFO - MAE: 0.5800
+2025-03-26 13:08:22,925 - model_comparison - INFO - RMSE: 0.6255
+2025-03-26 13:08:22,926 - model_comparison - INFO - Correlation: 0.6922
+2025-03-26 13:08:22,926 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 13:08:22,926 - model_comparison - INFO - Within_50%: 67.6471
+2025-03-26 13:08:22,926 - model_comparison - INFO - N: 34.0000
+2025-03-26 13:08:22,926 - model_comparison - INFO - 
+----- SPARSE SKUs (HBM MODEL) -----
+2025-03-26 13:08:22,927 - model_comparison - INFO - MAE: 0.6149
+2025-03-26 13:08:22,927 - model_comparison - INFO - RMSE: 0.6476
+2025-03-26 13:08:22,927 - model_comparison - INFO - Correlation: 0.5620
+2025-03-26 13:08:22,927 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 13:08:22,927 - model_comparison - INFO - Within_50%: 60.0000
+2025-03-26 13:08:22,927 - model_comparison - INFO - N: 15.0000
+2025-03-26 13:08:22,927 - model_comparison - INFO - 
+----- DATA-RICH SKUs (HBM MODEL) -----
+2025-03-26 13:08:22,928 - model_comparison - INFO - MAE: 0.5524
+2025-03-26 13:08:22,928 - model_comparison - INFO - RMSE: 0.6074
+2025-03-26 13:08:22,928 - model_comparison - INFO - Correlation: 0.7415
+2025-03-26 13:08:22,928 - model_comparison - INFO - Direction_Accuracy: 100.0000
+2025-03-26 13:08:22,928 - model_comparison - INFO - Within_50%: 73.6842
+2025-03-26 13:08:22,929 - model_comparison - INFO - N: 19.0000
+2025-03-26 13:08:22,929 - model_comparison - INFO - 
+----- XGBOOST MODEL METRICS -----
+2025-03-26 13:08:22,929 - model_comparison - INFO - MAE: 2.2751
+2025-03-26 13:08:22,929 - model_comparison - INFO - RMSE: 2.2979
+2025-03-26 13:08:22,929 - model_comparison - INFO - Correlation: nan
+2025-03-26 13:08:22,929 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 13:08:22,930 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 13:08:22,930 - model_comparison - INFO - N: 34.0000
+2025-03-26 13:08:22,930 - model_comparison - INFO - 
+----- SPARSE SKUs (XGBOOST MODEL) -----
+2025-03-26 13:08:22,930 - model_comparison - INFO - MAE: 2.2959
+2025-03-26 13:08:22,930 - model_comparison - INFO - RMSE: 2.3090
+2025-03-26 13:08:22,930 - model_comparison - INFO - Correlation: nan
+2025-03-26 13:08:22,930 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 13:08:22,930 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 13:08:22,930 - model_comparison - INFO - N: 15.0000
+2025-03-26 13:08:22,930 - model_comparison - INFO - 
+----- DATA-RICH SKUs (XGBOOST MODEL) -----
+2025-03-26 13:08:22,931 - model_comparison - INFO - MAE: 2.2586
+2025-03-26 13:08:22,931 - model_comparison - INFO - RMSE: 2.2891
+2025-03-26 13:08:22,931 - model_comparison - INFO - Correlation: nan
+2025-03-26 13:08:22,931 - model_comparison - INFO - Direction_Accuracy: 0.0000
+2025-03-26 13:08:22,931 - model_comparison - INFO - Within_50%: 0.0000
+2025-03-26 13:08:22,931 - model_comparison - INFO - N: 19.0000
+2025-03-26 13:08:23,198 - model_comparison - INFO - Results saved to results/comparison

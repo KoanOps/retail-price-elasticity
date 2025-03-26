@@ -1,0 +1,49 @@
+2025-03-26 15:13:45,081 - Retail_Elasticity - INFO - Added log file: validation/simulated/model_results/run.log
+2025-03-26 15:13:45,082 - Retail_Elasticity - INFO - Running bayesian model on synthetic data
+2025-03-26 15:13:45,082 - Retail_Elasticity - INFO - Loading data from validation/simulated/transformed_validation_data.parquet
+2025-03-26 15:13:45,083 - Retail_Elasticity - INFO - Initialized DataLoader with data path: validation/simulated/transformed_validation_data.parquet
+2025-03-26 15:13:45,171 - Retail_Elasticity - INFO - Loaded data with 10000 rows and 33 columns
+2025-03-26 15:13:45,171 - Retail_Elasticity - INFO - Loaded data with 10000 rows and 33 columns
+2025-03-26 15:13:45,171 - Retail_Elasticity - INFO - Creating model
+2025-03-26 15:13:45,172 - Retail_Elasticity - INFO - Starting step: Creating model
+2025-03-26 15:13:45,172 - Retail_Elasticity - INFO - Creating bayesian model
+2025-03-26 15:13:45,174 - Retail_Elasticity - INFO - Creating Bayesian model with parameters: {'results_dir': 'results', 'model_name': 'bayesian_elasticity_model', 'use_seasonality': True, 'data_config': {}, 'model_config': {}, 'n_draws': 1000, 'n_tune': 1000, 'n_chains': 4, 'target_accept': 0.95}
+2025-03-26 15:13:45,174 - Retail_Elasticity - INFO - Initialized bayesian_elasticity_model model in results
+2025-03-26 15:13:45,175 - Retail_Elasticity - INFO - Initialized model components with base sampling parameters: {'n_draws': 1000, 'n_tune': 1000, 'n_chains': 4, 'target_accept': 0.95}
+2025-03-26 15:13:45,176 - Retail_Elasticity - INFO - Successfully created Bayesian model
+2025-03-26 15:13:45,176 - Retail_Elasticity - INFO - Step Creating model completed successfully in 0.00 seconds
+2025-03-26 15:13:45,176 - Retail_Elasticity - INFO - Fitting model to data
+2025-03-26 15:13:45,176 - Retail_Elasticity - INFO - Fitting model to data: 10000 rows, 33 columns
+2025-03-26 15:13:45,176 - Retail_Elasticity - INFO - Columns in input data: ['Transaction_Date', 'SKU', 'Product_Class', 'Store_ID', 'Qty_Sold', 'Price_Per_Unit', 'Total_Sale_Value', 'Is_Promo', 'Promo_Discount', 'Seasonality_Factor', 'Date', 'sku', 'product_class', 'quantity', 'price', 'store_id', 'SKU_Coded', 'Product_Class_Code', 'day_of_week', 'month', 'quarter', 'year', 'is_weekend', 'Price_Per_Unit_mean', 'Price_Per_Unit_std', 'Price_Per_Unit_min', 'Price_Per_Unit_max', 'Qty_Sold_mean', 'Qty_Sold_std', 'Qty_Sold_min', 'Qty_Sold_max', 'Price_Per_Unit_class_mean', 'Price_Per_Unit_class_std']
+2025-03-26 15:13:45,177 - Retail_Elasticity - INFO - Starting model fitting process...
+2025-03-26 15:13:45,180 - Retail_Elasticity - INFO - Standardized column names: {'sku': 'sku', 'product_class': 'product_class', 'Price_Per_Unit': 'price', 'quantity': 'quantity', 'Date': 'date'}
+2025-03-26 15:13:45,196 - Retail_Elasticity - INFO - Preparing data with 10000 rows
+2025-03-26 15:13:45,197 - Retail_Elasticity - INFO - Preparing data with columns: price=price, quantity=quantity, sku=sku, product_class=product_class, date=date
+2025-03-26 15:13:45,208 - Retail_Elasticity - INFO - Created indices for 50 SKUs and 8 product classes
+2025-03-26 15:13:45,219 - Retail_Elasticity - INFO - Log transformation validation for price:
+2025-03-26 15:13:45,220 - Retail_Elasticity - INFO -   Skewness: Raw=3.0172, Log=0.9039 - BETTER with log
+2025-03-26 15:13:45,220 - Retail_Elasticity - INFO -   Shapiro-Wilk p-value: Raw=0.0000, Log=0.0000 - BETTER with log
+2025-03-26 15:13:45,220 - Retail_Elasticity - INFO -   Q-Q plot correlation: Raw=0.8158, Log=0.9737 - BETTER with log
+2025-03-26 15:13:45,220 - Retail_Elasticity - INFO - Log transformation for price is APPROPRIATE
+2025-03-26 15:13:45,223 - Retail_Elasticity - INFO - Created log-transformed price column: log_price
+2025-03-26 15:13:45,232 - Retail_Elasticity - INFO - Log transformation validation for quantity:
+2025-03-26 15:13:45,233 - Retail_Elasticity - INFO -   Skewness: Raw=3.5652, Log=0.2394 - BETTER with log
+2025-03-26 15:13:45,234 - Retail_Elasticity - INFO -   Shapiro-Wilk p-value: Raw=0.0000, Log=0.0000 - BETTER with log
+2025-03-26 15:13:45,234 - Retail_Elasticity - INFO -   Q-Q plot correlation: Raw=0.8640, Log=0.9953 - BETTER with log
+2025-03-26 15:13:45,234 - Retail_Elasticity - INFO - Log transformation for quantity is APPROPRIATE
+2025-03-26 15:13:45,236 - Retail_Elasticity - INFO - Created log-transformed quantity column: log_quantity
+2025-03-26 15:13:45,266 - Retail_Elasticity - INFO - Added 12 seasonality features
+2025-03-26 15:13:45,267 - Retail_Elasticity - INFO - Data preparation complete: 10000 rows, 47 columns
+2025-03-26 15:13:45,267 - Retail_Elasticity - INFO - Data preparation complete. Shape: (10000, 47)
+2025-03-26 15:13:45,268 - Retail_Elasticity - INFO - Building Bayesian model...
+2025-03-26 15:13:45,464 - Retail_Elasticity - INFO - Bayesian model built successfully
+2025-03-26 15:13:45,465 - Retail_Elasticity - INFO - Starting step: Running MCMC sampling
+2025-03-26 15:13:45,465 - Retail_Elasticity - INFO - Starting MCMC sampling with parameters: draws=1000, tune=1000, chains=4, target_accept=0.95, max_treedepth=15
+2025-03-26 15:14:07,159 - Retail_Elasticity - ERROR - Error in step Running MCMC sampling: Invalid parameter for MCMC sampling: Not enough samples to build a trace.
+2025-03-26 15:14:07,160 - Retail_Elasticity - INFO - Step Running MCMC sampling failed in 21.70 seconds
+2025-03-26 15:14:07,160 - Retail_Elasticity - ERROR - Model fitting failed after 21.98 seconds: Inference failed: Invalid parameter for MCMC sampling: Not enough samples to build a trace.
+2025-03-26 15:14:07,167 - Retail_Elasticity - INFO - Saving results
+2025-03-26 15:14:07,167 - Retail_Elasticity - INFO - Starting step: Saving results
+2025-03-26 15:14:07,168 - Retail_Elasticity - INFO - Step Saving results completed successfully in 0.00 seconds
+2025-03-26 15:14:07,168 - Retail_Elasticity - INFO - Full analysis executed in 22.09 seconds
+2025-03-26 15:14:07,171 - Retail_Elasticity - WARNING - Model did not produce elasticity estimates
