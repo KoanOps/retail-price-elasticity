@@ -130,6 +130,8 @@ python main.py \
 
 ## Conceptual Flow
 Raw Data → Data Preprocessing → Hierarchical Bayesian Model → Posterior Analysis → Visualizations/Reports
+
+## Bayesian Hierarchical Model Structure
 ![Bayesian Hierarchical Model Structure](docs/images/model_graph.png)
 
 ## Model Performance
@@ -141,7 +143,6 @@ The hierarchical Bayesian model (HBM) demonstrates key advantages compared to tr
 - **More Accurate Estimation**: Consistently achieves lower error rates, especially with sparse data
 
 ### Model Validation
-
 To validate model accuracy using synthetic data:
 
 ```bash
