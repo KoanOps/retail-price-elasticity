@@ -9,7 +9,7 @@
 # required modules regardless of the current working directory.
 #
 # USAGE:
-#   ./run_elasticity_analysis.sh [options]
+#   ./run_analysis.sh [options]
 #
 # COMMON OPTIONS:
 #   --model-type bayesian     Use Bayesian hierarchical model
@@ -20,8 +20,8 @@
 #   --tune 500                Number of tuning iterations (Bayesian model)
 #
 # EXAMPLES:
-#   ./run_elasticity_analysis.sh --model-type bayesian --data-path data/sales.parquet --results-dir results/my_analysis
-#   ./run_elasticity_analysis.sh --help    Show all available options
+#   ./run_analysis.sh --model-type bayesian --data-path data/sales.parquet --results-dir results/my_analysis
+#   ./run_analysis.sh --help    Show all available options
 #
 # NOTES:
 #   - Requires Python 3.7+ with all dependencies installed

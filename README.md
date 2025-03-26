@@ -9,11 +9,17 @@ Price elasticity measures how demand responds to price changes.
 - Elasticity = -1: Unit elastic
 - Elasticity > -1: Inelastic (less price-sensitive)
 
-This Bayesian approach provides robust elasticity estimates with uncertainty quantification, accounting for:
-- SKU-level differences
-- Product category effects
-- Seasonality patterns
-- Price interactions
+## Model Philosophy
+- Materially right > Precisely wrong
+- Signal + actionability is underrated, model precision is overrated
+- Design for reliable decision-making under uncertainty, not surgical price optimization
+- Different markets have fundamentally different data-generating processes
+
+## Data Characteristics
+- **Sparse SKU Data**: Hierarchical structure manages varying observation counts of unique price points per SKU with product class effects (categorical data)
+- **Long-Tailed Distributions**: Log transformations handle skewed price and quantity distributions
+- **Correlated Patterns**: Partial pooling captures relationships between SKUs and product classes
+- **Temporal Effects**: Seasonal components model time-based demand patterns
 
 ## Repository Structure
 
@@ -23,36 +29,53 @@ retail/
 │   ├── data_loader.py                # Loads and validates input data
 │   ├── data_preprocessor.py          # Prepares data for modeling
 │   ├── data_visualizer.py            # Visualization utilities
-│   └── simulation.py                 # Synthetic data generation
+│   ├── simulation.py                 # Synthetic data generation
+│   ├── generate_data.py              # Data generation utilities
+│   └── sales.parquet                 # Sample retail sales data
 │
 ├── model/                 # Elasticity modeling components
 │   ├── bayesian/                     # Bayesian modeling components 
-│   │   ├── data_preparation.py       # Bayesian-specific preprocessing
 │   │   ├── model_builder.py          # PyMC model construction
-│   │   ├── sampling.py               # MCMC sampling management
-│   │   └── visualization.py          # Model-specific visualization
+│   │   └── __init__.py               # Package exports
 │   │
+│   ├── base_model.py                 # Abstract base model class
 │   ├── bayesian_model.py             # Main Bayesian model implementation
-│   └── model_runner.py               # Model execution orchestration
+│   ├── linear_model.py               # Linear elasticity model
+│   ├── model_runner.py               # Model execution orchestration
+│   ├── data_preparation.py           # Data preparation for models
+│   ├── constants.py                  # Model constants and defaults
+│   ├── sampling.py                   # MCMC sampling management
+│   ├── visualization.py              # Visualization utilities
+│   ├── diagnostics.py                # Model diagnostic tools
+│   └── exceptions.py                 # Custom exception classes
 │
 ├── utils/                  # Utility functions and helpers
-│   ├── model_validation.py           # Validation tools
+│   ├── analysis/                     # Analysis utilities
+│   │   ├── model_validation.py       # Validation tools
+│   │   ├── log_transform_validator.py # Log transformation utility
+│   │   ├── seasonality_analysis.py   # Seasonality analysis tools
+│   │   └── results_processor.py      # Results processing utilities
+│   │
 │   ├── results_manager.py            # Results processing and storage
 │   ├── logging_utils.py              # Enhanced logging
 │   ├── decorators.py                 # Function decorators
-│   └── log_transform_validator.py    # Log transformation utility
+│   ├── common.py                     # Common utility functions
+│   └── data_utils.py                 # Data manipulation utilities
 │
 ├── tests/                  # Test and validation suite
-│   ├── validate_elasticity_model.py  # Model validation script
 │   └── test_*.py                     # Unit tests for components
 │
 ├── config/                 # Configuration management
 │   └── default_config.py             # Default parameter settings
 │
+├── diagnostics/            # Additional diagnostic tools
+├── scripts/                # Helper scripts
 ├── results/                # Output directory for analysis results
-├── analysis.py                       # Main analysis script
-├── main.py                           # Command-line entry point
-└── requirements.txt                  # Project dependencies
+├── validation_results/     # Validation output directory
+├── analysis.py             # Main analysis script
+├── main.py                 # Command-line entry point
+├── run_analysis.sh # Shell script for running analysis
+└── requirements.txt        # Project dependencies
 ```
 
 ## Installation
@@ -105,43 +128,6 @@ python main.py \
   --chains 2
 ```
 
-### Python API
-
-You can integrate the framework into your Python applications:
-
-```python
-# Import the model runner
-from model.model_runner import ModelRunner
-from config.config_manager import ConfigManager
-
-# Initialize configuration
-config_manager = ConfigManager()
-config_manager.data_config.data_path = "data/sales.parquet"
-config_manager.app_config.results_dir = "results/api_run"
-
-# Initialize model runner with configuration
-runner = ModelRunner(
-    results_dir=config_manager.app_config.results_dir,
-    config_manager=config_manager
-)
-
-# Run analysis
-model_params = {
-    'model_type': 'bayesian',
-    'sample_frac': 0.3,
-    'use_seasonality': True,
-    'n_draws': 1000,
-    'n_tune': 500,
-    'n_chains': 2
-}
-results = runner.run_analysis(config_manager.data_config.data_path, **model_params)
-
-# Access elasticities (check actual structure in your results)
-if "elasticities" in results:
-    elasticities = results["elasticities"]
-    print(f"Elasticity results available for {len(elasticities)} SKUs")
-```
-
 ### Model Validation
 
 To validate model accuracy using synthetic data:
@@ -178,20 +164,29 @@ The utility evaluates three key metrics to determine appropriateness:
 
 ## Model Features
 
-- **Hierarchical Structure**: Accounts for SKU and category-level effects
-- **Prior Specifications**: Informed priors based on retail domain knowledge
+- **Hierarchical Structure**: Accounts for SKU and category-level effects using partial pooling
 - **Diagnostics**: MCMC convergence checks and posterior predictive checks
 - **Validation**: Synthetic data validation with known elasticities
 - **Uncertainty Quantification**: Credible intervals for all estimates
 - **Performance**: Optimized for large retail datasets
 
+The hierarchical Bayesian model uses partial pooling to balance between bias & variance (uncertainty band/width of credible intervals):
+- Complete pooling (all SKUs share the same elasticity - high bias, low variance)
+- No pooling (each SKU has its own independent elasticity - low bias, high variance)
+
+The model addresses hierarchical complexity challenges through non-centered parameterization and carefully tuned MCMC parameters (target_accept=0.95, multiple chains, adaptive tuning). The model assumes HalfNormal distribution for observation noise, though inverse gamma could be used if strong historical evidence exists about exact variance patterns.
+
+Pooling parameters should be adjusted based on real-world characteristics when available - for example, increasing class_effect_std for luxury vs necessity categories.
+
 ## Limitations
 - **Data Requirements**: Currently requires clean, structured price-quantity data
-- **Computation Time**: Full Bayesian inference can be computationally intensive for very large datasets
+- **Computation Time**: Full Bayesian inference can be computationally intensive for very large datasets. 
 - **External Factors**: Current model doesn't account for all external factors (i.e.competitor pricing)
+- **Regime Stability**: Assumes stable price-demand relationships across time periods; phase shifts (e.g., COVID, inflation spikes) require detecting regime changes and adapting the modeling framework accordingly
 
 ## Future work
 Future enhancements could include:
-- Adding competitor price effects
-- Implementing multi-SKU cross-elasticity
-- Developing a web dashboard for non-technical users
+- Adding additional external factors i.e. competitor price effects
+- Room to adapt model in different regimes/phase shifts
+- Standardizing data to improve performance and efficiency
+- Optimizing hierarchical model parameterization and MCMC tuning
