@@ -198,10 +198,15 @@ The utility evaluates three key metrics to determine appropriateness:
 
 ## Model Assumptions
 **Demand Functional Form**: Assumes a log-log demand relationship (constant elasticity model).
+
 **Prior Distributions**: Elasticity priors are normally distributed, centered around -1.0, adjustable via configuration parameters.
+
 **Observation Noise**: Currently modeled with a HalfNormal distribution. Inverse gamma could replace this if historical data suggests known variance patterns.
+
 **Cross-Price Effects**: Model currently focuses only on own-price elasticity; explicit modeling of cross-price or promotional interaction terms is not implemented.
+
 **Exchangeability**: Assumes SKUs within a product class are exchangeable, allowing hierarchical parameters to generalize.
+
 **Customization**: model_config parameters allow adjusting priors, pooling strength, and elasticity bounds for market-specific adaptations (luxury vs. necessities).
 
 ## Development Features
