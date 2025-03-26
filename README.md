@@ -140,20 +140,6 @@ The hierarchical Bayesian model (HBM) demonstrates key advantages compared to tr
 - **Hierarchical Structure**: Leverages information across SKUs and product classes
 - **More Accurate Estimation**: Consistently achieves lower error rates, especially with sparse data
 
-Our controlled experiment with balanced sparse and dense datasets clearly demonstrates HBM's advantages:
-
-![Model Comparison with Balanced Data Samples](docs/images/model_comparison_balanced.png)
-
-The analysis shows that HBM consistently:
-- Produces lower estimation errors (RMSE) on sparse data
-- Maintains tighter error distributions
-- Provides robust performance across varying data densities
-
-The comparison shows each model's strengths and limitations:
-- **HBM**: Consistent predictions with quantified uncertainty, handles sparse data reliably
-- **Linear**: Simple but produces occasional extreme estimates
-- **XGBoost**: Good with dense data but unstable on sparse SKUs
-
 ### Model Validation
 
 To validate model accuracy using synthetic data:
