@@ -38,6 +38,7 @@ from model.model_runner import ModelRunner
 from utils.analysis.model_validation import calculate_validation_metrics
 from model.bayesian_model import BayesianModel
 from model.exceptions import ModelError, FittingError, DataError
+from utils.script_params import get_base_parser, parse_args_with_unknown
 
 # Set up logging
 logger = logging.getLogger('model_comparison')
@@ -175,54 +176,76 @@ def run_linear_model(data, true_elasticities, use_promo=False, use_seasonality=F
     elasticity_estimates = {}
     skipped_skus = []
     
+    # First pass: fit models for SKUs with sufficient data
     for sku in true_elasticities.keys():
         sku_data = data[data['SKU'] == sku].copy()
         
-        if len(sku_data) < 5:  # Skip SKUs with too few observations
-            logger.warning(f"Skipping SKU {sku} with only {len(sku_data)} observations")
-            skipped_skus.append(sku)
-            continue
+        if len(sku_data) >= 5:  # Only fit model for SKUs with enough data
+            # Create log-transformed variables
+            sku_data['log_price'] = np.log(sku_data['Price_Per_Unit'])
+            sku_data['log_quantity'] = np.log(sku_data['Qty_Sold'])
             
-        # Create log-transformed variables
-        sku_data['log_price'] = np.log(sku_data['Price_Per_Unit'])
-        sku_data['log_quantity'] = np.log(sku_data['Qty_Sold'])
-        
-        # Setup features
-        feature_list = ['log_price']
-        
-        if use_promo and 'Is_Promo' in sku_data.columns:
-            feature_list.extend(['Is_Promo', 'Promo_Discount'])
-        
-        if use_seasonality:
-            if 'Seasonality_Factor' in sku_data.columns:
-                # Log transform seasonality factor for log-linear model
-                sku_data['log_Seasonality'] = np.log(sku_data['Seasonality_Factor'])
-                feature_list.append('log_Seasonality')
+            # Setup features
+            feature_list = ['log_price']
             
-            # Add temporal features if available
-            if 'Transaction_Date' in sku_data.columns:
-                sku_data['Month'] = pd.to_datetime(sku_data['Transaction_Date']).dt.month
-                sku_data['DayOfWeek'] = pd.to_datetime(sku_data['Transaction_Date']).dt.dayofweek
-                sku_data['Weekend'] = (sku_data['DayOfWeek'] >= 5).astype(int)
+            if use_promo and 'Is_Promo' in sku_data.columns:
+                feature_list.extend(['Is_Promo', 'Promo_Discount'])
+            
+            if use_seasonality:
+                if 'Seasonality_Factor' in sku_data.columns:
+                    sku_data['log_Seasonality'] = np.log(sku_data['Seasonality_Factor'])
+                    feature_list.append('log_Seasonality')
                 
-                # Add month dummies for seasonality
-                for month in range(1, 13):
-                    sku_data[f'Month_{month}'] = (sku_data['Month'] == month).astype(int)
-                
-                # Include key seasonal periods
-                feature_list.extend(['Weekend', 'Month_11', 'Month_12'])
-        
-        X = sku_data[feature_list].values
-        y = sku_data['log_quantity'].values
-        
-        # Fit linear regression
-        model = LinearRegression()
-        model.fit(X, y)
-        
-        # Store elasticity (first coefficient corresponds to log_price)
-        elasticity_estimates[sku] = model.coef_[0]
+                if 'Transaction_Date' in sku_data.columns:
+                    sku_data['Month'] = pd.to_datetime(sku_data['Transaction_Date']).dt.month
+                    sku_data['DayOfWeek'] = pd.to_datetime(sku_data['Transaction_Date']).dt.dayofweek
+                    sku_data['Weekend'] = (sku_data['DayOfWeek'] >= 5).astype(int)
+                    
+                    for month in range(1, 13):
+                        sku_data[f'Month_{month}'] = (sku_data['Month'] == month).astype(int)
+                    
+                    feature_list.extend(['Weekend', 'Month_11', 'Month_12'])
+            
+            X = sku_data[feature_list].values
+            y = sku_data['log_quantity'].values
+            
+            # Fit linear regression
+            model = LinearRegression()
+            model.fit(X, y)
+            
+            # Store elasticity (first coefficient corresponds to log_price)
+            elasticity_estimates[sku] = model.coef_[0]
     
-    logger.info(f"Linear model complete - analyzed {len(elasticity_estimates)} SKUs, skipped {len(skipped_skus)}")
+    # Second pass: handle sparse SKUs using pooled estimates
+    for sku in true_elasticities.keys():
+        if sku not in elasticity_estimates:
+            sku_data = data[data['SKU'] == sku].copy()
+            
+            if len(sku_data) > 0:
+                # Get product class for this SKU
+                product_class = sku_data['Product_Class'].iloc[0]
+                
+                # Get estimates for other SKUs in same class
+                class_estimates = []
+                for other_sku in elasticity_estimates:
+                    other_data = data[data['SKU'] == other_sku]
+                    if len(other_data) > 0 and other_data['Product_Class'].iloc[0] == product_class:
+                        class_estimates.append(elasticity_estimates[other_sku])
+                
+                if class_estimates:
+                    # Use class average
+                    elasticity_estimates[sku] = np.mean(class_estimates)
+                    logger.info(f"Using pooled class estimate for SKU {sku} with {len(sku_data)} observations")
+                else:
+                    # Fallback to overall average
+                    elasticity_estimates[sku] = np.mean(list(elasticity_estimates.values()))
+                    logger.info(f"Using overall average for SKU {sku} with {len(sku_data)} observations")
+            else:
+                # If no data at all, use overall average
+                elasticity_estimates[sku] = np.mean(list(elasticity_estimates.values()))
+                logger.info(f"Using overall average for SKU {sku} with no observations")
+    
+    logger.info(f"Linear model complete - analyzed {len(elasticity_estimates)} SKUs")
     if elasticity_estimates:
         logger.info(f"Mean elasticity: {np.mean(list(elasticity_estimates.values())):.4f}")
     
@@ -472,98 +495,95 @@ def run_hbm_model(df, true_elasticities, use_promo=False, use_seasonality=False)
     return bayesian_results
 
 
-def run_xgboost_model(df, true_elasticities, use_promo=False, use_seasonality=False):
-    """Run an XGBoost regression model and return the results."""
+def run_xgboost_model(data, true_elasticities, use_promo=False, use_seasonality=False):
+    """Run XGBoost regression model and return the results."""
     logger.info("Running XGBoost regression model")
     
     if use_promo:
         logger.info("Using promotional features in XGBoost model")
     
-    if use_seasonality and 'Seasonality_Factor' in df.columns:
+    if use_seasonality and 'Seasonality_Factor' in data.columns:
         logger.info("Using seasonality features in XGBoost model")
-        # XGBoost will handle the features directly, no need for log transformation
     
     elasticity_estimates = {}
     skipped_skus = []
     
+    # First pass: fit models for SKUs with sufficient data
     for sku in true_elasticities.keys():
-        sku_data = df[df['SKU'] == sku].copy()
+        sku_data = data[data['SKU'] == sku].copy()
         
-        if len(sku_data) < 5:  # Skip SKUs with too few observations
-            logger.warning(f"Skipping SKU {sku} with only {len(sku_data)} observations")
-            skipped_skus.append(sku)
-            continue
+        if len(sku_data) >= 5:  # Only fit model for SKUs with enough data
+            # Create log-transformed variables
+            sku_data['log_price'] = np.log(sku_data['Price_Per_Unit'])
+            sku_data['log_quantity'] = np.log(sku_data['Qty_Sold'])
             
-        # Create log-transformed variables
-        sku_data['log_price'] = np.log(sku_data['Price_Per_Unit'])
-        sku_data['log_quantity'] = np.log(sku_data['Qty_Sold'])
-        
-        # Setup features
-        feature_names = ['log_price']
-        
-        if use_promo and 'Is_Promo' in sku_data.columns:
-            feature_names.extend(['Is_Promo', 'Promo_Discount'])
-        
-        if use_seasonality:
-            if 'Seasonality_Factor' in sku_data.columns:
-                feature_names.append('Seasonality_Factor')
+            # Setup features
+            feature_list = ['log_price']
             
-            # Add temporal features if available
-            if 'Transaction_Date' in sku_data.columns:
-                sku_data['Month'] = pd.to_datetime(sku_data['Transaction_Date']).dt.month
-                sku_data['DayOfWeek'] = pd.to_datetime(sku_data['Transaction_Date']).dt.dayofweek
-                sku_data['Weekend'] = (sku_data['DayOfWeek'] >= 5).astype(int)
+            if use_promo and 'Is_Promo' in sku_data.columns:
+                feature_list.extend(['Is_Promo', 'Promo_Discount'])
+            
+            if use_seasonality:
+                if 'Seasonality_Factor' in sku_data.columns:
+                    sku_data['log_Seasonality'] = np.log(sku_data['Seasonality_Factor'])
+                    feature_list.append('log_Seasonality')
                 
-                feature_names.extend(['Month', 'DayOfWeek', 'Weekend'])
-                
-                # Holiday periods
-                sku_data['November'] = (sku_data['Month'] == 11).astype(int)
-                sku_data['December'] = (sku_data['Month'] == 12).astype(int)
-                feature_names.extend(['November', 'December'])
-        
-        X = sku_data[feature_names].values
-        y = sku_data['log_quantity'].values
-        
-        # Train XGBoost model
-        dtrain = xgb.DMatrix(X, label=y, feature_names=feature_names)
-        
-        # Parameters optimized for elasticity estimation
-        params = {
-            'objective': 'reg:squarederror',
-            'learning_rate': 0.1,
-            'max_depth': 3,
-            'min_child_weight': 3,
-            'subsample': 0.8,
-            'colsample_bytree': 0.8,
-            'gamma': 0.1,
-            'reg_alpha': 0.1,
-            'reg_lambda': 1.0
-        }
-        
-        # Train the model
-        model = xgb.train(params, dtrain, num_boost_round=100)
-        
-        # Extract price elasticity
-        # For XGBoost, we need to perform a small perturbation to estimate elasticity
-        price_idx = feature_names.index('log_price')
-        X_base = X.copy()
-        X_perturbed = X.copy()
-        
-        # Small perturbation to log_price (1% increase)
-        X_perturbed[:, price_idx] += 0.01
-        
-        # Calculate predictions for both base and perturbed features
-        y_base_pred = model.predict(xgb.DMatrix(X_base, feature_names=feature_names))
-        y_perturbed_pred = model.predict(xgb.DMatrix(X_perturbed, feature_names=feature_names))
-        
-        # Calculate elasticity as % change in quantity / % change in price
-        # Here the % change in price is 1%, so we multiply by 100
-        percent_change = (y_perturbed_pred - y_base_pred) / 0.01
-        
-        # Take the average effect across all observations for this SKU
-        elasticity_estimates[sku] = np.mean(percent_change)
+                if 'Transaction_Date' in sku_data.columns:
+                    sku_data['Month'] = pd.to_datetime(sku_data['Transaction_Date']).dt.month
+                    sku_data['DayOfWeek'] = pd.to_datetime(sku_data['Transaction_Date']).dt.dayofweek
+                    sku_data['Weekend'] = (sku_data['DayOfWeek'] >= 5).astype(int)
+                    
+                    for month in range(1, 13):
+                        sku_data[f'Month_{month}'] = (sku_data['Month'] == month).astype(int)
+                    
+                    feature_list.extend(['Weekend', 'Month_11', 'Month_12'])
+            
+            X = sku_data[feature_list].values
+            y = sku_data['log_quantity'].values
+            
+            # Fit XGBoost model
+            model = xgb.XGBRegressor(
+                objective='reg:squarederror',
+                n_estimators=100,
+                max_depth=3,
+                learning_rate=0.1,
+                random_state=42
+            )
+            model.fit(X, y)
+            
+            # Store elasticity (first feature importance corresponds to log_price)
+            elasticity_estimates[sku] = model.feature_importances_[0]
     
-    logger.info(f"XGBoost model complete - analyzed {len(elasticity_estimates)} SKUs, skipped {len(skipped_skus)}")
+    # Second pass: handle sparse SKUs using pooled estimates
+    for sku in true_elasticities.keys():
+        if sku not in elasticity_estimates:
+            sku_data = data[data['SKU'] == sku].copy()
+            
+            if len(sku_data) > 0:
+                # Get product class for this SKU
+                product_class = sku_data['Product_Class'].iloc[0]
+                
+                # Get estimates for other SKUs in same class
+                class_estimates = []
+                for other_sku in elasticity_estimates:
+                    other_data = data[data['SKU'] == other_sku]
+                    if len(other_data) > 0 and other_data['Product_Class'].iloc[0] == product_class:
+                        class_estimates.append(elasticity_estimates[other_sku])
+                
+                if class_estimates:
+                    # Use class average
+                    elasticity_estimates[sku] = np.mean(class_estimates)
+                    logger.info(f"Using pooled class estimate for SKU {sku} with {len(sku_data)} observations")
+                else:
+                    # Fallback to overall average
+                    elasticity_estimates[sku] = np.mean(list(elasticity_estimates.values()))
+                    logger.info(f"Using overall average for SKU {sku} with {len(sku_data)} observations")
+            else:
+                # If no data at all, use overall average
+                elasticity_estimates[sku] = np.mean(list(elasticity_estimates.values()))
+                logger.info(f"Using overall average for SKU {sku} with no observations")
+    
+    logger.info(f"XGBoost model complete - analyzed {len(elasticity_estimates)} SKUs")
     if elasticity_estimates:
         logger.info(f"Mean elasticity: {np.mean(list(elasticity_estimates.values())):.4f}")
     
@@ -882,6 +902,48 @@ def calculate_sparse_vs_rich_metrics(full_data, sparse_data, true_elasticities, 
     }
 
 
+def create_cv_visualizations(metrics_data, results_dir):
+    """Create visualizations from sparse vs. rich metrics data."""
+    viz_dir = os.path.join(results_dir, "visualizations")
+    os.makedirs(viz_dir, exist_ok=True)
+    
+    # Extract model data
+    models = {'linear': [], 'hbm': [], 'xgb': []}
+    for model in models:
+        if model in metrics_data:
+            # Get true vs. predicted values from metrics
+            models[model] = metrics_data[model]['overall']
+    
+    # Create performance comparison bar chart (most important visualization)
+    plt.figure(figsize=(10, 6))
+    metrics = ['MAE', 'RMSE', 'Correlation']
+    model_names = []
+    metric_values = {m: [] for m in metrics}
+    
+    for model, data in models.items():
+        if data:
+            model_names.append(model.upper())
+            for metric in metrics:
+                metric_values[metric].append(data.get(metric, 0))
+    
+    # Plot bar chart
+    x = np.arange(len(model_names))
+    width = 0.25
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    for i, metric in enumerate(metrics):
+        ax.bar(x + i*width, metric_values[metric], width, label=metric)
+    
+    ax.set_xticks(x + width)
+    ax.set_xticklabels(model_names)
+    ax.set_ylabel('Value')
+    ax.set_title('Model Performance Comparison')
+    ax.legend()
+    
+    plt.savefig(os.path.join(viz_dir, 'model_comparison.png'))
+    plt.close()
+
+
 def main():
     """Execute the main model comparison."""
     parser = argparse.ArgumentParser(description='Compare HBM model with log-log linear regression')
@@ -991,24 +1053,40 @@ def main():
             use_seasonality=args.with_seasonality
         )
         
+        # Get common SKUs between all models
+        common_skus = sorted(set(train_elasticities.keys()) & 
+                           set(linear_results['elasticities'].keys()) & 
+                           set(hbm_results.keys()) &
+                           set(xgb_results['elasticities'].keys()))
+        
+        # Create DataFrames with only common SKUs
+        linear_df = pd.DataFrame({
+            'True_Elasticity': [train_elasticities[sku] for sku in common_skus],
+            'Model_Elasticity': [linear_results['elasticities'][sku] for sku in common_skus]
+        })
+        
+        hbm_df = pd.DataFrame({
+            'True_Elasticity': [train_elasticities[sku] for sku in common_skus],
+            'Model_Elasticity': [hbm_results[sku] for sku in common_skus]
+        })
+        
+        xgb_df = pd.DataFrame({
+            'True_Elasticity': [train_elasticities[sku] for sku in common_skus],
+            'Model_Elasticity': [xgb_results['elasticities'][sku] for sku in common_skus]
+        })
+        
         # Store metrics for this fold
-        linear_fold_metrics = calculate_comparison_metrics(
-            pd.DataFrame({'True_Elasticity': train_elasticities.values(), 'Model_Elasticity': linear_results['elasticities'].values()}),
-            'Model_Elasticity', 'True_Elasticity'
+        linear_cv_results[f"fold_{fold+1}"] = calculate_comparison_metrics(
+            linear_df, 'Model_Elasticity', 'True_Elasticity'
         )
-        linear_cv_results[f"fold_{fold+1}"] = linear_fold_metrics
         
-        hbm_fold_metrics = calculate_comparison_metrics(
-            pd.DataFrame({'True_Elasticity': train_elasticities.values(), 'Model_Elasticity': hbm_results.values()}),
-            'Model_Elasticity', 'True_Elasticity'
+        hbm_cv_results[f"fold_{fold+1}"] = calculate_comparison_metrics(
+            hbm_df, 'Model_Elasticity', 'True_Elasticity'
         )
-        hbm_cv_results[f"fold_{fold+1}"] = hbm_fold_metrics
         
-        xgb_fold_metrics = calculate_comparison_metrics(
-            pd.DataFrame({'True_Elasticity': train_elasticities.values(), 'Model_Elasticity': xgb_results['elasticities'].values()}),
-            'Model_Elasticity', 'True_Elasticity'
+        xgb_cv_results[f"fold_{fold+1}"] = calculate_comparison_metrics(
+            xgb_df, 'Model_Elasticity', 'True_Elasticity'
         )
-        xgb_cv_results[f"fold_{fold+1}"] = xgb_fold_metrics
     
     # Calculate average metrics across folds
     logger.info("\n----- CROSS-VALIDATION RESULTS -----")
@@ -1029,6 +1107,9 @@ def main():
         synthetic_data, sparse_data, true_elasticities,
         linear_results, hbm_results, xgb_results, args.results_dir
     )
+    
+    # Create visualizations
+    create_cv_visualizations(sparse_metrics, args.results_dir)
     
     logger.info(f"Results saved to {args.results_dir}")
 

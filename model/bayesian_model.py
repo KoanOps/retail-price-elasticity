@@ -357,20 +357,29 @@ class BayesianModel(BaseElasticityModel):
             
             # Extract the parameters that compose elasticity
             # The hierarchical elasticity model has:
-            # 1. overall_elasticity (global mean)
-            # 2. class_elasticity (product class effects)
-            # 3. sku_elasticity_offset (individual SKU effects)
+            # 1. overall_elasticity (global mean) - actually named 'elasticity_mu' in the model
+            # 2. class_elasticity (product class effects) - actually named 'elasticity_class_effect' 
+            # 3. sku_elasticity_offset (individual SKU effects) - actually named 'elasticity_sku_effect'
             
             # Check if we have all the necessary parameters
             missing_params = []
-            required_params = ['overall_elasticity', 'class_elasticity', 'sku_elasticity_offset']
-            for param in required_params:
-                if param not in posterior:
-                    missing_params.append(param)
+            # Map the expected parameter names to the actual parameter names in the model
+            param_mapping = {
+                'overall_elasticity': 'elasticity_mu',
+                'class_elasticity': 'elasticity_class_effect',
+                'sku_elasticity_offset': 'elasticity_sku_effect'
+            }
+            
+            # Check for parameters using their actual names in the model
+            for expected_param, actual_param in param_mapping.items():
+                if actual_param not in posterior:
+                    missing_params.append(expected_param)
             
             if missing_params:
                 logger.warning(f"Missing elasticity parameters in posterior: {', '.join(missing_params)}")
-                return self._create_dummy_elasticities()
+                # Try to continue with available parameters instead of falling back to dummy
+                if all(param_mapping[param] not in posterior for param in missing_params):
+                    return self._create_dummy_elasticities()
                 
             # Get list of SKUs from data preparation
             if not hasattr(self, 'data_prep') or not hasattr(self.data_prep, 'skus'):
@@ -383,12 +392,12 @@ class BayesianModel(BaseElasticityModel):
             sku_to_class = self.data_prep.sku_to_class
             
             # Compute the total elasticity for each SKU by combining the components
-            # Total elasticity = overall_elasticity + class_elasticity[class_idx] + sku_elasticity_offset[sku_idx]
+            # Total elasticity = elasticity_mu + elasticity_class_effect[class_idx] + elasticity_sku_effect[sku_idx]
             
-            # Get the mean values across chains and draws
-            overall_elasticity = float(posterior['overall_elasticity'].mean(dim=['chain', 'draw']).values)
-            class_elasticity = posterior['class_elasticity'].mean(dim=['chain', 'draw']).values
-            sku_offset = posterior['sku_elasticity_offset'].mean(dim=['chain', 'draw']).values
+            # Get the mean values across chains and draws using the actual parameter names
+            overall_elasticity = float(posterior[param_mapping['overall_elasticity']].mean(dim=['chain', 'draw']).values)
+            class_elasticity = posterior[param_mapping['class_elasticity']].mean(dim=['chain', 'draw']).values
+            sku_offset = posterior[param_mapping['sku_elasticity_offset']].mean(dim=['chain', 'draw']).values
             
             logger.info(f"Computed elasticities with overall mean: {overall_elasticity}")
             

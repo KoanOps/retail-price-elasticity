@@ -21,6 +21,10 @@ Price elasticity measures how demand responds to price changes.
 - **Correlated Patterns**: Partial pooling captures relationships between SKUs and product classes
 - **Temporal Effects**: Seasonal components model time-based demand patterns
 
+## Conceptual Flow
+Raw Data → Data Preprocessing → Hierarchical Bayesian Model → Posterior Analysis → Visualizations/Reports
+```
+
 ## Repository Structure
 
 ```
@@ -164,19 +168,23 @@ The utility evaluates three key metrics to determine appropriateness:
 
 ## Model Features
 
-- **Hierarchical Structure**: Accounts for SKU and category-level effects using partial pooling
-- **Diagnostics**: MCMC convergence checks and posterior predictive checks
-- **Validation**: Synthetic data validation with known elasticities
-- **Uncertainty Quantification**: Credible intervals for all estimates
-- **Performance**: Optimized for large retail datasets
+- **Hierarchical Structure**: Balances between "complete pooling" (all SKUs have identical elasticity) and "no pooling" (each SKU is fully independent). Uses partial pooling to optimize bias-variance trade-off.
+- **Uncertainty Quantification**: Provides credible intervals around elasticity estimates, allowing informed decisions under uncertainty.
+- **Diagnostics and Validation**:
+  - MCMC convergence checks
+  - Posterior predictive checks
+  - Validation on synthetic data with known elasticities
+- **Performance Optimization**:
+  - Non-centered parameterization to handle hierarchical complexity
+  - Optimized MCMC sampling (target_accept=0.95, adaptive tuning, multiple chains) suitable for large retail datasets
 
-The hierarchical Bayesian model uses partial pooling to balance between bias & variance (uncertainty band/width of credible intervals):
-- Complete pooling (all SKUs share the same elasticity - high bias, low variance)
-- No pooling (each SKU has its own independent elasticity - low bias, high variance)
-
-The model addresses hierarchical complexity challenges through non-centered parameterization and carefully tuned MCMC parameters (target_accept=0.95, multiple chains, adaptive tuning). The model assumes HalfNormal distribution for observation noise, though inverse gamma could be used if strong historical evidence exists about exact variance patterns.
-
-Pooling parameters should be adjusted based on real-world characteristics when available - for example, increasing class_effect_std for luxury vs necessity categories.
+## Model Assumptions
+- **Demand Functional Form**: Assumes a log-log demand relationship (constant elasticity model).
+- **Prior Distributions**: Elasticity priors are normally distributed, centered around -1.0, adjustable via configuration parameters.
+- **Observation Noise**: Currently modeled with a HalfNormal distribution. Inverse gamma could replace this if historical data suggests known variance patterns.
+- **Cross-Price Effects**: Model currently focuses only on own-price elasticity; explicit modeling of cross-price or promotional interaction terms is not implemented.
+- **Exchangeability**: Assumes SKUs within a product class are exchangeable, allowing hierarchical parameters to generalize.
+- **Customization**: model_config parameters allow adjusting priors, pooling strength, and elasticity bounds for market-specific adaptations (luxury vs. necessities).
 
 ## Limitations
 - **Data Requirements**: Currently requires clean, structured price-quantity data
